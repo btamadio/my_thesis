@@ -1,3 +1,4 @@
 *_tmp/
 *.log*
 thesis.pdf
+.DS_Store
