@@ -72,8 +72,8 @@ the pixel detector, the IBL, which was installed in May 2014.}
 \subsection{Pixel Detector}
 
 The innermost layer of ATLAS is the pixel detector system. It consists
-of 1744 pixel sensors, arranged into a barrel region and two endcap
-regions. In total, there are 80.4 million readout channels. \cite{atlas-detector-2008}
+of 1744 solid-state pixel sensors, arranged into a barrel region and two endcap
+regions. In total, there are 80.4 million pixel readout channels. \cite{atlas-detector-2008}
 
 \subsubsection{Layout}
 The barrel region consists of four
@@ -102,8 +102,8 @@ field. This generates a current, which can be measured by
 charge-sensitive sensors at the edge of the material.\cite{spieler-2005}
 
 In a silicon detector, the active material is a pn junction, operated
-at reverse bias, until fully depleted. This reduces the thermal noise
-from free charge carriers low enough that electron-hole pairs from
+with a reverse bias voltage, until fully depleted. This reduces the thermal noise
+from free charge carriers to a low enough level that electron-hole pairs from
 signal particles can be detected.\cite{spieler-2005}
 
 In ATLAS, the pixel sensors consist of an n-type bulk, with $p^+$
@@ -115,11 +115,19 @@ inversion. After type inversion, the active pn junction region
 switches to the $n^+$-doped side.\cite{pixels-2008} This process is illustrated in
 Figure ~\ref{fig:pixel_type_inversion}.
 
+This $n^+$-in-$n$ design allows the sensors to continue to operate
+both before and after large doses of radiation.
+
 Each pixel tile has 47232 pixels, layed out in a grid of 144 columns
 by 328 rows. Some of the pixels are grouped to common read-out
 channels, resulting in 46080 read-out channels. This grouping is done
 so that an equal number of read-out channels can be connected to each
 of the 16 front-end read-out chips.
+
+In 128 of the columns, each pixel implant is $382.5\times30~\mu m^2$,
+with pitch (center-to-center distance) of  $400\times50~\mu m^2$. In
+the remaining 16 columns, the pixel sizes are $582.5\times30~\mu m^2$,
+with a pitch of  $600\times50~\mu m^2$.\cite{pixels-2008}
 
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{pixel_type_inversion}
@@ -131,11 +139,38 @@ type inversion, in (b), the depletion zone occurs between the now
 p-type bulk and the $n^+$-doped front side.\cite{pixels-2008}}
 \label{fig:pixel_type_inversion}
 \end{figure}
+
 \subsubsection{The IBL}
+A major upgrade that occurred during the long shutdown in 2014 was to
+install the Insertable B-Layer (IBL) to the pixel detector. The IBL became
+the fourth and innermost layer of the pixel detector. The IBL provides
+several key improvements to the tracking system, which will allow the
+pixel detector to maintain good performance even in the
+higher-luminosity environment that will be present in the High
+Luminosity LHC (HL-LHC).\cite{ibl-tdr} The IBL does this by
+improving tracking robustness against module failures, adding
+measurement redundancy to mitigate the effects of pileup, and
+adding an additional measurement closer to the interaction
+point. \cite{ibl-tdr}
+
+As part of the IBL insertion project, the original beam pipe was
+removed, and replaced with a smaller-radius beampipe. Precision
+tooling and methods for insertion were developed and practiced for two
+years before the procedure was finally carried out. The tolerances
+were extremely tight, with only a $0.2~mm$ gap between the IBL and
+inner supporting tube.\cite{ibl-website}. An image of the IBL being inserted can be seen in
+~\ref{fig:ibl_insertion}
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{ibl_insertion}
+\caption{The IBL as it was inserted into the pixel detector}
+\label{fig:ibl_insertion}
+\cite{ibl-website}
+\end{figure}
 
 \subsection{Silcon Strip Tracker}
 
-The silicon strip tracker (SCT) is also segmented into a barrel and
+The silicon strip tracker (SCT) is segmented into a barrel region and
 two endcap regions. 
 
 \subsubsection{Layout}
