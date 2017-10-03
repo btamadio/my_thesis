@@ -47,7 +47,7 @@ background and signal Monte Carlo.
 \label{fig:MJ_dEta_distributions}
 \end{figure}
 
-\section{Data-Driven Background Estimation}
+\section{Data-Driven Background Estimation} \label{bkg_estimation}
 A data-driven jet mass template method is used to estimate the
 background. The method is similar to that used in the Run-1 version of
 the analysis \cite{run1-multijet}, with a
@@ -250,15 +250,53 @@ $|\eta|<2.0$. The leading large-R jet is required to have
 $p_{T}>440~GeV$, a selection for which the $H_{T}$ trigger is fully
 efficient.
 
-Small-R jets are used to indentify b-jets in events, which can then be
-matched to large-R jets. To be considered for b-tagging, a small-R jet
+Small-R jets are used as candidates for b-tagging. To be considered for b-tagging, a small-R jet
 must have $p_{T}>50~GeV$ and $|\eta|<2.5$. The algorithm used to tag
 b-jets is described in chapter \ref{chapter-jets} as well as
-\cite{b-jet-perf-1, b-jet-perf-2}
+\cite{b-jet-perf-1, b-jet-perf-2}. The algorithm used for b-tagging in
+this analysis is the fixed-efficiency $70\%$ working point.
+
+The control, validation, and signal regions defined in section
+\ref{region_defs} can be further segmented into b-tag and b-veto
+regions. Events with at least one b-tagged small-R jet are considered
+b-tag events, while those without are labelled as b-veto. When
+b-tagging is not taken into consideration, the region is called
+b-inclusive.
+
+Additionally, large-R jets found to be within $\DeltaR=1.0$ of a
+b-tagged small-R jet in the same event are referred to as b-matched
+jets. Those large-R jets not within $\DeltaR=1.0$ of a b-tagged
+small-R jet are called non-b-matched. 
+
+The distinction in terminology between b-tagged and b-matched is important enough to
+restate for clarity. When referring to the presence or absence of a b-tagged
+jet \textit{within an event}, the terms b-tag, b-veto, and b-inclusive are used. When
+referring to the proximity of an \textit{individual large-R jet} to a b-tagged
+small-R jet, the terms b-matched and non-b-matched are used.
+
+Templates will be divided into b-matched and non-b-matched templates,
+which are used to dress b-matched and non-b-matched jets,
+respectively. Validation and signal regions will be divided into
+b-tag, b-veto, and b-inclusive regions.
+
+\section{Control, Uncertainty Determination, Validation, and Signal Regions} \label{region_defs}
+Events are divided into control, uncertainty determination,
+validation, and signal regions.
+
+The control region is used to derive the jet mass templates, as
+described in section \ref{bkg_estimation}. The control region is
+defined as those events with exactly three large-R jets. 
+
+There are two uncertainty determination regions (UDRs), which are used to
+derive the data-driven background systematic uncertainty, as detailed
+in section \ref{bkg_uncert}. The high-$p_{T}$ UDR, known as UDR1,
+consists of events with exactly two large-R jets, with at least one
+having $p_{T}>400~GeV$. The low-$p_{T}$ UDR, known as UDR2, consists
+of events with exactly four large-R jets, all of which have
+$p_{T}<400~GeV$. The UDRs are independent of the control, validation,
+and signal regions.
 
 
-
-\section{Control, Validation, and Signal Regions} \label{region_defs}
 
 \section{Background Systematic Uncertainty} \label{bkg_uncert}
 Systematic uncertainties are derived from the dressed mass response in
