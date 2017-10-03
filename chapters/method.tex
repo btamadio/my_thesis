@@ -263,9 +263,9 @@ b-tag events, while those without are labelled as b-veto. When
 b-tagging is not taken into consideration, the region is called
 b-inclusive.
 
-Additionally, large-R jets found to be within $\DeltaR=1.0$ of a
+Additionally, large-R jets found to be within $\Delta R=1.0$ of a
 b-tagged small-R jet in the same event are referred to as b-matched
-jets. Those large-R jets not within $\DeltaR=1.0$ of a b-tagged
+jets. Those large-R jets not within $\Delta R=1.0$ of a b-tagged
 small-R jet are called non-b-matched. 
 
 The distinction in terminology between b-tagged and b-matched is important enough to
@@ -296,7 +296,51 @@ of events with exactly four large-R jets, all of which have
 $p_{T}<400~GeV$. The UDRs are independent of the control, validation,
 and signal regions.
 
+Validation region are used to check that the template method
+accurately estimates the $M_J^{\Sigma}$ distribution in
+high-multiplicity events that are free of signal
+contamination. Requiring large $|\Delta\eta|$ reduces the signal
+contribution to the high-multiplicity regions. There are four
+overlapping validation regions, each requiring $|\Delta\eta| >
+1.4$. The validation regions are divided into two b-tag and two
+b-inclusive regions. The b-tag regions require at least one b-tagged
+small-R jet, while the b-inclusive regions have no such
+requirement. The b-tag and b-inclusive regions are further subdivided
+into 4-jet and 5-jet regions. The 4-jet regions require \textit{at
+  least} four large-R jets, and leading jet $p_T>400GeV$ so that
+they are independent of UDR2. The 5-jet regions require five or more
+large-R jets, and have no requirement on the leading jet $p_T$. 
 
+The signal regions are divided the same way as the validation regions,
+into two b-tag regions: one with four or more jets, and one with five
+or more jets, as well as a two corresponding b-inclusive regions. The
+four-jet signal regions also require lead jet $p_T>400GeV$, like the
+validation region. The difference between the signal and validation
+regions is a reversal of the $|\Delta\eta|$ requirement. All signal
+regions require $|\Delta\eta|<1.4$. Additionally, the signal regions
+include a requirement on $M_J^{\Sigma}$. The four-jet b-tag signal region
+(4jSRb) and 4-jet b-inclusive signal region (4jSR) each require
+$M_J^{\Sigma} > 1.0~TeV$. The five-jet b-tag signal region (5jSRb) is
+divided into two overlapping regions: one with a cut of
+$M_J^{\Sigma}>0.6~TeV$ and one with a cut of
+$M_J^{\Sigma}>0.8~TeV$. Finally, the five-jet b-inclusive region
+(5jSR) requires $M_J^{\Sigma}>0.8~TeV$.
+
+A summary of the definitions for the control, uncertainty
+determination, validation, and signal regions can be found in table \ref{tbl:region_defs}.
+
+\begin{table}
+  \caption{Summary of the requirements defining the control,
+    uncertainty determination, validation, and signal
+    regions. Requirements are placed on the large-R jet multiplicity
+    ($N_{jet}$), the presence or absence of a b-tagged small-R jet
+    ($b$-tag), the $p_T$ of the leading jet ($p_{T,1}$), the
+    pseudorapidity difference between the two leading jets
+    ($|\Delta\eta_{12}|$), and the scalar sum of the first four
+    leading jets in the event ($M_J^{\Sigma}$).}
+  \label{tbl:region_defs}
+  \includegraphics[width=\linewidth]{region_definition_table_2}
+\end{table}
 
 \section{Background Systematic Uncertainty} \label{bkg_uncert}
 Systematic uncertainties are derived from the dressed mass response in
