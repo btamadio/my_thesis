@@ -1,4 +1,4 @@
-\chapter{Method}
+\chapter{Method} \label{chapter-method}
 
 \section{Analysis Overview}
 A data-driven method is used to predict the background yield in the
@@ -26,8 +26,8 @@ used.
 $M_{J}^{\Sigma}$ provides good separation between signal and
 background because it takes into
 account both the energy and angular structure of an event, unlike a
-purely energy-dependent observable like $H_{T}$ \cite{hook_mj,
-  elhedri_mj}.
+purely energy-dependent observable like $H_{T}$ \cite{hook-mj,
+  elhedri-mj}.
 
 The second discriminating variable is $|\Delta \eta_{12}|$, which is
 the pseudorapidity differences between the first two leading jets in
@@ -48,6 +48,33 @@ background and signal Monte Carlo.
 \end{figure}
 
 \section{Data-Driven Background Estimation}
+A data-driven jet mass template method is used to estimate the
+background. The method is similar to that used in the Run-1 version of
+the analysis \cite{run1-multijet}, with a
+few important differences.
+
+In the Run-1 analysis, the templates were smoothed with a kernel
+density estimate before sampling the dressed masses. In this version
+of the analysis, the templates remain binned. This allows for an
+estimate of the statistical uncertainty from the control sample
+size. By Poisson fluctuating each template bin before sampling, the
+statistical uncertainty is propagated to the dressed $M_J^{\Sigma}$
+distributions.
+
+Secondly, in the Run-1 version of the analysis, two separate sets of templates
+were generated: one set for the leading two jets in each event, and
+one set for the third leading jet. In this analysis, the templates are
+instead divided into b-matched and non-b-matched jets. The discrepancy
+in template shape between b-matched and non-b-matched jets was seen to
+be larger than that between the third leading jet and first two
+leading jets. 
+
+Finally, the Run-1 version of the analysis used Monte-Carlo
+non-closure as one contribution to the background systematic
+uncertainty. In this analysis, a data-driven method is used
+instead. This is due to the fact that the sample size of available
+simulated data was not large enough to make an accurate estimate of
+the non-closure.
 
 \subsection{Jet mass templates}
 Jet mass templates are derived from a signal-depleted control region
@@ -165,7 +192,7 @@ systematically-shifted predictions.
 The two systematic uncertainties are symmetrized by taking the maximum
 of the downward-shifted and upward-shifted uncertainties.
 
-\subsection{Dressed Mass Response}
+\subsection{Dressed Mass Response} \label{response}
 Dressed mass response plots are created by plotting the average
 dressed and average kinematic jet mass in each $p_T$ bin. The dressed mass
 response for the control region is shown in figure
@@ -195,13 +222,50 @@ the background estimation uncertainty. This method is described in
 
 \end{figure}
 
-
 \section{Event Selection}
-\section{Control, Validation, and Signal Regions}
-\section{Background Uncertainty} \label{bkg_uncert}
+This analysis uses the entire 2015 and 2016 ATLAS datasets, comprising
+$36.1~fb^{-1}~(\pm2.1\%)$. All collisions occurred as
+$\sqrt{s}=13~TeV$. 
+
+The trigger selects events with $H_{T}>1.0~TeV$, where $H_{T}$ is the
+scalar sum of the $p_{T}$ of all jets in an event. The trigger
+efficiency for the benchmark signal samples is found to be $100\%$.
+
+Additional requirements are that events have a primary vertex formed
+from at least two tracks with $p_{T}>400~MeV$.
+
+Two different methods of reconstructing jets are used in the
+analysis. Large-R jets are reconstructed using the anti-$k_{T}$
+algorithm with radius parameter
+$R=1.0$, and sub-jet radius parameter $R_{sub-jet}=0.2$. The jets are
+trimmed with sub-jet $p_{T}$-fraction $f_{p_{T}}=0.05$. The details of
+how jets are reconstructed, trimmed, and calibrated can be found in
+chapter \ref{chapter-jets}.
+
+Small-R jets are reconstructed with the anti-$k_{T}$ algorithm, using
+radius parameter $R=0.4$. 
+
+Large-R jets are required to have $p_{T}>200~GeV$ and
+$|\eta|<2.0$. The leading large-R jet is required to have
+$p_{T}>440~GeV$, a selection for which the $H_{T}$ trigger is fully
+efficient.
+
+Small-R jets are used to indentify b-jets in events, which can then be
+matched to large-R jets. To be considered for b-tagging, a small-R jet
+must have $p_{T}>50~GeV$ and $|\eta|<2.5$. The algorithm used to tag
+b-jets is described in chapter \ref{chapter-jets} as well as
+\cite{b-jet-perf-1, b-jet-perf-2}
+
+
+
+\section{Control, Validation, and Signal Regions} \label{region_defs}
+
+\section{Background Systematic Uncertainty} \label{bkg_uncert}
 Systematic uncertainties are derived from the dressed mass response in
-the UDRs.
+the two UDRs.
+
 \subsection{Method}
+
 \subsubsection{Binning of systematics}
 Systematic uncertainties are binned in $p_{T}$ and $|\eta|$. The lowest
 $p_{T}$ bin is for jets with $p_{T} < 402~GeV$. The second bin is for
