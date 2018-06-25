@@ -208,15 +208,31 @@ The modules are arranged in back-to-back pairs at a stereo angle of $40~mrad$, i
 
 \subsubsection{Modules}
 Like in the pixel system, the SCT sensors are solid-state silicon detectors.
-Instead of pixels, the base unit is a strip of silicon, ranging in length from $6 \text{to} 13~cm$.
+Instead of pixels, the base unit is a strip of silicon, ranging in length from $6$ to $13~cm$.
 These strips are made of p-type silicon, and are embedded in n-type silicon. The average pitch is $80~\mu m$.\cite{sct-2008}
 
 The resolution resulting from this design is $17~\mu m$ in the $r-\phi$ direction, and $580~\mu m$ in the z-direction.\cite{sct-2008}
 
 \subsection{Transition Radiation Tracker}\label{subsec:trt}
+Moving outwards from the pixel system and SCT, the final inner detector subsystem is the transition radiation tracker, or TRT .
+Unlike the pixel or SCT systems, the TRT uses proportional drift tubes, referred to as straws, as sensors.
 
 \subsubsection{Layout}
 \subsubsection{Modules}
+
+The TRT uses proportional drift tubes to detect charged particles.
+A tube is filled with a mixture of two or more gases, including an inert gas such as Xenon, and an electric field is applied across the tube.
+When a charged particle passes through the tube, ion pairs are generated from the inert gas.
+Positive and negative ions drift in opposite directions, towards the cathode and anode, respectively.
+If a particle's energy is completely absorbed in the tube, the number of ions produced in stopping the particle is
+proportional to the original energy of the particle.\cite{knoll-2000}
+
+In the ATLAS TRT, the straws are filled with a mixture of $70\%~\mathrm{Xe}$, $27\%~\mathrm{CO_2}$,
+and $3\%~\mathrm{O_2}$.
+Carbon dioxide is used as a quencher gas, which is needed to guarantee that the ionizaiton procedure is stable.
+The addition of a small amount of oxygen increases the voltage difference between the working point and the breakdown voltage,
+further stabilizing the process.\cite{trt-2013}
+
 
 \section{Calorimeters}\label{sec:calorimeters}
 \subsection{Electromagnetic Calorimeters}\label{subsec:em_cal}
