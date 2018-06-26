@@ -284,7 +284,53 @@ But there is a tradeoff: as straw diameter increases, so does the drift time.
 The optimal diameter to ensure acceptable time resolution for $25~ns$ bunch-spacing was chosen as $4~cm$.\cite{trt-2013}
 
 \section{Calorimeters}\label{sec:calorimeters}
+
 \subsection{Electromagnetic Calorimeters}\label{subsec:em_cal}
+
+The electromagnetic calorimeter is located just outside the solenoid that surrounds the inner detector.
+It is optimized for measuring the energy of electromagnetic showers.
+The EM calorimeter is also designed to measure the direction of neutral particles, which cannot be tracked by the inner detector.
+
+In the barrel region, the EM calorimeter covers the range $|\eta| < 1.475$.
+In the end-cap region, it covers a range of $1.375 < |eta| < 3.23$.
+
+The calorimeters have to be thick enough to fully absorb shower energy and to minimize punch-through into the muon system.
+The EM calorimeter depth was designed to be 22 interaction lengths $\left(X_0\right)$ in the barrel, and $24~X_0$ in the end-caps.
+An interaction length is defined as the average distance traveled by a particle through a material when it has lost
+$1 - 1/\mathrm{e}$ of its original energy.\cite{em_calo}
+
+The calorimeters consist of accordion-shaped lead absorber plates with copper-kapton electrodes in between.
+The accordion shape provides full symmetry in $|\phi|$ with no gaps.
+The absorber plates are grounded and the electrodes are kept at $2000~V$ in the barrel region and between
+$1000$ and $2500~V$ in the end-cap region.
+The whole system is immersed in liquid argon.\cite{atlas-detector-2008}
+
+A particle passing through the lead absorbers generates a shower of particles, which ionize the LAr.
+Due to the electric field between the absorber plates and electrodes, ions drift towards the electrodes.
+This generates a pulse in the electrodes which can then be recorded.
+
+The calorimeter cells are arranged into three layers, with highest granularity closest to the interaction point.
+Cells in layer 1 have a granularity of $\delta\phi \times \delta\eta = 0.0245 \times 0.0031$.
+This very fine segmentation is useful in accurately determining the direction of incoming particles.
+It is also useful in discriminating between an individual photons and a neutral $\pi$ meson decaying to two photons.\cite{em_calo}
+
+In the second layer, the granularity is reduced $\delta\phi \times \delta\eta = 0.0245 \times 0.025$.
+
+In the third and final layer, the granularity is further reduced to $\delta\phi \times \delta\eta = 0.0245 \times 0.05$.
+
+The geometry of the EM calorimeter cells can be seen in figure~\ref{fig:em_calo}
+
+Inside the innermost layer of the barrel EM calorimeter is an $11~mm$-thin presampler.
+The purpose of this presampler is to correct for energy lost to material upstream of the EM calorimeter.
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{em_calo}
+\caption{Schematic of EM calorimeter, showing the granularity of each layer.}
+\label{fig:em_calo}\cite{em_calo}
+\end{figure}
+
 \subsection{Hadronic Calorimeters}\label{subsec:had_cal}
+
 \section{Muon Spectrometer}\label{sec:muon_spec}
+
 \section{Trigger and Data Acquisition}\label{sec:trigger}
