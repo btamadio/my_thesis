@@ -285,6 +285,33 @@ The optimal diameter to ensure acceptable time resolution for $25~ns$ bunch-spac
 
 \section{Calorimeters}\label{sec:calorimeters}
 
+The ATLAS calorimeters are designed to absorb and measure the energy of both electromagnetic and hadronic showers.
+Different materials and geometries are used for different calorimeter subsystems, but the operating principle is the same.
+In each calorimeter, there is an absorber medium, and a sampling medium.
+When a particle strikes the absorber medium, it triggers a shower of particles which then pass into the sampling medium.
+The sampling medium is ionized by these showering particles, and instrumentation is used to measure the amount of ionization.
+In order to accurately measure shower energy, the ATLAS calorimeters are designed to fully absorb both electromagnetic and hadronic showers.
+
+The innermost calorimeter is a high-granularity detector optimized for measuring electromagnetic showers.
+Lead is used as an absorber and LAr as the sampling medium.
+It covers the range $|\eta| < 3.2$.
+
+The outer calorimeter has a coarser granularity and is optimized for measuring jets and $E_{T miss}$ .
+It consists of scintillator tiles and uses steel as the absorber.
+The hadronic calorimeter is also known as the tile calorimeter.
+
+In addition to the EM and hadronic calorimeters, there is copper-tungsten/LAr calorimeter providing coverage out to
+$|\eta| < 4.9$.
+This is known as the forward calorimeter, or FCal.
+
+The layout of the ATLAS calorimeter system can be seen in figure~\ref{fig:calo_full}
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{calo_full}
+\caption{Layout of the ATLAS calorimeter system.}
+\label{fig:calo_full}\cite{atlas-detector-2008}
+\end{figure}
+
 \subsection{Electromagnetic Calorimeters}\label{subsec:em_cal}
 
 The electromagnetic calorimeter is located just outside the solenoid that surrounds the inner detector.
@@ -292,7 +319,7 @@ It is optimized for measuring the energy of electromagnetic showers.
 The EM calorimeter is also designed to measure the direction of neutral particles, which cannot be tracked by the inner detector.
 
 In the barrel region, the EM calorimeter covers the range $|\eta| < 1.475$.
-In the end-cap region, it covers a range of $1.375 < |eta| < 3.23$.
+In the end-cap region, it covers a range of $1.375 < |eta| < 3.2$.
 
 The calorimeters have to be thick enough to fully absorb shower energy and to minimize punch-through into the muon system.
 The EM calorimeter depth was designed to be 22 interaction lengths $\left(X_0\right)$ in the barrel, and $24~X_0$ in the end-caps.
@@ -320,7 +347,7 @@ In the third and final layer, the granularity is further reduced to $\delta\phi 
 
 The geometry of the EM calorimeter cells can be seen in figure~\ref{fig:em_calo}
 
-Inside the innermost layer of the barrel EM calorimeter is an $11~mm$-thin presampler.
+Inside the innermost layer of the barrel EM calorimeter is an $11~mm$-thin presampler, covering a range of $|\eta| < 1.8$.
 The purpose of this presampler is to correct for energy lost to material upstream of the EM calorimeter.
 
 \begin{figure}[h]
