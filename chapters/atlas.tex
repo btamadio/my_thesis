@@ -364,12 +364,15 @@ The most important ATLAS subdetector for measuring jets is the hadronic calorime
 The hadronic calorimeter system consists of central and extended tile calorimeter barrels, two end cap calorimeters,
 and a forward calorimeter.
 
+\subsubsection{Tile calorimeters}
+
 The central tile barrel covers the range $|\eta|<1.0$, the extended tile barrels cover the range $0.8 < |\eta| < 1.7$,
 and the end-cap calorimeters cover the range $1.5 < |\eta| < 3.2$.
 The forward calorimeters (FCal) cover the extreme forward region, $3.1 < |\eta| < 4.9$.
 
 The central barrel is $5.8~m$ long, and the extended barrels are each $2.6~m$ long.
 Both the central and extended barrels cover the range $2.28~m < R < 4.25~m$.
+Each of the three tile calorimeters is composed of 64 wedge-shaped modules.
 The geometry of the hadronic calorimeter system, not including the end-caps, can be seen in figure~\ref{fig:calo_full}.
 
 The hadronic calorimeters in the central and extended barrel regions are tile calorimeters.
@@ -377,6 +380,8 @@ They consist of alternating steel absorber plates and scintillating tiles.
 Particles that pass through the steel plates generate hadronic showers.
 The hadrons from these showers then stimulate the production of photons in the scintillating tiles.
 Those photons are then collected by photomultiplier tubes, producing a current that can be measured.
+A wavelength-shifting fiber is used to convert the ultraviolet photons produced in the scintillator into optical photons
+before entering the photomultipliers.
 
 A schematic of a tile calorimeter module can be seen in figure~\ref{fig:tile_cal_module}
 
@@ -386,10 +391,53 @@ A schematic of a tile calorimeter module can be seen in figure~\ref{fig:tile_cal
 \label{fig:tile_cal_module}\cite{atlas-detector-2008}
 \end{figure}
 
-Whereas the depth of an electromagnetic shower in a material is described by the radiation length, $(X_0)$, of that material,
+The $\eta$- and depth-dependent segmentation of the tile calorimeter modules can be seen in figure~\ref{fig:tile_cal_granularity}
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{tile_cal_granularity}
+\caption{Schematic of the central (left) and extended (right) tile calorimeter, showing the $\eta$- and depth-dependent segmentation.}
+\label{fig:tile_cal_granularity}\cite{atlas-detector-2008}
+\end{figure}
+
+\subsubsection{Hadronic end-cap calorimeters}
+
+The hadronic end-cap calorimeter (HEC) consists of two cylindrical wheels on each side of the barrel,
+each of which is $2.03~m$ in radius.
+Each of these wheels is made up of 32 modules.
+The HEC wheels closest and farthest from the interaction point are called HEC1 and HEC2.
+HEC1 modules have higher granularity and sample fraction than HEC2 modules.
+A schematic of the HEC modules can be seen in figure~\ref{fig:hec_module}.
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{hec_module}
+\caption{Schematic of hadronic end-cap calorimeter module}
+\label{fig:hec_module}\cite{atlas-detector-2008}
+\end{figure}
+
+The HECs use LAr as the sampling material and copper as the absorber material.
+The copper plates are separated by gaps of $8.5~mm$, with three electrodes in between.
+This creates four drift zones between each copper plate.
+Typical drift time across the drift zones is $430 ns$, at a potential difference of $1800 V$.\cite{atlas-detector-2008}
+
+There are a total of 5632 readout cells.
+In the region $|\eta| < 2.5$, the readout cell size is $\delta\phi \times \delta\eta = 0.1 \times 0.1$, and $\delta\phi \times \delta\eta = 0.2 \times 0.2$ elsewhere.
+
+
+\subsubsection{Forward calorimeters}
+
+\subsubsection{Material budget}
+Whereas the depth of an electromagnetic shower in a material is described by the radiation length, $X_0$, of that material,
 hadronic showers are instead measured by interaction length, $\lambda$ .
 
+The total amount of material as a function of $|\eta|$ can be seen in figure~\ref{fig:calo_material_budget}
 
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{calo_material_budget}
+\caption{Amount of material, in units of interaction length, versus pseudorapidity, including all material before the
+EM calorimeter, the EM calorimeter, and the hadronic calorimeters. The light blue indicates the amount of material in front
+of the muon spectrometer for $|\eta| < 3.0$}
+\label{fig:calo_material_budget}\cite{atlas-detector-2008}
+\end{figure}
 
 \section{Muon Spectrometer}\label{sec:muon_spec}
 
