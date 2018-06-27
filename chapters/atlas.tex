@@ -57,7 +57,7 @@ so that their momenta can be measured.
 
 The layout of the magnet systems can be seen in figure~\ref{fig:magnet_layout}.
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
 \includegraphics[width=\textwidth]{magnet_layout}
 \caption{A diagram showing the layout of the ATLAS magnet system.
 The central solenoid is used to apply a force that curves the trajectories of charged particles in the inner detector.
@@ -79,6 +79,10 @@ but roughly runs in a circular direction around the calorimeters.
 The axial length of the barrel toroid is $25.3~m$, and the outer diameter measures $20.1~m$.
 The average field strength is $0.5~T$ and the superconducting material used is similar to that used in the
 central solenoid\cite{atlas-detector-2008}.
+The magnetic field in the region $|\eta|<1.4$ is dominated by the barrel toroid,
+while the end-cap field dominates the region $1.6 < |\eta| < 2.7$.
+The region $1.4 < |\eta| < 1.6$ is the transition region, where both sources contribute significantly to the magnetic field.
+
 Figure~\ref{fig:toroid_end_view} shows an end-on view of the barrel toroid, after installation,
 and before the calorimeters are inserted.
 
@@ -258,7 +262,7 @@ There are 351,000 total readout channels.
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{trt_end_cap}
 \caption{Part of a TRT end-cap, showing the radial layout of the $37~cm$ straw tubes.}
-\label{fig:ibl_insertion}\cite{trt-2013}
+\label{fig:trt_end_cap}\cite{trt-2013}
 \end{figure}
 
 \subsubsection{Sensors}
@@ -325,7 +329,7 @@ In the end-cap region, it covers a range of $1.375 < |eta| < 3.2$.
 The calorimeters have to be thick enough to fully absorb shower energy and to minimize punch-through into the muon system.
 The EM calorimeter depth was designed to be 22 interaction lengths $\left(X_0\right)$ in the barrel, and $24~X_0$ in the end-caps.
 An interaction length is defined as the average distance traveled by a particle through a material when it has lost
-$1 - 1/\mathrm{e}$ of its original energy.\cite{em_calo}
+$1 - 1/\mathrm{e}$ of its original energy.\cite{em-calo}
 
 The calorimeters consist of accordion-shaped lead absorber plates with copper-kapton electrodes in between.
 The accordion shape provides full symmetry in $|\phi|$ with no gaps.
@@ -340,7 +344,7 @@ This generates a pulse in the electrodes which can then be recorded.
 The calorimeter cells are arranged into three layers, with highest granularity closest to the interaction point.
 Cells in layer 1 have a granularity of $\delta\phi \times \delta\eta = 0.0245 \times 0.0031$.
 This very fine segmentation is useful in accurately determining the direction of incoming particles.
-It is also useful in discriminating between an individual photons and a neutral $\pi$ meson decaying to two photons.\cite{em_calo}
+It is also useful in discriminating between an individual photons and a neutral $\pi$ meson decaying to two photons.\cite{em-calo}
 
 In the second layer, the granularity is reduced $\delta\phi \times \delta\eta = 0.0245 \times 0.025$.
 
@@ -354,7 +358,7 @@ The purpose of this presampler is to correct for energy lost to material upstrea
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{em_calo}
 \caption{Schematic of EM calorimeter, showing the granularity of each layer.}
-\label{fig:em_calo}\cite{em_calo}
+\label{fig:em_calo}\cite{em-calo}
 \end{figure}
 
 \subsection{Hadronic Calorimeters}\label{subsec:had_cal}
@@ -463,5 +467,61 @@ of the muon spectrometer for $|\eta| < 3.0$}
 \end{figure}
 
 \section{Muon Spectrometer}\label{sec:muon_spec}
+
+The outermost ATLAS system is the muon spectrometer, used to measure the momenta of charged particles that exit the calorimeter systems.
+Muons are not absorbed by the EM calorimeter because they undergo less bremsstrahlung than electrons due to their high mass.
+They are also no absorbed by the hadronic calorimeter because they do not interact strongly.
+As a result, muons are the most common particle to escape the calorimeter system.
+
+The overall dimensions of the muon spectrometer, which define the demensions of ATLAS, are $44~m$ long by $22~m$ high.
+The muon spectrometer consists of four subsystems.
+The monitored drift tubes (MDTs) and cathode strip chambers (CSCs) are used for high-precision tracking,
+while the resistive plate chambers (RDCs) and thin-gap chambers (TGCs) are used for triggering and bunch-crossing identification.
+The location of each of the four muon subsystems can be seen in figure~\ref{fig:muon_spec_layout}
+
+\begin{figure}[!htbp]
+\includegraphics[width=\textwidth]{muon_spec_layout}
+\caption{Layout of the muon spectrometer, indicating the location of barrel and end-cap toroids, along with the four subsystems.}
+\label{fig:muon_spec_layout}\cite{atlas-detector-2008}
+\end{figure}
+
+As described in section~\ref{sec:magnet_systems}, the magnetic field in the muon system runs in a roughly circular direction around the beamline.
+As a result, charged particles are bent in the $\eta$ direction in the muon spectrometer.
+
+In the barrel region, covering $|\eta| < 1.0$ the muon system is laid out in three concentric cells,
+located at $5~m$, $7.5~m$, and $10~m$ from the interaction point.
+Full coverage is provided in this region, except for a small gap at $|\eta| = 0$, to allow for services to the solenoid,
+calorimeters, and inner detector systems.
+The size of the acceptance gap is $|\eta| < 0.04$ in the innermost layer, and $|\eta| < 0.08$ in the outer layers.
+The end-cap consists of large wheels, located at $|z| \approx 7.4~m$, $10.8~m$, $14~m$, and $21.5~m$.
+Figure~\ref{fig:muon_cross_section} shows a cross-section of the barrel region of the muon spectrometer in the $x-y$ plane,
+and a cross-section of the barrel and end-cap regions in the $y-z$ plane.
+The small acceptance gap at $\eta = 0$ can be seen.
+
+\begin{figure}[!htbp]
+\includegraphics[width=\textwidth]{muon_cross_section}
+\caption{Cross-sections in $x-y$ (left) and $y-z$ (right) of the muon spectrometer.}
+\label{fig:muon_cross_section}\cite{muon-2003}
+\end{figure}
+
+The muon spectrometer provides high-precision momentum measurements out to $|\eta| < 2.7$,
+and triggering on high-momentum muons out to $|\eta| < 2.4$.
+
+The ATLAS design specification requires momentum resolution of $10\%$ for $1~TeV$ muons.
+This resolution is achieved or exceeded for the range $10~GeV < p_T < 1~TeV$.
+The contribution to $p_T$ resolution from various sources at different $p_T$ is shown in figure~\ref{fig:muon_resolution}.
+The dominant contribution at low-$p_T$ is from energy loss fluctuations,
+while at high-$p_T$ it's from wire resolution and autocalibration.\cite{muon-2003}
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{muon_pt_resolution}
+\caption{The contribution to muon spectrometer $p_T$ resolution from various sources over a range of $p_T$}
+\label{fig:muon_resolution}\cite{muon-2003}
+\end{figure}
+
+\subsubsection{Monitored drift tubes (MDTs)}
+\subsubsection{Cathode strip chambers (CSCs)}
+\subsubsection{Resistive plate chambers (RPCs)}
+\subsubsection{Thin-gap chambers (TGCs)}
 
 \section{Trigger and Data Acquisition}\label{sec:trigger}
