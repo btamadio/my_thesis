@@ -422,14 +422,37 @@ Typical drift time across the drift zones is $430 ns$, at a potential difference
 There are a total of 5632 readout cells.
 In the region $|\eta| < 2.5$, the readout cell size is $\delta\phi \times \delta\eta = 0.1 \times 0.1$, and $\delta\phi \times \delta\eta = 0.2 \times 0.2$ elsewhere.
 
+\subsection{Forward Calorimeters}\label{subsec:fcal}
 
-\subsubsection{Forward calorimeters}
+Special forward calorimeters (FCal) were designed to cover the forward region, $3.1 < |\eta| < 4.9$.
+This region experiences very high particle flux compared to the barrel or end-cap regions, so a different design was needed.
+Each FCal consists of three modules.
+The module closest to the interaction point (FCal1)is optimized for EM showers,
+while the middle and outer modules (FCal2 and FCal3) are optimized for hadronic showers.
+All three modules are $45~cm$ deep, and use LAr as the sampling material.
 
-\subsubsection{Material budget}
-Whereas the depth of an electromagnetic shower in a material is described by the radiation length, $X_0$, of that material,
-hadronic showers are instead measured by interaction length, $\lambda$ .
+FCal1 uses copper as the absorber material, while FCal2 and FCal3 use tungsten as the primary absorber.
+To further reduce punch-through into the muon system, a copper shield plug is placed behind FCal3.
 
-The total amount of material as a function of $|\eta|$ can be seen in figure~\ref{fig:calo_material_budget}
+The location of the FCal with respect to the end-cap calorimeters can be seen in figure~\ref{fig:fcal_layout}
+The FCal, hadronic end-cap, and electromagnetic end-cap calorimeters are all contained in the same end-cap cryostat.
+
+The overlapping design of the end-cap and forward calorimeters allows for hermetic coverage with minimal energy loss out to $|\eta| < 4.9$.
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{fcal_layout}
+\caption{Schematic showing the layout of the forward calorimeters and end-cap calorimeters.}
+\label{fig:fcal_layout}\cite{atlas-detector-2008}
+\end{figure}
+
+\subsubsection{Energy absorbtion}
+In order to provide accurate energy measurements of photons, jets, and $E_{Tmiss}$,
+it is necessary for the calorimeters to absorb as much shower energy as possible.
+Any particles that don't get absorbed by the calorimeter are considered punch-through particles.
+These punch-through particles add noise to the muon system, and so should be minimized.
+
+For hadronic showers, the analog to a radiation length is called an interaction length, $\lambda$ .
+The amount of energy absorbed by each part of the calorimeter, as measured in radiation lengths, can be seen in figure~\ref{fig:calo_material_budget}.
 
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{calo_material_budget}
