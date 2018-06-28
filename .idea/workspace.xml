@@ -4,7 +4,6 @@
     <list default="true" id="214241b4-fcb9-4ead-a5a3-46d194763dc4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapters/atlas.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/atlas.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/references.bib" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/chapters/atlas.tex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="541">
-              <caret line="551" column="101" selection-start-line="551" selection-start-column="101" selection-end-line="551" selection-end-column="101" />
+              <caret line="592" column="134" lean-forward="true" selection-start-line="592" selection-start-column="134" selection-end-line="592" selection-end-column="134" />
               <folding>
                 <element signature="e#4012#4016#2" expanded="true" />
                 <element signature="e#4112#4116#2" expanded="true" />
@@ -136,6 +135,14 @@
                 <element signature="e#32545#32549#3" expanded="true" />
                 <element signature="e#32618#32622#3" expanded="true" />
                 <element signature="e#32696#32700#3" expanded="true" />
+                <element signature="e#32847#32851#2" expanded="true" />
+                <element signature="e#33390#33394#3" expanded="true" />
+                <element signature="e#33401#33405#3" expanded="true" />
+                <element signature="e#33525#33529#2" expanded="true" />
+                <element signature="e#33530#33534#2" expanded="true" />
+                <element signature="e#34375#34379#2" expanded="true" />
+                <element signature="e#34467#34471#3" expanded="true" />
+                <element signature="e#34504#34508#3" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -267,7 +274,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/chapters/atlas.tex</main-file>
-        <aux-dir>$APPLICATION_HOME_DIR$/bin</aux-dir>
+        <aux-dir />
       </texify-bibtex>
     </configuration>
   </component>
@@ -444,6 +451,14 @@
             <element signature="e#32545#32549#3" expanded="true" />
             <element signature="e#32618#32622#3" expanded="true" />
             <element signature="e#32696#32700#3" expanded="true" />
+            <element signature="e#32847#32851#2" expanded="true" />
+            <element signature="e#33390#33394#3" expanded="true" />
+            <element signature="e#33401#33405#3" expanded="true" />
+            <element signature="e#33525#33529#2" expanded="true" />
+            <element signature="e#33530#33534#2" expanded="true" />
+            <element signature="e#34375#34379#2" expanded="true" />
+            <element signature="e#34467#34471#3" expanded="true" />
+            <element signature="e#34504#34508#3" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -581,6 +596,14 @@
             <element signature="e#32545#32549#3" expanded="true" />
             <element signature="e#32618#32622#3" expanded="true" />
             <element signature="e#32696#32700#3" expanded="true" />
+            <element signature="e#32847#32851#2" expanded="true" />
+            <element signature="e#33390#33394#3" expanded="true" />
+            <element signature="e#33401#33405#3" expanded="true" />
+            <element signature="e#33525#33529#2" expanded="true" />
+            <element signature="e#33530#33534#2" expanded="true" />
+            <element signature="e#34375#34379#2" expanded="true" />
+            <element signature="e#34467#34471#3" expanded="true" />
+            <element signature="e#34504#34508#3" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -708,6 +731,14 @@
             <element signature="e#32545#32549#3" expanded="true" />
             <element signature="e#32618#32622#3" expanded="true" />
             <element signature="e#32696#32700#3" expanded="true" />
+            <element signature="e#32847#32851#2" expanded="true" />
+            <element signature="e#33390#33394#3" expanded="true" />
+            <element signature="e#33401#33405#3" expanded="true" />
+            <element signature="e#33525#33529#2" expanded="true" />
+            <element signature="e#33530#33534#2" expanded="true" />
+            <element signature="e#34375#34379#2" expanded="true" />
+            <element signature="e#34467#34471#3" expanded="true" />
+            <element signature="e#34504#34508#3" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -835,6 +866,14 @@
             <element signature="e#32545#32549#3" expanded="true" />
             <element signature="e#32618#32622#3" expanded="true" />
             <element signature="e#32696#32700#3" expanded="true" />
+            <element signature="e#32847#32851#2" expanded="true" />
+            <element signature="e#33390#33394#3" expanded="true" />
+            <element signature="e#33401#33405#3" expanded="true" />
+            <element signature="e#33525#33529#2" expanded="true" />
+            <element signature="e#33530#33534#2" expanded="true" />
+            <element signature="e#34375#34379#2" expanded="true" />
+            <element signature="e#34467#34471#3" expanded="true" />
+            <element signature="e#34504#34508#3" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -962,6 +1001,14 @@
             <element signature="e#32545#32549#3" expanded="true" />
             <element signature="e#32618#32622#3" expanded="true" />
             <element signature="e#32696#32700#3" expanded="true" />
+            <element signature="e#32847#32851#2" expanded="true" />
+            <element signature="e#33390#33394#3" expanded="true" />
+            <element signature="e#33401#33405#3" expanded="true" />
+            <element signature="e#33525#33529#2" expanded="true" />
+            <element signature="e#33530#33534#2" expanded="true" />
+            <element signature="e#34375#34379#2" expanded="true" />
+            <element signature="e#34467#34471#3" expanded="true" />
+            <element signature="e#34504#34508#3" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1054,7 +1101,7 @@
     <entry file="file://$PROJECT_DIR$/chapters/atlas.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
-          <caret line="551" column="101" selection-start-line="551" selection-start-column="101" selection-end-line="551" selection-end-column="101" />
+          <caret line="592" column="134" lean-forward="true" selection-start-line="592" selection-start-column="134" selection-end-line="592" selection-end-column="134" />
           <folding>
             <element signature="e#4012#4016#2" expanded="true" />
             <element signature="e#4112#4116#2" expanded="true" />
@@ -1150,6 +1197,14 @@
             <element signature="e#32545#32549#3" expanded="true" />
             <element signature="e#32618#32622#3" expanded="true" />
             <element signature="e#32696#32700#3" expanded="true" />
+            <element signature="e#32847#32851#2" expanded="true" />
+            <element signature="e#33390#33394#3" expanded="true" />
+            <element signature="e#33401#33405#3" expanded="true" />
+            <element signature="e#33525#33529#2" expanded="true" />
+            <element signature="e#33530#33534#2" expanded="true" />
+            <element signature="e#34375#34379#2" expanded="true" />
+            <element signature="e#34467#34471#3" expanded="true" />
+            <element signature="e#34504#34508#3" expanded="true" />
           </folding>
         </state>
       </provider>
