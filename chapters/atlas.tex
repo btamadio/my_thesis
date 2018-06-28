@@ -553,6 +553,28 @@ This results in an $\eta$ resolution of $60~\mu m$, and a $\phi$ resolution of $
 Since the magnetic fields bend muons in the $\eta$ plane, precice momentum measurements require far greater resolution in $\eta$.
 
 \subsubsection{Resistive plate chambers (RPCs)}
+
+Resistive plate chambers are used for the muon trigger in the barrel region $|\eta| < 1.05$.
+In the middle station, there are two layers of RPCs, used for the low-$p_T$ threshold trigger.
+This trigger threshold is $6-9~GeV$.
+In the outer station, there is a single layer of RPCs, used for the high-$p_T$ threshold trigger,
+with a threshold of $9-35~GeV$.
+
+Each RPC consists of two rectangular detectors, called units.
+Standard RPCs are paired with MDTs, and have the same dimensions.
+A few additional smaller RPCs are included in areas where MDTs cannot be installed due to lack of space.
+
+Each RPC provides two measurements of $\eta$ and $\phi$ for a charged particle passing through it.
+A charged particle passing through all three layers therefore generates 6 $\eta-\phi$ measurements.
+To reduce fake tracks, 3 out of 4 of the middle-station detectors and at least one outer layer station must register hits.
+
+An RPC detector consists of two plastic insulating plates, separated by $2~mm$, with a gas occupying the internal space.
+A voltage difference of $9.8~kV$ is applied across the plates.
+Charged particles passing through the plates generate an avalanche of charge which can then be measured by metallic strips connected to the plates.
+The insulator plates are made of phenolic-melaminic plastic laminate,
+and the gas is a mixture of $\mathrm{C_2 H_2 F4}$, $\mathrm{Iso-C_4 H_{10}}$, and $\mathrm{SF_6}$
+in the proportions $94.7\%$, $5\%$, $0.3\%$.\cite{atlas-detector-2008}
+
 \subsubsection{Thin-gap chambers (TGCs)}
 
 \section{Trigger and Data Acquisition}\label{sec:trigger}
