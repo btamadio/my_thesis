@@ -594,4 +594,46 @@ A highly quenching gas mixture of $55\% \mathrm{CO_2}$ and $45\% \mathrm{n-C_5 H
 
 The time resolution provided by the TGCs is $4~ns$.\cite{muon-2003}
 
-\section{Trigger and Data Acquisition}\label{sec:trigger}
+\section{Trigger}\label{sec:trigger}
+
+Because of the very high event rate at the LHC, and the large amount of data collected per event,
+it is impossible to record every single event.
+There are 40 million events per second, and each event generates $1.6~MB$ of raw data.
+The ATLAS trigger system is designed to make very fast decisions about which events to record and which to ignore,
+in order to reduce the event rate to approximately $1~kHz$.
+The challenge of trigger design is to balance processing time against decision accuracy,
+to make sure that events that could be useful for physics analysis are not lost.
+The selection criteria used by each level of the trigger are known as the trigger menu.
+A large number of possible trigger selection criteria are designed, in order to serve the broad range of physics analyses performed at ATLAS .
+
+The ATLAS trigger system consists of a hardware based level 1 (L1) trigger, and a software-based high-level trigger (HLT).
+The L1 trigger reduces the event rate from the original $40~MHz$ to approximately $100~kHz$.
+The HLT further reduces the event rate to approximately $1~kHz$, which is the maximum rate of data transfer from the detector.
+The flowchart of data through the trigger system can be seen in figure~\ref{fig:trigger_flowchart}
+
+\begin{figure}[!htbp]
+\includegraphics[width=\textwidth]{trigger_flowchart}
+\caption{Flowchart outlining the level 1 and high-level trigger design and data acquisition system.}
+\label{fig:trigger_flowchart}
+\end{figure}
+
+For every event, the L1 trigger system reads reduced-granularity measurements from both the hadronic and electromagnetic calorimeters.
+Special calorimeter cells, called trigger towers, in each calorimeter were designed for this purpose.
+The trigger towers have a granularity of $\delta \eta \times \delta \phi = 0.1 \times 0.1$.
+The location of the trigger towers at the back of the electromagnetic calorimeter can be seen in figure~\ref{fig:em_calo}.
+The L1 trigger also reads data from the RPCs and TGCs of the muon spectrometer system, as discussed in~\ref{sec:muon_spec}.
+The calorimeter data will be used for photon, electron, tau, jet, and $E_{Tmiss}$ triggers, and the muon data will only be used for muon triggers.
+Data from these two sources are fed into the central trigger processor (CTP),
+which makes the decision about whether or not accept each event at level 1.
+
+If an event is accepted at L1, full detector raw data for that event is read out and temporarily stored until the HLT decision is made.
+Some amount of reconstruction is done at this time, including a high-speed,
+reduced-accuracy version of the tracking algorithms, known as Fast TracKer (FTK).
+Later, if an event is accepted by the HLT, the full tracking reconstruction algorithm will be applied.
+The L1 system then sends region-of-interest information to the HLT .
+Regions of interest are the subsections of the detector that the L1 trigger has identified as possibly containing interesting physics objects.
+The full detector information and L1 region-of-interest data are combined by the HLT,
+which then makes the final decision on whether or not to keep an event.
+Only when an event passes both the L1 and HLT decision criteria will its be permanently stored.
+
+The L1 trigger system desicision time is just $2.5~\mu m$, while the HLT makes decsisons on the order of seconds.
