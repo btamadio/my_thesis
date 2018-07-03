@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214241b4-fcb9-4ead-a5a3-46d194763dc4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapters/sm.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/sm.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="thesis.tex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thesis.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
+            <state>
+              <caret column="25" selection-start-column="25" selection-end-column="25" />
               <folding>
                 <element signature="e#26#47#2" expanded="true" />
               </folding>
@@ -29,22 +30,22 @@
       <file leaf-file-name="sm.tex" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chapters/sm.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="atlas.tex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapters/atlas.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3555">
-              <caret line="237" selection-start-line="237" selection-end-line="243" selection-end-column="12" />
+            <state relative-caret-position="589">
+              <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
               <folding>
-                <element signature="e#10488#10494#3" expanded="true" />
-                <element signature="e#11445#11451#2" expanded="true" />
-                <element signature="e#11457#11463#2" expanded="true" />
-                <element signature="e#40500#40504#2" expanded="true" />
+                <element signature="e#1700#1706#2" expanded="true" />
+                <element signature="e#1712#1718#2" expanded="true" />
+                <element signature="e#3737#3743#2" expanded="true" />
+                <element signature="e#4171#4174#2" expanded="true" />
+                <element signature="e#4219#4222#2" expanded="true" />
+                <element signature="e#4274#4277#2" expanded="true" />
+                <element signature="e#4277#4280#2" expanded="true" />
+                <element signature="e#4283#4289#2" expanded="true" />
+                <element signature="e#4291#4294#3" expanded="true" />
+                <element signature="e#4299#4302#3" expanded="true" />
+                <element signature="e#4306#4312#2" expanded="true" />
+                <element signature="e#4314#4317#3" expanded="true" />
+                <element signature="e#4322#4325#3" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,6 +89,7 @@
       <find>url</find>
       <find>}</find>
       <find>figure</find>
+      <find>amsmat</find>
     </findStrings>
     <replaceStrings>
       <replace>figure~\ref{</replace>
@@ -104,9 +106,9 @@
         <option value="$PROJECT_DIR$/compile.sh" />
         <option value="$PROJECT_DIR$/chapters/signal.tex" />
         <option value="$PROJECT_DIR$/chapters/abstract.tex" />
-        <option value="$PROJECT_DIR$/thesis.tex" />
         <option value="$PROJECT_DIR$/chapters/atlas.tex" />
         <option value="$PROJECT_DIR$/references.bib" />
+        <option value="$PROJECT_DIR$/thesis.tex" />
         <option value="$PROJECT_DIR$/chapters/sm.tex" />
       </list>
     </option>
@@ -121,6 +123,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,7 +140,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -161,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="BibTeX.atlas bibliography">
     <configuration name="atlas bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-bibtex>
         <compiler>BIBTEX</compiler>
@@ -171,6 +173,19 @@
         <aux-dir>$APPLICATION_HOME_DIR$/bin</aux-dir>
       </texify-bibtex>
     </configuration>
+    <configuration name="sm bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-bibtex>
+        <compiler>BIBTEX</compiler>
+        <compiler-path />
+        <compiler-arguments />
+        <main-file>$PROJECT_DIR$/chapters/sm.tex</main-file>
+        <aux-dir />
+      </texify-bibtex>
+    </configuration>
+    <list>
+      <item itemvalue="BibTeX.atlas bibliography" />
+      <item itemvalue="BibTeX.sm bibliography" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -505,16 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thesis.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#26#47#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/references.bib">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2880">
@@ -522,10 +527,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/thesis.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+          <folding>
+            <element signature="e#26#47#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chapters/atlas.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3555">
-          <caret line="237" selection-start-line="237" selection-end-line="243" selection-end-column="12" />
+        <state relative-caret-position="2119">
+          <caret line="212" column="16" lean-forward="true" selection-start-line="212" selection-start-column="16" selection-end-line="212" selection-end-column="16" />
           <folding>
             <element signature="e#10488#10494#3" expanded="true" />
             <element signature="e#11445#11451#2" expanded="true" />
@@ -537,8 +552,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/sm.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        <state relative-caret-position="589">
+          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+          <folding>
+            <element signature="e#1700#1706#2" expanded="true" />
+            <element signature="e#1712#1718#2" expanded="true" />
+            <element signature="e#3737#3743#2" expanded="true" />
+            <element signature="e#4171#4174#2" expanded="true" />
+            <element signature="e#4219#4222#2" expanded="true" />
+            <element signature="e#4274#4277#2" expanded="true" />
+            <element signature="e#4277#4280#2" expanded="true" />
+            <element signature="e#4283#4289#2" expanded="true" />
+            <element signature="e#4291#4294#3" expanded="true" />
+            <element signature="e#4299#4302#3" expanded="true" />
+            <element signature="e#4306#4312#2" expanded="true" />
+            <element signature="e#4314#4317#3" expanded="true" />
+            <element signature="e#4322#4325#3" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
