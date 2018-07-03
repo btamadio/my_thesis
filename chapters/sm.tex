@@ -77,7 +77,6 @@ each of which comes in three colors:
     \end{pmatrix}_L
 \end{equation}
 
-
 Quark color will play a role in QCD interactions, as discussed in the next session.
 There are also the corresponding $SU(2)$-singlet right-handed fields:
 
@@ -88,7 +87,7 @@ q_{uR},\; q_{dR},\; q_{cR},\; q_{sR},\; q_{tR},\; q_{bR}
 \subsection{Symmetries and Lagrangian}\label{subsec:ew_lagrangian}
 The symmetry constraining the electroweak sector of the Standard Model Lagrangian is $SU(2)_L \times U(1)_Y$.
 The subscript $L$ for the $SU(2)$ group indicates that it only acts on the left-handed fields in the theory.
-Right-handed fields appear as $SU(2)$ singlets.
+As we've seen, right-handed fields appear as $SU(2)$ singlets.
 The Lagrangian density satisfying the required symmetries, including all renormalizable terms, is:
 
 \begin{equation}\label{eq:ew_lagrangian}
@@ -96,18 +95,70 @@ The Lagrangian density satisfying the required symmetries, including all renorma
 \end{equation}
 
 Where $W_\mu^a$ are the three $SU(2)_L$ gauge bosons, $B_\mu$ is the $U(1)_Y$ (hypercharge) gauge boson,
-and $W_\mu\nu = \delta_{\mu} W_{\nu} - \delta_{\nu} W_{\mu}$.
+and $W_\mu\nu = \partial_{\mu} W_{\nu} - \partial_{\nu} W_{\mu}$.
 
-This Lagrangian describes the charged-current and neutral-current interactions, as well as gauge-boson self-interactions.
-However, it is insufficient because the gauge bosons are massless.
-In fact, it is impossible to include gauge boson mass terms in the electroweak Lagrangian without explicity breaking the gauge symmetry.
+This Lagrangian describes the charged-current and neutral-current weak interactions, as well as weak gauge boson self-interactions.
+However, it is insufficient to describe nature because the gauge bosons are massless in this theory.
+It would be impossible to include gauge boson mass terms in the electroweak Lagrangian without explicitly breaking the symmetry.
+Similarly, it's impossible to introduce Lorentz-invariant fermion mass terms that keep the Lagrangian invariant under $SU(2)_L \times U(1)_Y$.
+In order to reconcile this theory with the experimentally observed fact of massive weak gauge bosons and massive fermions,
+an entirely new field will have to be introduced.
 
-\subsection{Higgs mechanism}\label{subsec:ew_higgs}
+\subsection{Spontaneous symmetry breaking}\label{subsec:ew_higgs}
 
-The original symmetry is spontaneously broken, via the nonzero Higgs vacuum expectation value, to: $U(1)_{QED}$.
-This process of spontaneous symmetry breaking generates fermion masses, electroweak gauge boson masses, and the Yukawa coupling terms between fermions.
+The original $SU(2)_{L}\times U(1)_Y$ symmetry will be spontaneously broken, via the nonzero Higgs vacuum expectation value, to: $U(1)_{QED}$.
+This process of spontaneous symmetry breaking (SSB) generates fermion masses, electroweak gauge boson masses, and the Yukawa coupling terms between fermions.
+
+We introduce a new $SU(2)$-doublet complex scalar field, $\phi$, as well as a potential of the form:
+
+\begin{equation}\label{eq:higgs_potential}
+    V(\phi) = m^2 \phi^\dagger\phi + \lambda(\phi^\dagger\phi)^2
+\end{equation}
+
+With $\lambda > 0$ and $\mu^2 <0$.
+The minimum energy state satisfies: $\phi^\dagger\phi = \frac{-\mu^2}{2\lambda}$.
+
+We can then re-parameterize the scalar field as:
+
+\begin{equation}\label{eq:higgs_param}
+    \phi = \exp{\left(i\frac{\sigma_i}{2}\theta^i(x)\right)}\frac{1}{\sqrt{2}}\begin{pmatrix} 0 \\ v+H(x) \end{pmatrix}
+\end{equation}
+
+Where $H(x)$ and $\theta^i(x)$ are real-valued fields,
+and $v = \sqrt{\frac{-\mu^2}{\lambda}}$ is the vacuum expectation value of the Higgs field.
+
+Because of the $SU(2)_L$ symmetry of the theory, we are free to choose convenient values for $\theta_i(x)$,
+without affecting the outcome of any observable predictions.
+Selecting $\theta_i(x) = 0$, the additional kinetic term required in the Lagrangian is:
+
+\begin{equation}\label{eq:higgs_kinetic}
+    \Delta\mathcal{L} = \left(D_{\mu}\phi\right)^{\dagger}\left(D_{\mu}\phi\right)
+    =\frac{1}{2}\partial_{\mu}H \partial^{\mu}H + (v+H)^{2}\left(\frac{g^2}{4}W_\mu^\dagger W^\mu
+    + \frac{g^2}{8\cos^2 {\theta_W}}Z_\mu Z^\mu\right)
+\end{equation}
+
+Where $W_\mu$ and $Z_\mu$ are mass eigenstates of the electroweak gauge fields,
+linear combinations of the original $W_\mu^a$ and $B_\mu$.
+
+This has added interaction terms between the Higgs field and the $W$ and $Z$ bosons,
+as well as quadratic terms for these same bosons.
+A quadratic term in the Lagrangian is physically the same as having a mass term in the Lagrangian.
+
+So we find that the $W$ and $Z$ boson masses are:
+
+\begin{equation}\label{eq:wz_masses}
+    M_w = \frac{1}{2}vg,\; M_Z = \frac{M_W}{\cos{\theta_W}}
+\end{equation}
+
+Through SSB, electroweak gauge boson masses have been generated without requiring explicity mass terms in the Lagrangian.
+
+The introduction of this scalar field and its associated potential will also generate fermionic mass terms,
+couplings between the fermions and the scalar field, and a mass term for the scalar field itself.
+The massive particle associated with this field, the Higgs boson, was discovered in 2012 by the ATLAS and CMS collaborations.
 
 \section{Quantum Chromodynamics}\label{sec:sm_qcd}
+
+Quantum Chromodynamics (QCD) is the part of the Standard Model that governs strong interactions.
 
 \section{Phenomenology}\label{sec:sm_pheno}
 
