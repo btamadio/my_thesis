@@ -4,7 +4,6 @@
     <list default="true" id="214241b4-fcb9-4ead-a5a3-46d194763dc4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapters/sm.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/sm.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/references.bib" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,12 +29,8 @@
       <file leaf-file-name="sm.tex" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chapters/sm.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-              <folding>
-                <element signature="e#1634#1640#2" expanded="true" />
-                <element signature="e#1646#1652#2" expanded="true" />
-              </folding>
+            <state relative-caret-position="585">
+              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -43,7 +38,7 @@
       <file leaf-file-name="atlas.tex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chapters/atlas.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
+            <state relative-caret-position="3555">
               <caret line="237" selection-start-line="237" selection-end-line="243" selection-end-column="12" />
               <folding>
                 <element signature="e#10488#10494#3" expanded="true" />
@@ -58,7 +53,7 @@
       <file leaf-file-name="references.bib" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/references.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
+            <state relative-caret-position="2880">
               <caret line="192" column="90" selection-start-line="192" selection-start-column="11" selection-end-line="192" selection-end-column="90" />
             </state>
           </provider>
@@ -191,7 +186,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17777778" />
@@ -522,14 +517,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/references.bib">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="2880">
           <caret line="192" column="90" selection-start-line="192" selection-start-column="11" selection-end-line="192" selection-end-column="90" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/atlas.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
+        <state relative-caret-position="3555">
           <caret line="237" selection-start-line="237" selection-end-line="243" selection-end-column="12" />
           <folding>
             <element signature="e#10488#10494#3" expanded="true" />
@@ -542,12 +537,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/sm.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding>
-            <element signature="e#1634#1640#2" expanded="true" />
-            <element signature="e#1646#1652#2" expanded="true" />
-          </folding>
+        <state relative-caret-position="585">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
         </state>
       </provider>
     </entry>
