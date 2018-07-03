@@ -96,21 +96,26 @@ The Lagrangian density satisfying the required symmetries, including all renorma
     \mathcal{L}_{EW} = \mathcal{L}_{kin} + \mathcal{L}_{\text{interactions}}
 \end{equation}
 
-Where:
+The kinetic part of the electroweak Lagrangian is:
 
 \begin{equation}\label{eq:ew_kin}
     \mathcal{L}_{kin} = -\frac{1}{4}W^{\mu \nu}_{a}W_{\mu \nu}^{a}-\frac{1}{4}B^{\mu \nu}B_{\mu \nu}
 \end{equation}
 
-And:
-
-\begin{equation}\label{eq:ew_int}
-    \mathcal{L}_{\text{interactions}} = \sum_{\text{generations}}\left[\frac{g}{2}\bar{\psi}_{L}\gamma^\mu\sigma^i W_\mu^i \psi+
-    g'B_\mu\left(Y_{\psi_L}\bar{\psi}_L\gamma^\mu\psi_L + Y_{\psi_R}\bar{\psi}_R\gamma^\mu psi_R\right)\right]
-\end{equation}
-
 Where $W_\mu^a$ are the three $SU(2)_L$ gauge bosons, $B_\mu$ is the $U(1)_Y$ (hypercharge) gauge boson,
 and $W_\mu\nu = \partial_{\mu} W_{\nu} - \partial_{\nu} W_{\mu}$.
+
+The part of the electroweak Lagrangian describing electroweak interactions is:
+
+\begin{equation}\label{eq:ew_int}
+    \mathcal{L}_{\text{interactions}} = \sum_{\text{generations}}\left[\frac{g}{2}\bar{\psi}_{L}\gamma^\mu\sigma^i W_\mu^i \psi_L+
+    g'B_\mu\left(Y_{\psi_L}\bar{\psi}_L\gamma^\mu\psi_L + Y_{\psi_R}\bar{\psi}_R\gamma^\mu \psi_R\right)\right]
+\end{equation}
+
+Where $\gamma^\mu$ are the Dirac gamma matrices, Y is the hypercharge associated with the relevant field.
+Left-handed leptons and quarks have weak hypercharge $Y = -1$ and $Y = 1/3$, respectively.
+Right-handed leptons have weak hypercharge $Y = -2$, while right-handed up-type quarks have weak hypercharge $Y = 4/3$,
+and right-handed down-type quarks have weak hypercharge $Y = -2/3$.
 
 This Lagrangian describes the charged-current and neutral-current weak interactions, as well as weak gauge boson self-interactions.
 However, it is insufficient to describe nature because the gauge bosons are massless in this theory.
@@ -121,8 +126,10 @@ an entirely new field will have to be introduced.
 
 \subsection{Spontaneous symmetry breaking}\label{subsec:ew_higgs}
 
-The original $SU(2)_{L}\times U(1)_Y$ symmetry will be spontaneously broken, via the nonzero Higgs vacuum expectation value, to: $U(1)_{QED}$.
-This process of spontaneous symmetry breaking (SSB) generates fermion masses, electroweak gauge boson masses, and the Yukawa coupling terms between fermions.
+The original $SU(2)_{L}\times U(1)_Y$ symmetry will be spontaneously broken, via the nonzero Higgs vacuum expectation value, to $U(1)_{QED}$.
+This process of spontaneous symmetry breaking (SSB) generates fermion masses, electroweak gauge boson masses,
+and the Yukawa coupling terms between fermions.
+It also generates a new massive real scalar field, known as the Higgs field.
 
 We introduce a new $SU(2)$-doublet complex scalar field, $\phi$, as well as a potential of the form:
 
@@ -169,6 +176,30 @@ Through SSB, electroweak gauge boson masses have been generated without requirin
 
 The introduction of this scalar field and its associated potential will also generate fermionic mass terms,
 couplings between the fermions and the scalar field, and a mass term for the scalar field itself.
+
+Like with the gauge bosons, adding an explicit fermionic mass term would break the $SU(2)_L \times U(1)_Y$ symmetry of the theory.
+However, the introduction of the new scalar field allows for additional terms in the Lagrangian,
+which can be written, in unitary gauge, as:
+
+\begin{equation}\label{ew:yukawa_lagrangian}
+    L_Y = \frac{1}{\sqrt{2}}\left(v+H\right)\left(c_{1}\bar{d}d+c_2\bar{u}u+c_3\bar{e}e\right)
+\end{equation}
+
+Once again, after spontaneous symmetry breaking, there appear terms in the Lagrangian that are quadratic in the fields.
+These are mass terms for the fermions, and like for the gauge bosons, the masses are proportional to the Higgs vacuum
+expectation value.
+
+\begin{equation}\label{ew:fermion_masses}
+    m_d = -c_1\frac{v}{\sqrt{2}},\; m_u = -c_2\frac{v}{\sqrt{2}},\; m_e = -c_3\frac{v}{\sqrt{2}}
+\end{equation}
+
+Unlike for the gauge bosons, we find no testable relationship between the fermion masses,
+since the coefficients are all free parameters of the theory.
+
+The Higgs mechanism allows for the generation of masses for electroweak gauge bosons and for fermions without explicitly
+breaking the original symmetry of the theory.
+Additional consequences arising from the Higgs mechanism are the relationship between $Z$ and $W$ boson masses,
+the existence of a new massive scalar field, and interactions between this field and the fermions and gauge bosons.
 The massive particle associated with this field, the Higgs boson, was discovered in 2012 by the ATLAS and CMS collaborations.
 
 \section{Quantum Chromodynamics}\label{sec:sm_qcd}
