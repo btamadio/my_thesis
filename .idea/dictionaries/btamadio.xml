@@ -2,17 +2,20 @@
   <dictionary name="btamadio">
     <words>
       <w>abelian</w>
+      <w>adjoint</w>
       <w>beamline</w>
       <w>beampipe</w>
       <w>chromodynamics</w>
       <w>electroweak</w>
       <w>endcap</w>
       <w>fermionic</w>
+      <w>gluons</w>
       <w>hadronic</w>
       <w>insertable</w>
       <w>kapton</w>
       <w>massless</w>
       <w>muon</w>
+      <w>perturbative</w>
       <w>polyimide</w>
       <w>presampler</w>
       <w>pseudorapidity</w>

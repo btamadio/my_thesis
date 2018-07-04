@@ -204,9 +204,27 @@ The massive particle associated with this field, the Higgs boson, was discovered
 
 \section{Quantum Chromodynamics}\label{sec:sm_qcd}
 
-Quantum Chromodynamics (QCD) is the part of the Standard Model that concerned strong interactions.
+Quantum Chromodynamics (QCD) is the part of the Standard Model concerned with strong interactions.
+Because protons are bound states of quarks and gluons,
+QCD is needed for making any calculation of event rates at a proton-proton collider.
+It's particularly important for understanding the behavior of jets, which will be described in detail in chapter~\ref{ch:jets}.
+The particular structure of the theory yields very different behavior at high energy and low energy.
+At high energy, where the coupling strength is low, quarks and gluons are only weakly bound,
+so the theory behaves as an approximately free theory, a property known as asymptotic freedom.
+At lower energies, the coupling strength grows, and quarks and gluons become strongly bound,
+a property known as confinement.
+
+\subsection{Matter fields}\label{subsec:matter fields}
+
 The fields involved are the quark fields, which also participate in electroweak interactions.
-In the case of QCD, the quarks are in the fundamental $\boldsymbol{3}$ representation of $SU(3)$.
+In the case of QCD, the quarks are in the fundamental $\boldsymbol{3}$ representation of $SU(3)$:
+
+\begin{equation}\label{eq:qcd_fields}
+    \psi = \begin{pmatrix}\psi_R \\ \psi_G \\ \psi_B \end{pmatrix}
+\end{equation}
+
+Where $R,\;G,\;B$ stand for the red, green, and blue color charges.
+The theory will be invariant under local transformations of this color space.
 
 \subsection{Symmetries and Lagrangian}\label{subsec:ew_lagrangian}
 
@@ -227,7 +245,6 @@ D_\mu = \partial_\mu - i g_s G_\mu^a T^a
 
 is the gauge-covariant derivative, $g_s$ is the strong coupling constant, $G_\mu^a$ are the eight gluon fields,
 and $T^a$ are the infinitesimal generators of $SU(3)$.
-
 The gluon field strength tensor, $G_{\mu\nu}^a$, is defined as:
 
 \begin{equation}\label{eq:qcd_field_strength}
@@ -235,28 +252,50 @@ The gluon field strength tensor, $G_{\mu\nu}^a$, is defined as:
 \end{equation}
 
 Where $f^{abc}$ are the $SU(3)$ structure constants.
-
-This Lagrangian describes the interactions between quarks and gluons, as well as the gluon self-interactions.
+This Lagrangian describes the kinematics of massless quarks, their interactions with gluons, and gluon self-interactions.
+Quarks are given mass through electroweak symmetry breaking, as described in~\ref{subsec:ew_higgs}.
 
 \subsection{QCD coupling constant}\label{subsec:qcd_coupling}
 
 A consequence of the gluon self-interaction in the QCD Lagrangian is that the value of the strong coupling constant,
 $g_s$, depends on the energy scale.
-The rate of change of the coupling with increased energy is described by the $\beta$ function,
+The rate of change of the coupling as energy increases is governed by the $\beta$ function,
 
 \begin{equation}\label{eq:sm_qcd_beta}
     \beta\left(\alpha_s\right) = \frac{\alpha_s}{2\pi}\left(\frac{11}{3}n_{\text{colors}}-\frac{4}{3}n_{\text{flavors}}\right)
 \end{equation}
 
 Where $\alpha_s = g_s^2 / 4\pi$.
-
+In QCD, there are three colors and three flavors, the consequence of which is that the coupling constant descreases with energy.
+This is known as the "running" of the coupling constant, and results in very different predictions for the theory at different energy scales.
+Figure~\ref{fig:sm_qcd_coupling} shows the predicted value of $\alpha_s$ over a range of energies,
+along with values measured through a variety of physics processes.
 
 \begin{figure}[h!]
     \centering
 \includegraphics[width=0.6\linewidth]{sm_qcd_coupling}
 \caption{Measured values of the strong coupling constant $\alpha_s$ and its predicted values across a range of energies}
 \label{fig:sm_qcd_coupling}
-\end{figure}
+\end{figure}\cite{sm-review-2014}
+
+\subsubsection{Asymptotic freedom}
+
+At very high energies, at or above the $GeV$ scale, the strong coupling constant becomes small.
+As a result, QCD calculations in this regime are \textit{perturbative},
+meaning they can be approximated by a finite sum of terms expanded in powers of the coupling constant.
+This is similar to the way calculations are done in quantum electrodynamics (QED).
+
+Asymptotic freedom means that as energy grows infinite,
+quarks and gluons can be treated as completely un-coupled, free particles.
+At very high energies, their interactions can be treated as small perturbations about the free theory.
+
+\subsubsection{Confinement}
+
+At lower energies, the strong coupling constant grows larger, and the theory can no longer be treated as perturbative.
+Because the coupling constant is large,
+a finite series expanded in powers of the coupling constant is no longer sufficient to estimate the full predictions.
+
+\subsection{Parton distribution functions}\label{subsec:qcd_pdfs}
 
 \section{Phenomenology}\label{sec:sm_pheno}
 
