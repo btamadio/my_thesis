@@ -288,15 +288,68 @@ This is similar to the way calculations are done in quantum electrodynamics (QED
 Asymptotic freedom means that as energy grows infinite,
 quarks and gluons can be treated as completely un-coupled, free particles.
 At very high energies, their interactions can be treated as small perturbations about the free theory.
+At the LHC, the hard-scattering cross-section of a quark from one proton colliding with a quark from another proton
+can be calculated in this perturbative way.
+However, the full proton-proton collision cross-section calculation requires a combination of both perturbative and non-perturbative calculations.
 
-\subsubsection{Confinement}
+\subsubsection{Confinement and Hadronization}
 
 At lower energies, the strong coupling constant grows larger, and the theory can no longer be treated as perturbative.
 Because the coupling constant is large,
 a finite series expanded in powers of the coupling constant is no longer sufficient to estimate the full predictions.
+Instead, higher-order terms grow larger and larger, which means an infinite number of such terms would be needed to make an accurate prediction.
+
+The exact energy scale at which QCD becomes non-perturbative is not known,
+but experimental evidence indicates that it occurs below approximately $200~GeV$.
+
+Confinement is a consequence of the large coupling constant at low energies.
+Since quarks and gluons are strongly coupled, they can no longer exist as free states.
+Instead, they can only exist as color-neutral bound states, called hadrons.
+
+In a collision event, when a quark is generated in the final state,
+the strong force between the quark and other quarks in the event remains constant as distance between them increases.
+Equivalently, the potential energy between quarks increases with distance.
+Eventually it becomes energetically favorable for new quarks to be created from the vacuum,
+with the correct color charge to neutralize the color charge of the escaping quark.
+These new particles become bound together in color-neutral free states.
+This process is known as hadronization.
+
+Hadronization, along with parton showering, is responsible for the emergence of jets from LHC collisions.
+Rather than observing the quarks and gluons produced in the collision,
+the detector can only observe the spray of hadrons that result.
+Jets will be discussed in detail in chapter~\ref{ch:jets}.
+
+Confinement has not been rigorously proven from a theoretical standpoint.
+However, the existence of color confinement is consistent with empirical evidence.
 
 \subsection{Parton distribution functions}\label{subsec:qcd_pdfs}
 
-\section{Phenomenology}\label{sec:sm_pheno}
+The QCD Lagrangian describes how individual quarks and gluons behave.
+But the LHC collides protons, not individual quarks.
+Protons consist of three valence quarks: two up quarks and one down quark.
+But they also consist of a "sea" of quarks and antiquarks, as well as gluons.
+When calculating collision cross-sections for the LHC, this internal structure of the protons must be taken into account.
+
+Parton distribution functions (PDFs) model the internal structure of the proton.
+They are expressed as probability distributions over momentum fraction $x$, normalized to the number of partons.
+The momentum fraction $x$, is the proportion of the proton momentum carried by the individual parton.
+PDFs are conditional on $Q^2$, the squared energy scale.
+Separate PDFs are calculated for gluons and for each quark flavor.
+
+Examples of PDFs for different quark flavors, as well as for gluons, can be seen in figure~\ref{fig:sm_pdfs}.
+
+\begin{figure}[h!]
+    \centering
+\includegraphics[width=0.6\linewidth]{sm_pdfs}
+\caption{Parton distribution functions for the proton, calculated at NLO for two different energy scales.}
+\label{fig:sm_pdfs}
+\end{figure}\cite{sm-pdf-2009}
+
+When calculating LHC cross-sections, the hard-scattering cross-section for different types of partons
+must be convolved with the PDFs for each parton.
+The proton-proton cross-sections are thus an average of partonic cross-sections, weighted by the PDFs for those partons.
+
+The factorization theorem of QCD allows for the non-perturbative PDF calculations to be carried out independently from
+the perturbative hard scattering cross sections, and then combined.
 
 \section{Limitations}\label{sec:sm_limits}
