@@ -4,7 +4,8 @@
     <list default="true" id="214241b4-fcb9-4ead-a5a3-46d194763dc4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapters/sm.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/sm.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sm-pdfs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapters/susy.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/susy.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/references.bib" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +19,8 @@
       <file leaf-file-name="sm.tex" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chapters/sm.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="334" column="20" lean-forward="true" selection-start-line="334" selection-start-column="20" selection-end-line="334" selection-end-column="20" />
+            <state relative-caret-position="573">
+              <caret line="427" column="46" selection-start-line="427" selection-start-column="46" selection-end-line="427" selection-end-column="46" />
               <folding>
                 <element signature="e#1694#1700#2" expanded="true" />
                 <element signature="e#1706#1712#2" expanded="true" />
@@ -64,16 +65,23 @@
                 <element signature="e#13172#13175#2" expanded="true" />
                 <element signature="e#13626#13632#2" expanded="true" />
                 <element signature="e#13327#13333#2" expanded="true" />
+                <element signature="e#19749#19756#3" expanded="true" />
+                <element signature="e#20478#20481#2" expanded="true" />
+                <element signature="e#20516#20523#2" expanded="true" />
+                <element signature="e#20528#20535#2" expanded="true" />
+                <element signature="e#20538#20545#2" expanded="true" />
+                <element signature="e#21838#21844#2" expanded="true" />
+                <element signature="e#21853#21859#2" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jets.tex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
+      <file leaf-file-name="susy.tex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+              <caret column="39" selection-start-column="39" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -81,8 +89,8 @@
       <file leaf-file-name="references.bib" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/references.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="206" column="23" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
+            <state relative-caret-position="512">
+              <caret line="241" column="68" selection-start-line="241" selection-start-column="68" selection-end-line="241" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -118,6 +126,8 @@
       <find>figure</find>
       <find>amsmat</find>
       <find>parton</find>
+      <find>{</find>
+      <find>subesc</find>
     </findStrings>
     <replaceStrings>
       <replace>figure~\ref{</replace>
@@ -136,8 +146,9 @@
         <option value="$PROJECT_DIR$/chapters/abstract.tex" />
         <option value="$PROJECT_DIR$/chapters/atlas.tex" />
         <option value="$PROJECT_DIR$/thesis.tex" />
-        <option value="$PROJECT_DIR$/references.bib" />
         <option value="$PROJECT_DIR$/chapters/jets.tex" />
+        <option value="$PROJECT_DIR$/references.bib" />
+        <option value="$PROJECT_DIR$/chapters/susy.tex" />
         <option value="$PROJECT_DIR$/chapters/sm.tex" />
       </list>
     </option>
@@ -256,13 +267,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapters/signal.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapters/atlas.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8880">
@@ -578,15 +582,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/references.bib">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="206" column="23" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
+        <state relative-caret-position="512">
+          <caret line="241" column="68" selection-start-line="241" selection-start-column="68" selection-end-line="241" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/sm.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="334" column="20" lean-forward="true" selection-start-line="334" selection-start-column="20" selection-end-line="334" selection-end-column="20" />
+        <state relative-caret-position="573">
+          <caret line="427" column="46" selection-start-line="427" selection-start-column="46" selection-end-line="427" selection-end-column="46" />
           <folding>
             <element signature="e#1694#1700#2" expanded="true" />
             <element signature="e#1706#1712#2" expanded="true" />
@@ -631,6 +642,13 @@
             <element signature="e#13172#13175#2" expanded="true" />
             <element signature="e#13626#13632#2" expanded="true" />
             <element signature="e#13327#13333#2" expanded="true" />
+            <element signature="e#19749#19756#3" expanded="true" />
+            <element signature="e#20478#20481#2" expanded="true" />
+            <element signature="e#20516#20523#2" expanded="true" />
+            <element signature="e#20528#20535#2" expanded="true" />
+            <element signature="e#20538#20545#2" expanded="true" />
+            <element signature="e#21838#21844#2" expanded="true" />
+            <element signature="e#21853#21859#2" expanded="true" />
           </folding>
         </state>
       </provider>
