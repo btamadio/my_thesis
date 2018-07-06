@@ -69,11 +69,12 @@
       <file leaf-file-name="susy.tex" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="566">
+              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
               <folding>
                 <element signature="e#1516#1523#2" expanded="true" />
                 <element signature="e#2618#2625#3" expanded="true" />
+                <element signature="e#4453#4459#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,8 +83,8 @@
       <file leaf-file-name="references.bib" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/references.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="247" column="116" selection-start-line="247" selection-start-column="116" selection-end-line="247" selection-end-column="116" />
+            <state relative-caret-position="478">
+              <caret line="251" column="30" selection-start-line="251" selection-start-column="30" selection-end-line="251" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -584,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/references.bib">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="247" column="116" selection-start-line="247" selection-start-column="116" selection-end-line="247" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapters/sm.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -639,13 +633,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/references.bib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="251" column="30" selection-start-line="251" selection-start-column="30" selection-end-line="251" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="566">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
           <folding>
             <element signature="e#1516#1523#2" expanded="true" />
             <element signature="e#2618#2625#3" expanded="true" />
+            <element signature="e#4453#4459#2" expanded="true" />
           </folding>
         </state>
       </provider>

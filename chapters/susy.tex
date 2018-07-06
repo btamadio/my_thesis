@@ -36,17 +36,50 @@ the largest contribution coming from the top quark loop, shown in figure~\ref{fi
 \label{fig:susy_top_loop}
 \end{figure}
 
-The correction to the mass-squared coming from this diagram is:
+The correction to the Higgs mass-squared coming from this diagram is:
 
 \begin{equation}\label{eq:higgs_top_correction}
-    \delta m^2 = \frac{3m_t^2}{2\pi^2 v^2}\Lambda_{UV}^2
+    \delta m_h^2 = \frac{3m_t^2}{2\pi^2 v^2}\Lambda_{UV}^2
 \end{equation}
 
 Where $m_t$ is the top quark mass, $v$ is the Higgs vacuum expectation value, and $\Lambda_{UV}$ is the ultraviolet cutoff.
+Supersymmetry introduces a so-called superpartner for each Standard Model particle.
+Standard Model fermions have bosonic superpartners, and Standard Model bosons have fermionic superpartners.
+Superpartners always have the same quantum numbers as their Standard Model partners, except for spin.
+The details of how this comes about will be discussed in~\ref{sec:susy_theory}.
+The superpartner of the top is called the stop.
+It's a scalar particle with all the same quantum numbers as the top quark, except for spin.
 
+The introduction of superpartners leads to new quantum corrections to the Higgs mass-squared.
+One of those corrections can be seen in~\ref{fig:susy_stop_loop}.
 
+\begin{figure}[h!]
+    \centering
+\includegraphics[width=0.6\linewidth]{susy_higgs_stop_loop}
+\caption{Stop loop diagram, the leading SUSY correction to the Higgs mass-squared. This contribution is quadratically divergent in the cutoff scale.}
+\label{fig:susy_stop_loop}
+\end{figure}
 
+The correction to the Higgs mass-squared coming from this diagram is:
 
+\begin{equation}\label{eq:higgs_stop_correction}
+    \delta m_h^2 = -\frac{3m_t^2}{2\pi^2 v^2}\Lambda_{UV}^2
+\end{equation}
+
+Thus, the quadratically-divergent top-loop correction is cancelled exactly.
+A similar cancellation occurs for all other quadratic divergences in the calculation,
+leaving terms that are only logarithmically divergent in the cutoff.
+
+In SUSY, the leading correction to the Higgs mass-squared is proportional to the log of the cutoff scale,
+and the squared difference between the top and stop masses:
+
+\begin{equation}\label{eq:susy_higgs_correction}
+    \delta m_h^2 \propto \left(m_{\tilde{t}}^2 - m_t^2\right)  \Lambda_{UV}
+\end{equation}\cite{susy-pheno-2000}
+
+The amount of fine-tuning required can be quantified by $m_h / \delta m_h $, so in order to preserve naturalness,
+the stop mass cannot be much heavier than the top quark mass.
+If we allow for fine-tuning of only 1 part in 10, then the stop mass shouldn't be higher than the $1~TeV$ scale.
 
 \subsection{Grand Unification}\label{subsec:susy_unification}
 
