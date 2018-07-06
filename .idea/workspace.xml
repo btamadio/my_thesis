@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="214241b4-fcb9-4ead-a5a3-46d194763dc4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapters/sm.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/sm.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapters/susy.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/susy.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/references.bib" afterDir="false" />
     </list>
@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sm.tex" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sm.tex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chapters/sm.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="427" column="46" selection-start-line="427" selection-start-column="46" selection-end-line="427" selection-end-column="46" />
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="23" selection-end-column="12" />
               <folding>
                 <element signature="e#1694#1700#2" expanded="true" />
                 <element signature="e#1706#1712#2" expanded="true" />
@@ -57,31 +57,24 @@
                 <element signature="e#7876#7879#2" expanded="true" />
                 <element signature="e#7890#7893#2" expanded="true" />
                 <element signature="e#8717#8723#2" expanded="true" />
-                <element signature="e#12075#12078#2" expanded="true" />
-                <element signature="e#12326#12329#3" expanded="true" />
-                <element signature="e#12329#12332#3" expanded="true" />
-                <element signature="e#12945#12950#3" expanded="true" />
-                <element signature="e#13152#13158#2" expanded="true" />
-                <element signature="e#13172#13175#2" expanded="true" />
                 <element signature="e#13626#13632#2" expanded="true" />
-                <element signature="e#13327#13333#2" expanded="true" />
-                <element signature="e#19749#19756#3" expanded="true" />
                 <element signature="e#20478#20481#2" expanded="true" />
-                <element signature="e#20516#20523#2" expanded="true" />
                 <element signature="e#20528#20535#2" expanded="true" />
                 <element signature="e#20538#20545#2" expanded="true" />
-                <element signature="e#21838#21844#2" expanded="true" />
-                <element signature="e#21853#21859#2" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="susy.tex" pinned="false" current-in-tab="false">
+      <file leaf-file-name="susy.tex" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="39" selection-start-column="39" selection-end-column="39" />
+            <state relative-caret-position="494">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <element signature="e#1516#1523#2" expanded="true" />
+                <element signature="e#2618#2625#3" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,8 +82,8 @@
       <file leaf-file-name="references.bib" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/references.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="241" column="68" selection-start-line="241" selection-start-column="68" selection-end-line="241" selection-end-column="68" />
+            <state relative-caret-position="553">
+              <caret line="247" column="116" selection-start-line="247" selection-start-column="116" selection-end-line="247" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -123,11 +116,11 @@
       <find>palestin</find>
       <find>url</find>
       <find>}</find>
-      <find>figure</find>
       <find>amsmat</find>
       <find>parton</find>
       <find>{</find>
       <find>subesc</find>
+      <find>figure</find>
     </findStrings>
     <replaceStrings>
       <replace>figure~\ref{</replace>
@@ -147,16 +140,16 @@
         <option value="$PROJECT_DIR$/chapters/atlas.tex" />
         <option value="$PROJECT_DIR$/thesis.tex" />
         <option value="$PROJECT_DIR$/chapters/jets.tex" />
+        <option value="$PROJECT_DIR$/chapters/sm.tex" />
         <option value="$PROJECT_DIR$/references.bib" />
         <option value="$PROJECT_DIR$/chapters/susy.tex" />
-        <option value="$PROJECT_DIR$/chapters/sm.tex" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="797" />
+    <option name="height" value="794" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -184,6 +177,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -219,12 +213,22 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/chapters/sm.tex</main-file>
+        <aux-dir>$APPLICATION_HOME_DIR$/bin</aux-dir>
+      </texify-bibtex>
+    </configuration>
+    <configuration name="susy bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-bibtex>
+        <compiler>BIBTEX</compiler>
+        <compiler-path />
+        <compiler-arguments />
+        <main-file>$PROJECT_DIR$/chapters/susy.tex</main-file>
         <aux-dir />
       </texify-bibtex>
     </configuration>
     <list>
       <item itemvalue="BibTeX.atlas bibliography" />
       <item itemvalue="BibTeX.sm bibliography" />
+      <item itemvalue="BibTeX.susy bibliography" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -247,6 +251,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17777778" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32918397" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32918397" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
@@ -260,7 +265,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32918397" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -582,22 +586,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/references.bib">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="241" column="68" selection-start-line="241" selection-start-column="68" selection-end-line="241" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" selection-start-column="39" selection-end-column="39" />
+        <state relative-caret-position="553">
+          <caret line="247" column="116" selection-start-line="247" selection-start-column="116" selection-end-line="247" selection-end-column="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/sm.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="427" column="46" selection-start-line="427" selection-start-column="46" selection-end-line="427" selection-end-column="46" />
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="23" selection-end-column="12" />
           <folding>
             <element signature="e#1694#1700#2" expanded="true" />
             <element signature="e#1706#1712#2" expanded="true" />
@@ -634,21 +631,21 @@
             <element signature="e#7876#7879#2" expanded="true" />
             <element signature="e#7890#7893#2" expanded="true" />
             <element signature="e#8717#8723#2" expanded="true" />
-            <element signature="e#12075#12078#2" expanded="true" />
-            <element signature="e#12326#12329#3" expanded="true" />
-            <element signature="e#12329#12332#3" expanded="true" />
-            <element signature="e#12945#12950#3" expanded="true" />
-            <element signature="e#13152#13158#2" expanded="true" />
-            <element signature="e#13172#13175#2" expanded="true" />
             <element signature="e#13626#13632#2" expanded="true" />
-            <element signature="e#13327#13333#2" expanded="true" />
-            <element signature="e#19749#19756#3" expanded="true" />
             <element signature="e#20478#20481#2" expanded="true" />
-            <element signature="e#20516#20523#2" expanded="true" />
             <element signature="e#20528#20535#2" expanded="true" />
             <element signature="e#20538#20545#2" expanded="true" />
-            <element signature="e#21838#21844#2" expanded="true" />
-            <element signature="e#21853#21859#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#1516#1523#2" expanded="true" />
+            <element signature="e#2618#2625#3" expanded="true" />
           </folding>
         </state>
       </provider>
