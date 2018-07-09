@@ -84,8 +84,66 @@ which indicates that SUSY should be accessible by the LHC .
 
 \subsection{Grand Unification}\label{subsec:susy_unification}
 
+Grand Unification is the idea that the $SU(3)_C \times SU(2)_L \times U(1)_Y$ symmetry of the Standard Model
+could be embedded in a simpler symmetry group, which constrains the theory at energies above $\Lambda_{GUT}$.
+In a Grand Unified Theory (GUT), there would be no distinction between quarks and leptons at energies above $\Lambda_{GUT}$,
+and the differences in interactions between these two types of matter fields would be explained by the details of the
+theory and the mechanism by which it is broken.
+Furthermore, at energies above $\Lambda_{GUT}$, the three forces of the Standard Model would be replaced by a single, unified force.
+Grand unification would be the logical next step after electroweak unification,
+in which the electromagnetic and weak forces are shown to be the same force at energies above $\Lambda_{EW}\approx 246~GeV$.
+Similarly to how electroweak unification gives a relationship between electric charge and weak isospin,
+grand unification would give a relationship between color charge and the electroweak quantum numbers.
+
+Several different symmetry groups have been proposed as GUTs, including $SU(5)$, $SO(10)$, $E_6$, and $SU(5)\times SU(5)$.\cite{susy-unification-1998}
+However, in order for unification to occur, the value of the three Standard Model coupling constants must converge at some energy scale.
+The running of coupling constants is determined by the renormalization group equation (RGE):
+
+\begin{equation}\label{eq:renorm_group}
+    \frac{\partial g}{\partial \log \mu} = \beta(g)
+\end{equation}
+
+Where $g$ is the coupling constant of interest, $\mu$ is the energy scale at which the coupling is being measured,
+and $\beta$ is a function that depends on the gauge structure and matter content of the theory.
+
+Using the RGE, and measured values of the coupling constants at specific starting energies,
+one can calculate the value of the three constants over a large range of energy scales.
+It turns out that for the Standard Model, there is no energy scale at which all three Standard Model constants converge,
+as would be required for a grand unified theory.
+
+However, when the $\beta$ function is modified to include supersymmetric particles,
+it is possible for all three Standard Model forces to unify.
+In one particular SUSY model, known as the Minimal Supersymmetric Standard Model (MSSM),
+unification of the forces occurs at $\mu \approx 2\times10^{16}~GeV$.\cite{susy-unification-1998}
+The running of the coupling constants under the Standard Model and MSSM can be seen in figure~\ref{fig:susy_unification}.
+
+\begin{figure}[h!]
+    \centering
+\includegraphics[width=0.95\linewidth]{susy_unification}
+\caption{Running of the three Standard Model coupling constants under the Standard Model (left) and MSSM (right) RGEs.
+For the MSSM, unification occurs at $\mu\approx 2\times 10^{16}~GeV$}
+\label{fig:susy_unification}
+\end{figure}\cite{susy-pheno-2000}
 
 \subsection{Dark Matter}\label{subsec:susy_dark_matter}
+
+As mentioned in~\ref{subsec:sm_dark_matter}, SUSY could explain Dark Matter,
+which comprises approximately $80\%$ of matter in the universe, but still cannot be explained by any known particle.
+
+In SUSY models that conserve R-parity, the lightest supersymmetric particle (LSP) is always stable.
+The LSP must be stable because R-parity prevents the LSP from decaying to a final state without SUSY particles,
+and conservation of energy prevents it from decaying to a final state with SUSY particles,
+since all SUSY particles are by definition more massive than the LSP .
+
+In so-called "natural" SUSY, the LSP is a neutralino, $\chi_0^{1}$.
+The neutralino is a mixture of the electroweak gauge superpartners, the wino and bino, and the Higgs superpartner, the higgsino.
+The neutralino in this theory would be stable, massive, electrically neutral, and it would interact via the weak force.
+As such, it is a viable candidate for WIMP dark matter.
+
+Intriguingly, if one assumes that dark matter was thermally produced in the early universe,
+and calculates the required production cross-section to match the dark matter abundance measured today,
+the result is $\left<\sigma v\right> \approx 3 \times 10^{-26}~cm^{3}/s$,
+which is very close to what would be expected for a weakly-interacting LSP .\cite{susy-dark-matter-1996}
 
 \section{Theory and Phenomenology}\label{sec:susy_theory}
 
