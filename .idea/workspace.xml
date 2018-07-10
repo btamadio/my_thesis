@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="214241b4-fcb9-4ead-a5a3-46d194763dc4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapters/signal.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/signal.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapters/jets.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/jets.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapters/method.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/method.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapters/susy.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/susy.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/references.bib" afterDir="false" />
     </list>
@@ -17,70 +17,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="susy.tex" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
+      <file leaf-file-name="jets.tex" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="329" column="10" selection-start-line="329" selection-start-column="10" selection-end-line="329" selection-end-column="10" />
+            <state relative-caret-position="412">
+              <caret line="55" column="107" selection-start-line="55" selection-start-column="107" selection-end-line="55" selection-end-column="107" />
               <folding>
-                <element signature="e#4852#4858#2" expanded="true" />
-                <element signature="e#4867#4873#2" expanded="true" />
-                <element signature="e#5007#5014#2" expanded="true" />
-                <element signature="e#5132#5139#2" expanded="true" />
-                <element signature="e#5346#5353#2" expanded="true" />
-                <element signature="e#7614#7617#2" expanded="true" />
-                <element signature="e#7617#7624#2" expanded="true" />
-                <element signature="e#7626#7632#2" expanded="true" />
-                <element signature="e#11258#11262#2" expanded="true" />
-                <element signature="e#11271#11275#2" expanded="true" />
-                <element signature="e#11277#11281#2" expanded="true" />
-                <element signature="e#12164#12168#2" expanded="true" />
-                <element signature="e#12203#12210#3" expanded="true" />
-                <element signature="e#12217#12224#3" expanded="true" />
-                <element signature="e#12249#12256#3" expanded="true" />
-                <element signature="e#12416#12422#2" expanded="true" />
-                <element signature="e#12423#12431#2" expanded="true" />
-                <element signature="e#12433#12439#3" expanded="true" />
-                <element signature="e#12442#12448#2" expanded="true" />
-                <element signature="e#12453#12461#2" expanded="true" />
-                <element signature="e#17455#17458#2" expanded="true" />
-                <element signature="e#17463#17470#3" expanded="true" />
-                <element signature="e#17474#17481#2" expanded="true" />
-                <element signature="e#17490#17497#2" expanded="true" />
-                <element signature="e#17533#17539#2" expanded="true" />
-                <element signature="e#17574#17580#2" expanded="true" />
-                <element signature="e#17864#17871#2" expanded="true" />
-                <element signature="e#17879#17886#2" expanded="true" />
-                <element signature="e#18226#18237#2" expanded="true" />
-                <element signature="e#18238#18241#2" expanded="true" />
-                <element signature="e#18886#18893#2" expanded="true" />
-                <element signature="e#18898#18905#2" expanded="true" />
-                <element signature="e#19230#19237#2" expanded="true" />
-                <element signature="e#20568#20575#2" expanded="true" />
+                <element signature="e#3148#3159#2" expanded="true" />
+                <element signature="e#3194#3205#2" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="results.tex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapters/results.tex">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="method.tex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapters/method.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1688">
-              <caret line="328" column="13" selection-start-line="328" selection-start-column="13" selection-end-line="328" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signal.tex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapters/signal.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -88,8 +33,17 @@
       <file leaf-file-name="references.bib" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/references.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="331" column="29" selection-start-line="331" selection-start-column="29" selection-end-line="331" selection-end-column="29" />
+            <state relative-caret-position="583">
+              <caret line="359" column="42" selection-start-line="359" selection-start-column="42" selection-end-line="359" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="method.tex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapters/method.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="42" selection-start-column="42" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -98,8 +52,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>error</find>
-      <find>nocite</find>
       <find>Figure\ref</find>
       <find>figure\ref{</find>
       <find>Figure~\ref</find>
@@ -124,10 +76,12 @@
       <find>parton</find>
       <find>{</find>
       <find>subesc</find>
-      <find>figure</find>
       <find>tbl:signal</find>
       <find>tbl:</find>
       <find>susy-primer</find>
+      <find>lamda</find>
+      <find>pdf</find>
+      <find>figure</find>
     </findStrings>
     <replaceStrings>
       <replace>figure~\ref{</replace>
@@ -145,11 +99,12 @@
         <option value="$PROJECT_DIR$/chapters/abstract.tex" />
         <option value="$PROJECT_DIR$/chapters/atlas.tex" />
         <option value="$PROJECT_DIR$/thesis.tex" />
-        <option value="$PROJECT_DIR$/chapters/jets.tex" />
         <option value="$PROJECT_DIR$/chapters/sm.tex" />
-        <option value="$PROJECT_DIR$/references.bib" />
         <option value="$PROJECT_DIR$/chapters/signal.tex" />
         <option value="$PROJECT_DIR$/chapters/susy.tex" />
+        <option value="$PROJECT_DIR$/references.bib" />
+        <option value="$PROJECT_DIR$/chapters/method.tex" />
+        <option value="$PROJECT_DIR$/chapters/jets.tex" />
       </list>
     </option>
   </component>
@@ -214,6 +169,15 @@
         <aux-dir>$APPLICATION_HOME_DIR$/bin</aux-dir>
       </texify-bibtex>
     </configuration>
+    <configuration name="jets bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-bibtex>
+        <compiler>BIBTEX</compiler>
+        <compiler-path />
+        <compiler-arguments />
+        <main-file>$PROJECT_DIR$/chapters/jets.tex</main-file>
+        <aux-dir />
+      </texify-bibtex>
+    </configuration>
     <configuration name="sm bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-bibtex>
         <compiler>BIBTEX</compiler>
@@ -236,6 +200,7 @@
       <item itemvalue="BibTeX.atlas bibliography" />
       <item itemvalue="BibTeX.sm bibliography" />
       <item itemvalue="BibTeX.susy bibliography" />
+      <item itemvalue="BibTeX.jets bibliography" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -551,17 +516,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
+    <entry file="file://$PROJECT_DIR$/thesis.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        <state relative-caret-position="1380">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#26#47#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="331" column="61" lean-forward="true" selection-start-line="331" selection-start-column="61" selection-end-line="331" selection-end-column="61" />
+          <folding>
+            <element signature="e#4852#4858#2" expanded="true" />
+            <element signature="e#4867#4873#2" expanded="true" />
+            <element signature="e#5007#5014#2" expanded="true" />
+            <element signature="e#5132#5139#2" expanded="true" />
+            <element signature="e#5346#5353#2" expanded="true" />
+            <element signature="e#7614#7617#2" expanded="true" />
+            <element signature="e#7617#7624#2" expanded="true" />
+            <element signature="e#7626#7632#2" expanded="true" />
+            <element signature="e#11258#11262#2" expanded="true" />
+            <element signature="e#11271#11275#2" expanded="true" />
+            <element signature="e#11277#11281#2" expanded="true" />
+            <element signature="e#12164#12168#2" expanded="true" />
+            <element signature="e#12203#12210#3" expanded="true" />
+            <element signature="e#12217#12224#3" expanded="true" />
+            <element signature="e#12249#12256#3" expanded="true" />
+            <element signature="e#12416#12422#2" expanded="true" />
+            <element signature="e#12423#12431#2" expanded="true" />
+            <element signature="e#12433#12439#3" expanded="true" />
+            <element signature="e#12442#12448#2" expanded="true" />
+            <element signature="e#12453#12461#2" expanded="true" />
+            <element signature="e#17455#17458#2" expanded="true" />
+            <element signature="e#17463#17470#3" expanded="true" />
+            <element signature="e#17474#17481#2" expanded="true" />
+            <element signature="e#17490#17497#2" expanded="true" />
+            <element signature="e#17533#17539#2" expanded="true" />
+            <element signature="e#17574#17580#2" expanded="true" />
+            <element signature="e#17864#17871#2" expanded="true" />
+            <element signature="e#17879#17886#2" expanded="true" />
+            <element signature="e#18226#18237#2" expanded="true" />
+            <element signature="e#18238#18241#2" expanded="true" />
+            <element signature="e#18886#18893#2" expanded="true" />
+            <element signature="e#18898#18905#2" expanded="true" />
+            <element signature="e#19230#19237#2" expanded="true" />
+            <element signature="e#20568#20575#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapters/results.tex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapters/signal.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/sm.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="411" column="53" selection-start-line="411" selection-start-column="30" selection-end-line="411" selection-end-column="53" />
+        <state relative-caret-position="245">
+          <caret line="340" selection-start-line="340" selection-end-line="345" selection-end-column="30" />
           <folding>
             <element signature="e#1694#1700#2" expanded="true" />
             <element signature="e#1706#1712#2" expanded="true" />
@@ -606,79 +627,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thesis.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-          <folding>
-            <element signature="e#26#47#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/references.bib">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="331" column="29" selection-start-line="331" selection-start-column="29" selection-end-line="331" selection-end-column="29" />
+        <state relative-caret-position="583">
+          <caret line="359" column="42" selection-start-line="359" selection-start-column="42" selection-end-line="359" selection-end-column="42" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapters/results.tex">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/method.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1688">
-          <caret line="328" column="13" selection-start-line="328" selection-start-column="13" selection-end-line="328" selection-end-column="13" />
+        <state>
+          <caret column="42" selection-start-column="42" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapters/signal.tex">
+    <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="329" column="10" selection-start-line="329" selection-start-column="10" selection-end-line="329" selection-end-column="10" />
+        <state relative-caret-position="412">
+          <caret line="55" column="107" selection-start-line="55" selection-start-column="107" selection-end-line="55" selection-end-column="107" />
           <folding>
-            <element signature="e#4852#4858#2" expanded="true" />
-            <element signature="e#4867#4873#2" expanded="true" />
-            <element signature="e#5007#5014#2" expanded="true" />
-            <element signature="e#5132#5139#2" expanded="true" />
-            <element signature="e#5346#5353#2" expanded="true" />
-            <element signature="e#7614#7617#2" expanded="true" />
-            <element signature="e#7617#7624#2" expanded="true" />
-            <element signature="e#7626#7632#2" expanded="true" />
-            <element signature="e#11258#11262#2" expanded="true" />
-            <element signature="e#11271#11275#2" expanded="true" />
-            <element signature="e#11277#11281#2" expanded="true" />
-            <element signature="e#12164#12168#2" expanded="true" />
-            <element signature="e#12203#12210#3" expanded="true" />
-            <element signature="e#12217#12224#3" expanded="true" />
-            <element signature="e#12249#12256#3" expanded="true" />
-            <element signature="e#12416#12422#2" expanded="true" />
-            <element signature="e#12423#12431#2" expanded="true" />
-            <element signature="e#12433#12439#3" expanded="true" />
-            <element signature="e#12442#12448#2" expanded="true" />
-            <element signature="e#12453#12461#2" expanded="true" />
-            <element signature="e#17455#17458#2" expanded="true" />
-            <element signature="e#17463#17470#3" expanded="true" />
-            <element signature="e#17474#17481#2" expanded="true" />
-            <element signature="e#17490#17497#2" expanded="true" />
-            <element signature="e#17533#17539#2" expanded="true" />
-            <element signature="e#17574#17580#2" expanded="true" />
-            <element signature="e#17864#17871#2" expanded="true" />
-            <element signature="e#17879#17886#2" expanded="true" />
-            <element signature="e#18226#18237#2" expanded="true" />
-            <element signature="e#18238#18241#2" expanded="true" />
-            <element signature="e#18886#18893#2" expanded="true" />
-            <element signature="e#18898#18905#2" expanded="true" />
-            <element signature="e#19230#19237#2" expanded="true" />
-            <element signature="e#20568#20575#2" expanded="true" />
+            <element signature="e#3148#3159#2" expanded="true" />
+            <element signature="e#3194#3205#2" expanded="true" />
           </folding>
         </state>
       </provider>
