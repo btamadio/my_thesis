@@ -3,6 +3,8 @@
     <words>
       <w>abelian</w>
       <w>adjoint</w>
+      <w>antileptons</w>
+      <w>antiquarks</w>
       <w>beamline</w>
       <w>beampipe</w>
       <w>bosonic</w>
@@ -13,6 +15,8 @@
       <w>gluons</w>
       <w>hadronic</w>
       <w>hadronization</w>
+      <w>hermitian</w>
+      <w>higgs</w>
       <w>insertable</w>
       <w>kapton</w>
       <w>massless</w>
@@ -27,7 +31,10 @@
       <w>presampler</w>
       <w>pseudorapidity</w>
       <w>renormalizable</w>
+      <w>sleptons</w>
       <w>spacetime</w>
+      <w>sparticle</w>
+      <w>squarks</w>
       <w>subdetector</w>
       <w>superfield</w>
       <w>superfields</w>
@@ -35,6 +42,7 @@
       <w>supermultiplets</w>
       <w>superpartner</w>
       <w>superpartners</w>
+      <w>superpotential</w>
       <w>supersymmetric</w>
       <w>supersymmetry</w>
       <w>toroids</w>
