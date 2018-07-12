@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214241b4-fcb9-4ead-a5a3-46d194763dc4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapters/jets.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/jets.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/jet_radial_sep.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/jet_radial_sep.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/references.bib" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +18,8 @@
       <file leaf-file-name="jets.tex" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="266" column="77" selection-start-line="266" selection-start-column="77" selection-end-line="266" selection-end-column="77" />
+            <state relative-caret-position="571">
+              <caret line="332" column="53" lean-forward="true" selection-start-line="332" selection-start-column="53" selection-end-line="332" selection-end-column="53" />
               <folding>
                 <element signature="e#7951#7955#2" expanded="true" />
                 <element signature="e#7956#7960#2" expanded="true" />
@@ -38,6 +38,9 @@
                 <element signature="e#15623#15627#2" expanded="true" />
                 <element signature="e#17059#17070#2" expanded="true" />
                 <element signature="e#17338#17341#2" expanded="true" />
+                <element signature="e#17611#17622#2" expanded="true" />
+                <element signature="e#17686#17689#2" expanded="true" />
+                <element signature="e#18910#18917#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,8 +49,8 @@
       <file leaf-file-name="references.bib" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/references.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="483" column="26" selection-start-line="483" selection-start-column="26" selection-end-line="483" selection-end-column="26" />
+            <state relative-caret-position="613">
+              <caret line="509" column="31" selection-start-line="509" selection-start-column="31" selection-end-line="509" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -649,15 +652,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/references.bib">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="483" column="26" selection-start-line="483" selection-start-column="26" selection-end-line="483" selection-end-column="26" />
+        <state relative-caret-position="613">
+          <caret line="509" column="31" selection-start-line="509" selection-start-column="31" selection-end-line="509" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="266" column="77" selection-start-line="266" selection-start-column="77" selection-end-line="266" selection-end-column="77" />
+        <state relative-caret-position="571">
+          <caret line="332" column="53" lean-forward="true" selection-start-line="332" selection-start-column="53" selection-end-line="332" selection-end-column="53" />
           <folding>
             <element signature="e#7951#7955#2" expanded="true" />
             <element signature="e#7956#7960#2" expanded="true" />
@@ -676,6 +679,9 @@
             <element signature="e#15623#15627#2" expanded="true" />
             <element signature="e#17059#17070#2" expanded="true" />
             <element signature="e#17338#17341#2" expanded="true" />
+            <element signature="e#17611#17622#2" expanded="true" />
+            <element signature="e#17686#17689#2" expanded="true" />
+            <element signature="e#18910#18917#2" expanded="true" />
           </folding>
         </state>
       </provider>

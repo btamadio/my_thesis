@@ -246,8 +246,7 @@ by different values of $p$.}
 \label{fig:jet_algo_compare}
 \end{figure}\cite{jet-antikt-algo}
 
-
-\section{Substructure}\label{sec:jet_substructure}
+\section{Boosted objects}\label{sec:jet_substructure}
 
 As the center-of-mass energy of collisions increases, it becomes increasingly important to study the internal structure
 of jets, in addition to the kinematic properties of jets within events.
@@ -266,6 +265,13 @@ Where $p_T$ is the transverse momentum of the $W$, and $m$ is the $W$ mass.
 For $W$ bosons with $p_T \gg m$, jets with radius parameter $R = 0.4$ will no longer resolve the decay products into separate jets,
 but instead will contain the all decay products of the $W$ into a single jet.
 
+Figure~\ref{fig:jet_radial_sep} illustrates the boosting effect for the simulated decay $Z'\rightarrow t\bar{t}$,
+where the $Z'$ represents a new heavy resonance.
+Since $m_{Z'} \gg m_{t}$, the top quarks are highly boosted, so their decay products cannot be resolved by jets with $R=0.4$.
+
+On the other hand, jets with $R = 1.0$ will capture all decay products with high efficiency,
+so the substructure of $R=1.0$ jets can potentially be used to reconstruct these boosted tops.
+
 \begin{figure}[h!]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_radial_sep}
@@ -273,12 +279,58 @@ but instead will contain the all decay products of the $W$ into a single jet.
 \label{fig:jet_radial_sep}
 \end{figure}
 
-\subsection{Large-R jet algorithms}\label{subsec:large_r_jets}
-\subsubsection{Grooming}
+When dealing with boosted objects, larger radius parameters are often used, in order to incrase the probability
+of capturing the full decay products of a boosted object.
+Jets with large radius parameters, typically $R=1.0$ or $R=1.2$ are referred to as fat jets.
+
+\subsection{Jet Mass}\label{subsec:jet_mass}
+
+\subsubsection{Jet mass origin}
+
+The earliest-developed, and most straightforward jet substructure observable is mass.
+The mass of a jet is calculated from the four-vectors of its constituent objects:
+
+\begin{equation}\label{eq:jet_mass}
+    m^2 = \left(\sum E_i\right)^2 - \left(\sum \vec{p}_i \right)^2
+\end{equation}
+
+For a jet that contains the collimated decay products of an individual boosted resonance,
+the mass of the jet corresponds to the mass of the resonance, $m_{jet} \approx m_{resonance}$.
+
+For a QCD jet, i.e.\ one that is a result of a high-$p_T$ gluon or light quark, one might expect the mass to also be very low or close to zero.
+But in fact perturbative QCD processes lead to a nonzero expected mass for light quark and gluon jets.
+Calculations of perturbative QCD jet mass is beyond the scope of this thesis,
+but the resulting mass is proportional to the jet radius parameter, $R$, and the transverse momentum $p_T$ of the jet.
+Jets arising from light quarks will have different mass than jets arising from gluons.
+After taking relative production cross-sections for quark and gluon jets into account at different energy scales,
+the resulting relationship between jet $p_T$ and mass at next-to-leading order (NLO) is well-approximated by:
+
+\begin{equation}\label{eq:jet_mass_nlo}
+    m \approx 0.2 p_T R
+\end{equation}\cite{jet-mass-nlo}
+
 \subsubsection{Trimming}
 
-\subsection{Boosted objects}\label{subsec:jet_boosted_substructure}
-\subsection{Accidental substructure}\label{subsec:jet_accidental_substructure}
+Additional contributions to the jet mass come from initial state radiation (ISR),
+pileup (PU), the underlying event (UE), and multi-parton interaction (MPI).
+
+A variety of so-called grooming techniques are used to remove the dependence on unassociated radiation,
+so that the resulting jet mass is a result of the hard-scattering process only.
+
+Trimming is a grooming method applied to fat jets after they have been clustered, typically with the anti-$k_T$ algorithm.
+Trimming is defined as:
+
+For each fat jet:
+\begin{enumerate}
+    \item Recluster the fat jet constituents with a smaller radius parameter, $R_{sub}$
+    \item Reject subjets with $p_{T} < f_{cut} p_T^{jet}$
+    \item Sum the four-vectors of the subjets that are not rejected to form the final trimmed jet
+\end{enumerate}
+
+In the first step, a radius parameter and clustering algorithm must be chosen.
+The subjet radius parameter must be smaller than the original radius parameter.
+Often the $k_T$ algorithm is used for subjet clustering, in order to preserve as much of the FSR as possible.
+Rejecting FSR results in reduced jet mass resolution.
 
 \section{Reconstruction in ATLAS}\label{sec:jet_reconstruction}
 \subsection{Clustering}\label{subsec:jet_clustering}
