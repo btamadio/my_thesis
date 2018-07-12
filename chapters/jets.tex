@@ -142,7 +142,7 @@ But in a collinear-unsafe algorithm, the two divergences do not cancel out, so p
 
 \begin{figure}[h!]
     \centering
-\includegraphics[width=0.6\linewidth]{jet_collinear_safety}
+\includegraphics[width=0.9\linewidth]{jet_collinear_safety}
 \caption{Illustration comparing the results of collinear-safe (left) and collinear-unsafe (right) jet clustering algorithms.
 The emission of a near-collinear gluon changes the number of jets in the event, and results in diverges in theoretical calculations.
 The x-axis represents rapidity, and y-axis represents transverse momentum.}
@@ -164,7 +164,7 @@ so the divergences do not cancel.
 
 \begin{figure}[h!]
     \centering
-\includegraphics[width=0.6\linewidth]{jet_ir_safety}
+\includegraphics[width=0.9\linewidth]{jet_ir_safety}
 \caption{Illustration of infrared unsafety.
 In an event with a W boson decaying to two hard partons, the emission of a soft gluon can change the result of an infrared-unsafe algorithm.}
 \label{fig:jet_ir_safety}
@@ -173,9 +173,15 @@ In an event with a W boson decaying to two hard partons, the emission of a soft 
 \subsection{Sequential recombination}\label{subec:jet_seq_recombination}
 
 Sequential recombination algorithms are the most commonly used jet algorithms in ATLAS today,
-and consist of the $k_T$ algorithm, Cambridge-Aachen (C/A), and anti-$k_T$ algorithm.
+and consist of the $k_T$ algorithm\cite{jet-kt-algo}, Cambridge-Aachen (C/A)\cite{jet-ca-algo}, and anti-$k_T$ algorithm\cite{jet-antikt-algo}.
+All sequential recombination algorithms start by defining a distance measure.
 
 
+\subsubsection{Cambridge-Aachen (p=0)}
+
+\subsubsection{$k_T$ (p=1)}
+
+\subsubsection{anti-$k_T$ (p=-1)}
 
 \section{Substructure}\label{sec:jet_substructure}
 \subsection{Boosted objects}\label{subsec:jet_boosted_substructure}
