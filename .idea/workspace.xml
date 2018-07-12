@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214241b4-fcb9-4ead-a5a3-46d194763dc4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapters/jets.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/jets.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/jet_radial_sep.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/jet_radial_sep.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/references.bib" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="jets.tex" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="332" column="53" lean-forward="true" selection-start-line="332" selection-start-column="53" selection-end-line="332" selection-end-column="53" />
+            <state relative-caret-position="241">
+              <caret line="277" column="133" selection-start-line="277" selection-start-column="133" selection-end-line="277" selection-end-column="133" />
               <folding>
                 <element signature="e#7951#7955#2" expanded="true" />
                 <element signature="e#7956#7960#2" expanded="true" />
@@ -50,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/references.bib">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="613">
-              <caret line="509" column="31" selection-start-line="509" selection-start-column="31" selection-end-line="509" selection-end-column="31" />
+              <caret line="516" column="48" selection-start-line="516" selection-start-column="48" selection-end-line="516" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -68,7 +67,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>figure\ref{</find>
       <find>Figure~\ref</find>
       <find>Figure ~\ref</find>
       <find>pitch</find>
@@ -98,6 +96,7 @@
       <find>pdf</find>
       <find>figure</find>
       <find>\prd</find>
+      <find>\caption{}</find>
     </findStrings>
     <replaceStrings>
       <replace>figure~\ref{</replace>
@@ -243,7 +242,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32916668" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -653,14 +652,14 @@
     <entry file="file://$PROJECT_DIR$/references.bib">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="613">
-          <caret line="509" column="31" selection-start-line="509" selection-start-column="31" selection-end-line="509" selection-end-column="31" />
+          <caret line="516" column="48" selection-start-line="516" selection-start-column="48" selection-end-line="516" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="332" column="53" lean-forward="true" selection-start-line="332" selection-start-column="53" selection-end-line="332" selection-end-column="53" />
+        <state relative-caret-position="241">
+          <caret line="277" column="133" selection-start-line="277" selection-start-column="133" selection-end-line="277" selection-end-column="133" />
           <folding>
             <element signature="e#7951#7955#2" expanded="true" />
             <element signature="e#7956#7960#2" expanded="true" />
