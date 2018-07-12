@@ -109,7 +109,9 @@ In this case, the object which the algorithm acts on is a cluster of calorimeter
 
 Historically, there have been two major types of jet algorithms used in particle physics experiments:
 cone-based algorithms and sequential recombination algorithms.
-Cone-based algorithms were developed first.
+Cone-based algorithms, which were developed first, aim to cluster jets in $\eta-\phi$ space.
+They are fast and easy to implement, and produce jets with regular boundaries in $\eta-\phi$ space,
+but have many theoretical and practical downsides compared to sequential recombination algorithms.
 They typically use the highest-transverse-momentum (hardest) object in the event as a seed for a jet cone,
 then define a cone around that seed as the leading jet,
 before moving on to the next-hardest object.
@@ -170,20 +172,111 @@ In an event with a W boson decaying to two hard partons, the emission of a soft 
 \label{fig:jet_ir_safety}
 \end{figure}\cite{jet-jetography}
 
-\subsection{Sequential recombination}\label{subec:jet_seq_recombination}
+\subsection{Sequential recombination algorithms}\label{subec:jet_seq_recombination}
 
-Sequential recombination algorithms are the most commonly used jet algorithms in ATLAS today,
-and consist of the $k_T$ algorithm\cite{jet-kt-algo}, Cambridge-Aachen (C/A)\cite{jet-ca-algo}, and anti-$k_T$ algorithm\cite{jet-antikt-algo}.
-All sequential recombination algorithms start by defining a distance measure.
+Sequential recombination algorithms are the most commonly used jet algorithms in ATLAS today.
+Instead of clustering in $\eta-\phi$ space, they cluster in transverse momentum space.
+The resulting jets have irregular boundaries, which adapt to soft radiation.
+Sequential recombination algorithms are generally slower to run,
+but have become more popular since the invention of the FastJet\cite{jet-fastjet} algorithm.
+Sequential recombination algorithms are IRC safe.
 
+All sequential recombination algorithms start by defining a distance measure:
 
-\subsubsection{Cambridge-Aachen (p=0)}
+\begin{align}\label{eq:jet_distance}
+    d_{ij} = min\left(k_{Ti}^{2p}, k_{Tj}^{2p}\right)\frac{\Delta_{ij}}{R^2} \\
+    d_{iB} = k_{Ti}^{2p}
+\end{align}
 
-\subsubsection{$k_T$ (p=1)}
+Where the indices $i$ and $j$ are used for two objects under consideration,
+$d_{ij}$ is the distance between those two objects, $k_T$ is the transverse momentum,
+$\Delta_{ij}^2 \equiv (\eta_i-\eta_j)^2 + (\phi_i-\phi_j)^2$ is the distance-squared in $\eta-\phi$ space,
+and $p$ and $R$ are two parameters that control the behavior of the algorithm.
+The object-beam distance, $d_{iB}$ is also used by the algorithms, and is defined for each object individually rather than for pairs of objects.
 
-\subsubsection{anti-$k_T$ (p=-1)}
+The choice of $R^2$ roughly controls the area of the resulting jets.
+It is often referred to as a radius parameter, but the jets that result from these algorithms have irregular shapes,
+so this term is used loosely.
+
+The choice of $p$ determines the class of sequential recombination algorithms, each of which has different properties.
+
+All sequential reclustering algorithms use these distance measures in the following way:
+
+\begin{enumerate}
+    \item Calculate $d_{ij}$ over all pairs of objects, and $d_i$ for each object individually
+    \item If the minimum of the set $\{d_{ij}, d_i\}$ is one of the $d_{ij}$'s:
+        \subitem Sum the four vectors of objects $i$ and $j$
+        \subitem Add the resultant four-vector to the list of objects, and remove the four vectors for objects $i$ and $j$
+        \subitem Go to Step 1
+    \item Else if the minimum of the set $\{d_{ij}, d_i\}$ is one of the $d_i$'s:
+        \subitem Call the object $i$ a jet
+        \subitem Remove the object $i$ from the list of objects
+        \subitem Go to Step 1
+\end{enumerate}
+
+An inclusive clustering algorithm stops when all objects have been clustered into a jet.
+An exclusive algorithm stops when a pre-defined number of jets have been clustered.\cite{jet-algo-review}
+
+The Cambridge-Aachen (C/A) algorithm has $p=0$, and so does not directly use the transverse momentum of the jets.
+Instead the distance measure is purely in terms of pseudorapidity and azimuthal angle,
+so objects are clustered based on how close together they are in this radial distance measure.
+The boundaries of resulting jets are sensitive to random fluctuations of soft objects,
+such as those from pileup and the underlying event.
+
+The $k_T$ algorithm has $p=1$, and so starts by clustering objects which are both spatially close together and have low momentum.
+Like with the C/A algorithm, the resulting jets are sensitive to random flucutations in soft objects from pileup and the underlying event.
+
+In the anti-$k_T$ algorithm, the objects which are closest together and hardest are clustered together first.
+The resulting jet shapes are insensitive to the details of the soft radiation.
+So the impact of pileup and the underlying event on jet momentum resolution is smallest for the anti-$k_T$ algorithm\cite{jet-antikt-algo}.
+
+A comparison of the different jet clustering algorithms can be seen in figure~\ref{fig:jet_algo_compare}.
+The same parton-level simulated event data was input into four different jet clustering algorithms.
+Random soft particles were also added to the parton-level event data.
+The resulting jets are plotted in $y-\phi$ space, with colors labelling the different jets, and the height of each bar
+indicating the transverse momentum in that region.
+For the $k_T$ and $C/A$ algorithms, the jet boundaries are highly irregular, and depend strongly on the details of the random soft particles.\cite{jet-antikt-algo}
+
+\begin{figure}[h!]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_algo_compare}
+\caption{Results of running four different jet clustering algorithm on the same set of parton-level simulated event data.
+SISCone (lower-left) is a cone-based algorithm, while the other three are sequential recombination algorithms defined
+by different values of $p$.}
+\label{fig:jet_algo_compare}
+\end{figure}\cite{jet-antikt-algo}
+
 
 \section{Substructure}\label{sec:jet_substructure}
+
+As the center-of-mass energy of collisions increases, it becomes increasingly important to study the internal structure
+of jets, in addition to the kinematic properties of jets within events.
+The decay products of hadronically-decaying heavy objects, such as W or Higgs bosons,
+become harder to resolve into separate jets as the momentum of the original object increases.
+Recently, a large number of jet substructure observables have been developed, and an entire subfield has emerged
+dedicated to the study of the internal properties of jets.
+
+For a two-pronged decay, for example $W \rightarrow q\bar{q}$, the angular separation between the decay products is given by:
+
+\begin{equation}\label{eq:jet_boosted_sep}
+    \Delta R = \frac{p_{T}}{2m}
+\end{equation}
+
+Where $p_T$ is the transverse momentum of the $W$, and $m$ is the $W$ mass.
+For $W$ bosons with $p_T \gg m$, jets with radius parameter $R = 0.4$ will no longer resolve the decay products into separate jets,
+but instead will contain the all decay products of the $W$ into a single jet.
+
+\begin{figure}[h!]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_radial_sep}
+\caption{}
+\label{fig:jet_radial_sep}
+\end{figure}
+
+\subsection{Large-R jet algorithms}\label{subsec:large_r_jets}
+\subsubsection{Grooming}
+\subsubsection{Trimming}
+
 \subsection{Boosted objects}\label{subsec:jet_boosted_substructure}
 \subsection{Accidental substructure}\label{subsec:jet_accidental_substructure}
 
