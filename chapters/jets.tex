@@ -330,7 +330,32 @@ For each fat jet:
 In the first step, a radius parameter and clustering algorithm must be chosen.
 The subjet radius parameter must be smaller than the original radius parameter.
 Often the $k_T$ algorithm is used for subjet clustering, in order to preserve as much of the FSR as possible.
-Rejecting FSR results in reduced jet mass resolution.
+Rejecting FSR results in reduced jet mass resolution.\cite{jet-tasi-substructure}
+The trimming procedure is illustrated in figure~\ref{fig:jet_trimming}
+
+\begin{figure}[h!]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_trimming}
+\caption{}
+\label{fig:jet_trimming}
+\end{figure}
+
+The values of $R_{sub}$ and $f_{cut}$ can be chosen to reduce pileup sensitivity and maximize jet mass resolution for the signal of interest.
+
+The effect of different grooming techniques, including trimming, on jet mass resolution can be seen in figure~\ref{fig:jet_grooming_effect}.
+For dijet events, high-mass jets are highly suppressed by grooming, which leads to a better signal-to-background ratio
+for signals of hadronically decaying boosted objects with QCD dijet backgrounds.
+For $t\bar{t}$ events, the top-mass peak is somewhat visible before grooming, although much wider than after grooming.
+The $W$-mass peak, which is originally completely hidden due to unassociated radiation effects,
+can be recovered with any of the grooming methods.
+
+\begin{figure}[h!]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_grooming_effect}
+\caption{Measured jet mass distributions before and after grooming, for various grooming techniques.
+Mass distributions are shown for both dijet events (left) and $t\bar{t}$ events (right).}
+\label{fig:jet_grooming_effect}
+\end{figure}
 
 \section{Reconstruction in ATLAS}\label{sec:jet_reconstruction}
 \subsection{Clustering}\label{subsec:jet_clustering}
