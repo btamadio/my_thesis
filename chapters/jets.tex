@@ -1,5 +1,25 @@
 \chapter{Jets} \label{ch:jets}
 
+A jet is a collimated spray of stable particles measurable in the detector,
+which arises from the production of a quark or gluon in the scattering process.
+Due to QCD confinement, the quarks and gluons themselves can never be observed,
+so jets serve as a kind of observable proxy for these more fundamental particles.
+However, there is not a simple one-to-one correspondence between each jet measured in an event and a quark or gluon in the hard scattering process.
+Due to the complex nature of proton-proton collisions, as well as the fundamental probabilistic nature of quantum mechanics,
+the partonic source for a given jet can never be specified exactly.
+Likewise, when performing theoretical calculations, the number and property of jets that arise from a given parton produced in the hard scattering
+can only be specified probabilistically.
+Section~\ref{sec:jet_collisions} will explain the many different parts of a proton-proton collision that contribute to jet production.
+
+Furthermore, the number and properties of jets measured in a single event will depend on the choice of jet reconstruction algorithm.
+In order for experimentalists to test the predictions of theory, it's important for standard jet definitions to be decided upon.
+While there is no one theoretically correct choice of jet definition, there are certain properties of jet algorithms
+that make them more or less desirable.
+The different kinds of jet algorithms and their properties will be discussed in section~\ref{sec:jet_clustering}
+
+Section~\ref{sec:jet_substructure} will discuss jet substructure, which are the internal properties of jets.
+And section~\ref{sec:jet_reconstruction} will explain the process of jet reconstruction and calibration in ATLAS.
+
 \section{The proton-proton collision environment}\label{sec:jet_collisions}
 
 As discussed in~\ref{subsec:qcd_pdfs}, the goal of proton-proton collision experiments is to understand the interactions
@@ -61,8 +81,101 @@ However, the MC estimates have very large uncertainties, for the reasons given a
 As a result, data driven estimation methods are used for determining the background rate of multijet events.
 
 \section{Clustering Algorithms}\label{sec:jet_clustering}
-\subsection{The $k_T$ algorithm}\label{subsec:jet_kt}
-\subsection{The anti-$k_T$ algorithm}\label{subsec:jet_anti_kt}
+
+In order to measure jets in an event, a decision has to be made on the type of jet reconstruction algorithm to use.
+The observable result of a collision event can consists of many clusters of stable particles or calorimeter hits.
+Exactly which particles to cluster together is highly non-trivial, and developing the algorithms to make these decisions
+is an active area of research in particle physics.
+
+The 1990 Snowmass accord defined a set of criteria which should be met by any jet algorithm.
+The criteria for a developing a jet reconstruction algorithm are:
+
+\begin{enumerate}
+    \item Simple to implement in an experimental analysis
+    \item Simple to implement in the theoretical calculation
+    \item Defined at any order in perturbation theory
+    \item Yields finite cross sections at any order of perturbation theory
+    \item Yields a cross section that is relatively insensitive to hadronization
+\end{enumerate}\cite{jet-jetography,jet-snowmass}
+
+Jet reconstruction algorithms that meet all of these criteria allow experimentalists to test theoretical prediction,
+because both the theoretical calculations and experimental analysis can use the same jet definition.
+Jet algorithms are defined as acting on abstract "objects".
+The last Snowmass criteria ensures that in theoretical calculations,
+jet algorithms can be applied at either the parton-level or hadron level.
+In either case, the object which the algorithm acts on will be a particle.
+Jet algorithms can also be applied by experimentalists to reconstruct jets from either simulated or real calorimeter hits.
+In this case, the object which the algorithm acts on is a cluster of calorimeter hits.
+
+Historically, there have been two major types of jet algorithms used in particle physics experiments:
+cone-based algorithms and sequential recombination algorithms.
+Cone-based algorithms were developed first.
+They typically use the highest-transverse-momentum (hardest) object in the event as a seed for a jet cone,
+then define a cone around that seed as the leading jet,
+before moving on to the next-hardest object.
+Cone-based algorithms have the advantage of producing regularly-shaped jet boundaries,
+which can simplify theoretical calculations and make experimental calibration easier~\cite{jet-cone-algo}.
+However, cone-based algorithms typically collinear safety,
+which are properties that need to be satisfied to meet the Snowmass criteria.
+
+\subsection{IRC Safety}\label{subsec:jet_irc_safety}
+
+Jet algorithms should ideally possess infrared and collinear (IRC) safety.
+This means that their results should not change due to soft gluon emissions or near-collinear emissions
+during either the parton shower or hadronization process.
+IRC safety is important because soft and collinear emissions are extremely common in QCD,
+occur randomly, are hard to predict, and can lead to divergences in perturbative calculations if the algorithm is IRC-unsafe.\cite{jet-jetography}
+
+\subsubsection{Collinear safety}
+
+A collinear-safe algorithm is insensitive to near-collinear emissions that occur during parton showering or hadron decays.
+Cone-based algorithms are collinearly unsafe because they seed jets with the hardest object in the event,
+which is very likely to change if there is a near-collinear emission.
+
+In figure~\ref{fig:jet_collinear_safety}, for the collinear-unsafe cone-based algorithm,
+the hardest object in the event changes depending on whether the radiated gluon is reabsorbed or emitted nearly collinear to the original quark.
+Thus, the resulting seed will change, yielding different jet results.
+The loop diagram and collinear emission diagram both lead to divergences in the theoretical cross-section.
+In a collinear-safe algorithm, the two divergences would cancel out because both amplitudes must be added to calculate the rate
+of the single jet being produced.
+But in a collinear-unsafe algorithm, the two divergences do not cancel out, so perturbation cross-sections are not finite.
+
+\begin{figure}[h!]
+    \centering
+\includegraphics[width=0.6\linewidth]{jet_collinear_safety}
+\caption{Illustration comparing the results of collinear-safe (left) and collinear-unsafe (right) jet clustering algorithms.
+The emission of a near-collinear gluon changes the number of jets in the event, and results in diverges in theoretical calculations.
+The x-axis represents rapidity, and y-axis represents transverse momentum.}
+\label{fig:jet_collinear_safety}
+\end{figure}\cite{jet-jetography}
+
+\subsubsection{Infrared safety}
+
+A related concept is that of infrared safety.
+Jet algorithms should insensitive to soft gluon emissions.
+These emissions are extremely common during parton showering, and since they occur in the non-perturbative regime of QCD,
+very hard to accurately predict.
+
+Figure~\ref{fig:jet_ir_safety} illustrates the result of an infrared-unsafe algorithm.
+A W boson decays to a quark-antiquark pair, which should result in two hard jets.
+Diagrams (b) and (c) each lead to IR divergences, which would cancel if the algorithm is infrared-safe.
+But for an infrared-unsafe algorithm, diagram (c) leads to a different number of jets from diagram (b),
+so the divergences do not cancel.
+
+\begin{figure}[h!]
+    \centering
+\includegraphics[width=0.6\linewidth]{jet_ir_safety}
+\caption{Illustration of infrared unsafety.
+In an event with a W boson decaying to two hard partons, the emission of a soft gluon can change the result of an infrared-unsafe algorithm.}
+\label{fig:jet_ir_safety}
+\end{figure}\cite{jet-jetography}
+
+\subsection{Sequential recombination}\label{subec:jet_seq_recombination}
+
+Sequential recombination algorithms are the most commonly used jet algorithms in ATLAS today,
+and consist of the $k_T$ algorithm, Cambridge-Aachen (C/A), and anti-$k_T$ algorithm.
+
+
 
 \section{Substructure}\label{sec:jet_substructure}
 \subsection{Boosted objects}\label{subsec:jet_boosted_substructure}
