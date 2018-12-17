@@ -1,0 +1,1 @@
+compile with ltx2any thesis.tex
