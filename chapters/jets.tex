@@ -279,7 +279,7 @@ so the substructure of $R=1.0$ jets can potentially be used to reconstruct these
 \label{fig:jet_radial_sep}
 \end{figure}
 
-When dealing with boosted objects, larger radius parameters are often used, in order to incrase the probability
+When dealing with boosted objects, larger radius parameters are often used, in order to increase the probability
 of capturing the full decay products of a boosted object.
 Jets with large radius parameters, typically $R=1.0$ or $R=1.2$ are referred to as fat jets.
 
@@ -337,7 +337,7 @@ The trimming procedure is illustrated in figure~\ref{fig:jet_trimming}
     \centering
 \includegraphics[width=0.9\linewidth]{jet_trimming}
 \caption{Illustration of the trimming procedure, one of several grooming methods used to remove the contribution
-of unassocated radiation to fat jet mass.}
+of unassociated radiation to fat jet mass.}
 \label{fig:jet_trimming}
 \end{figure}
 
@@ -359,7 +359,70 @@ Mass distributions are shown for both dijet events (left) and $t\bar{t}$ events 
 \end{figure}
 
 \section{Reconstruction in ATLAS}\label{sec:jet_reconstruction}
-\subsection{Clustering}\label{subsec:jet_clustering}
+The goal of jet measurements in ATLAS is to capture and reconstruct both the energy and momentum of jets leaving the
+collision point.
+Calorimeter jets use clusters of calorimeter cell hits as inputs to the clustering algorithms outlined
+in~\ref{sec:jet_clustering}.
+
+\subsection{Topological cell clusters}\label{subsec:jet_topo_clusters}
+\subsubsection{Clustering algorithm}\label{subsubsec:jet_topo_algo}
+Topological cell clusters, or topo-clusters, are three-dimensional clusters of calorimeter cell energy measurements.
+By clustering groups of calorimeter cells into topo-clusters, the number of inputs to the jet reconstruction algorithm
+is reduced.
+Topo-clustering also reduces calorimeter noise by rejecting cell signals not associated to other nearby significant
+cell signals.\cite{jet-topo-cluster}
+Topo-clusters serve as the main input to the jet clustering algorithms when reconstructing calorimeter jets in ATLAS .
+The two sources of calorimeter cell noise are electronic noise and pileup.
+
+The algorithm is based on the signal-to-noise ratio in each cell, $\zeta_{cell} = E_{cell}/\sigma_{cell}$.
+There are three tunable parameters used in the algorithm, labeled $S$, $N$, and $P$, where $S > N \geq P$.
+
+For purposes of the algorithm, a cell is considered to be a \textit{neighbor} of another cell if the two cells are
+adjacent in the same layer, or if they are in adjacent layers and have any overlap.\cite{jet-topo-cluster}
+
+The algorithm is as follows:
+\begin{itemize}
+    \item Label any cell with $\zeta_{cell}>S$ a seed cell.
+    \item Collect all neighboring cells to a seed cell into a proto-cluster.
+    \item If any cell in the proto-cluster has $\zeta_{cell}>N$, collect its neighbors into the proto-cluster.
+    \item Repeat the previous step until the set of neighbors collected has $\zeta_{cell}<N$.
+    \item Reject any cells with $\zeta_{cell}<P$.
+\end{itemize}
+
+At any time in the algorithm, if any cell with $\zeta_{cell}>N$ belongs two proto-clusters, then the two
+proto-clusters are merged.\cite{jet-topo-cluster}
+
+Once the algorithm terminates, the final set of topo-clusters are used as the inputs to the desired jet clustering
+algorithm.
+
+A result of this algorithm is that isolated cells with $\zeta_{cell} < N$ are rejected, which reduces that amount
+of noise entering the jet clustering algorithm.
+These cells are less likely to contain signal than cells with $\zeta_{cell}<N$ that neighbor cells with higher
+signal-to-noise ratio.
+
+This clustering algorithm does not guarantee that all the energy of a given particle in the jet will be captured by a single
+topo-cluster, nor does it guarantee that a single topo-cluster only contains energy from a single particle.
+So topo-clusters are not measurements of individual particles in the jet.
+
+The three parameters $S$, $N$, and $P$ are tuned on test-beam data with known energy to maximize the measured energy
+while minimizing the energy resolution\cite{jet-energy-measurement}.
+
+Results of the test beam energy measurements with $180~GeV$and $20~GeV$ pions can be seen in~\ref{fig:jet_snp_tuning}.
+
+\begin{figure}[h!]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_snp_tuning}
+\caption{Average energy and energy resolution measured for $180~GeV$ and $20~GeV$ pions with different values of the
+topo-clustering parameters $S$, $N$, and $P$.
+The x-axis of each plot represents choices for all three parameters, and the y-axis indicates either the average
+energy deposited in each cluster $<E_{clusters}>$ or the energy resolution $RMS/<E_{clusters}>$}
+\label{fig:jet_snp_tuning}
+\end{figure}\cite{jet-energy-measurement}
+
+Based on these measurements, the default parameter values chosen for ATLAS topo-clustering are $S=4$, $N=2$, $P=0$.
+
+\subsubsection{Topo-cluster moments}\label{subsubsec:jet_topo_moments}
+
 \subsection{Calibration}\label{subsec:jet_calibration}
-\subsection{Full and Fast Simulation Comparison}\label{subsec:jet_full_vs_fast_sim}
 \subsection{Flavor Tagging}\label{subsec:jet_flavor_tagging}
+\subsection{Simulation}\label{subsec:jet_full_vs_fast_sim}
