@@ -365,7 +365,6 @@ Calorimeter jets use clusters of calorimeter cell hits as inputs to the clusteri
 in~\ref{sec:jet_clustering}.
 
 \subsection{Topological cell clusters}\label{subsec:jet_topo_clusters}
-\subsubsection{Clustering algorithm}\label{subsubsec:jet_topo_algo}
 Topological cell clusters, or topo-clusters, are three-dimensional clusters of calorimeter cell energy measurements.
 By clustering groups of calorimeter cells into topo-clusters, the number of inputs to the jet reconstruction algorithm
 is reduced.
@@ -421,8 +420,94 @@ energy deposited in each cluster $<E_{clusters}>$ or the energy resolution $RMS/
 
 Based on these measurements, the default parameter values chosen for ATLAS topo-clustering are $S=4$, $N=2$, $P=0$.
 
-\subsubsection{Topo-cluster moments}\label{subsubsec:jet_topo_moments}
+The topo-cluster four momenta are used as the input objects to the jet clustering algorithms.
+Other properties of the topo-clusters, known as cluster moments, are used in calibration of the topo-clusters.
 
 \subsection{Calibration}\label{subsec:jet_calibration}
+Calibration of topo-clusters is performed before inputting them into the jet clustering algorithms.
+Calibration is needed in order to correct for the calorimeters' differing response to electromagnetic and hadronic
+showers, to correct for signal loss arising from the clustering algorithm, and to account for signal loss due to
+inactive material.
+The calibration strategy known as Local Cell Weighting (LCW) is used to correct for all three of these.
+
+Calibration is done using Monte Carlo simulations of neutral and charged pions in a simulated detector.
+Pions with energies up to $2~TeV$ and over a range of $\eta$ values are used.
+
+\subsubsection{Hadronic and electromagnetic repsonses}\label{subsubsec:hadronic_electromagnetic}
+The ATLAS calorimeters are non-compensating calorimeters, which means they have a lower response for hadronic showers
+than for electromagnetic showers, for the same energy deposited.
+As a result, separate calibrations are needed for hadronic and electromagnetic showers.
+A classification algorithm is used to determine the probability that each topo-cluster arose from an electromagnetic
+shower.
+This probability is called $P^{EM}$.
+The calibration weight for cell $i$ in cluster $j$ is then:
+
+\begin{equation}\label{eq:lcw_weights}
+    w_i = P_{j}^{EM}w_i^{EM}+\left(1-P^{EM}_j\right)w_i^{had}
+\end{equation}
+
+Where $P_j^{EM}$ is the predicted probability that cluster $j$ arose from an electromagnetic shower,
+$w_{i}^{EM}$ is the calibration weight for cell $i$ assuming the electromagnetic response, and
+$w_{i}^{had}$ is the calibration weight for cell $i$ assuming the hadronic response.\cite{jet-topo-cluster}
+
+Cluster classification probabilities are determined using the topo-cluster depth and signal density, as hadronic
+showers tend to deposit energy deeper in the calorimeter and have lower energy density.\cite{jet-topo-cluster}
+
+Figure~\ref{fig:jet_cluster_classification} shows the EM classification probability as a function of these two
+topo-cluster moments.
+The cell signal density is measured as energy density of the cell normalized to the total energy
+of the cluster to which it belongs.
+
+\begin{figure}[h!]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_cluster_classification}
+\caption{Cluster EM probability as a function of normalized cell signal density and depth.
+Cell that are farther away from their cluster's center, and with lower energy density are more likely to arise
+from hadronic showers.
+The red line indicates the 50\% boundary: cells falling on that line have a 50\% probability of arising from
+electromagnetic showers, while clusters below that line have a higher probability.}
+\label{fig:jet_cluster_classification}
+\end{figure}\cite{jet-topo-cluster}
+
+The hadronic calibration weight is then determined as
+
+\begin{equation}\label{eq:had_cal_weight}
+    w_{i}^{had} = \frac{E^{dep}_i}{E^{EM}_i}
+\end{equation}
+
+Where $E^{dep}_i$ is the true energy deposited in the cell, and $E^{EM}_i$ is the energy measured in the cell.
+
+\subsubsection{Out-of-cluster}\label{subsub:out_of_cluster}
+During the topo-clustering process, cells with signal fractions belows the necessary thresholds can be rejected,
+resulting in a certain amount of signal energy being lost.
+
+Lost cells with true signal energy deposited are attributed to nearby clusters.
+The relevant search area for a cluster depends on the cluster $\eta$, and ranges from $14\deg$ to $60\deg$.\cite{jet-topo-cluster}
+Lost cells can be attributed to more than one cluster, with a weight proportional to the energy deposited in each cluster.
+
+An out-of-cluster correction weight is then calculated as
+
+\begin{equation}\label{eq:out_of_cluster}
+    w_{j}^{ooc} = \frac{E_j^{ooc}+E^{dep}_j}{E^{dep}_j}
+\end{equation}
+
+Where $E_j^{ooc}$ is the total energy deposited in lost cells associated to the cluster, including a fraction
+of the energy from lost cells shared by multiple clusters.
+
+This correction is determined separately for electromagnetic and hadronic showers, using neutral and charged pions
+respectively\cite{jet-topo-cluster}
+
+\subusbsection{Dead material}\label{subsub:dead_material}
+
+Dead material is also accounted for using simulated pions in a simulated detector.
+Figure~\ref{fig:jet_lost_cells} shows an illustration of the lost cell and dead material calibration procedure.
+
+\begin{figure}[h!]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_lost_cells}
+\caption{Illustration of the procedure used to account for signal lost to lost cells and dead material.}
+\label{fig:jet_lost_cells}\cite{jet-topo-cluster}
+\end{figure}
+
 \subsection{Flavor Tagging}\label{subsec:jet_flavor_tagging}
 \subsection{Simulation}\label{subsec:jet_full_vs_fast_sim}
