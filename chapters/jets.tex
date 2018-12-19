@@ -40,7 +40,7 @@ Even though this is not a dijet or multijet production event,
 it is useful for understanding all the parts of a proton-proton collision that must be considered when calculating the
 predicted rates of multijet production.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
 \includegraphics[width=0.6\linewidth]{jet_tth_diagram}
 \caption{Diagram of a proton-proton collision event in which the hard scatter process is $t\bar{t}H$ production.
@@ -142,7 +142,7 @@ In a collinear-safe algorithm, the two divergences would cancel out because both
 of the single jet being produced.
 But in a collinear-unsafe algorithm, the two divergences do not cancel out, so perturbation cross-sections are not finite.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_collinear_safety}
 \caption{Illustration comparing the results of collinear-safe (left) and collinear-unsafe (right) jet clustering algorithms.
@@ -164,7 +164,7 @@ Diagrams (b) and (c) each lead to IR divergences, which would cancel if the algo
 But for an infrared-unsafe algorithm, diagram (c) leads to a different number of jets from diagram (b),
 so the divergences do not cancel.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_ir_safety}
 \caption{Illustration of infrared unsafety.
@@ -237,7 +237,7 @@ The resulting jets are plotted in $y-\phi$ space, with colors labelling the diff
 indicating the transverse momentum in that region.
 For the $k_T$ and $C/A$ algorithms, the jet boundaries are highly irregular, and depend strongly on the details of the random soft particles.\cite{jet-antikt-algo}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_algo_compare}
 \caption{Results of running four different jet clustering algorithm on the same set of parton-level simulated event data.
@@ -272,7 +272,7 @@ Since $m_{Z'} \gg m_{t}$, the top quarks are highly boosted, so their decay prod
 On the other hand, jets with $R = 1.0$ will capture all decay products with high efficiency,
 so the substructure of $R=1.0$ jets can potentially be used to reconstruct these boosted tops.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_radial_sep}
 \caption{Radial separation between top decay products vs. top-quark $p_T$ for top quarks produced from a theoretical heavy resonance, $Z'$}
@@ -333,7 +333,7 @@ Often the $k_T$ algorithm is used for subjet clustering, in order to preserve as
 Rejecting FSR results in reduced jet mass resolution.\cite{jet-tasi-substructure}
 The trimming procedure is illustrated in figure~\ref{fig:jet_trimming}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_trimming}
 \caption{Illustration of the trimming procedure, one of several grooming methods used to remove the contribution
@@ -350,7 +350,7 @@ For $t\bar{t}$ events, the top-mass peak is somewhat visible before grooming, al
 The $W$-mass peak, which is originally completely hidden due to unassociated radiation effects,
 can be recovered with any of the grooming methods.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_grooming_effect}
 \caption{Measured jet mass distributions before and after grooming, for various grooming techniques.
@@ -408,7 +408,7 @@ while minimizing the energy resolution\cite{energy-measurement-of-hadrons}.
 
 Results of the test beam energy measurements with $180~GeV$and $20~GeV$ pions can be seen in~\ref{fig:jet_snp_tuning}.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_snp_tuning}
 \caption{Average energy and energy resolution measured for $180~GeV$ and $20~GeV$ pions with different values of the
@@ -423,7 +423,8 @@ Based on these measurements, the default parameter values chosen for ATLAS topo-
 The topo-cluster four momenta are used as the input objects to the jet clustering algorithms.
 Other properties of the topo-clusters, known as cluster moments, are used in calibration of the topo-clusters.
 
-\subsection{Calibration}\label{subsec:jet_calibration}
+\subsection{Topo-cluster calibration}\label{subsec:topo_calibration}
+
 Calibration of topo-clusters is performed before inputting them into the jet clustering algorithms.
 Calibration is needed in order to correct for the calorimeters' differing response to electromagnetic and hadronic
 showers, to correct for signal loss arising from the clustering algorithm, and to account for signal loss due to
@@ -433,8 +434,6 @@ The calibration strategy known as Local Cell Weighting (LCW) is used to correct 
 Calibration is done using Monte Carlo simulations of neutral and charged pions in a simulated detector.
 Pions with energies up to $2~TeV$ and over a range of $\eta$ values are used.
 
-\subsubsection{Topo-cluster calibration}{subsubsec:topo_calibration}
-\subsubsubsection{Hadronic and electromagnetic responses}\label{subsubsubsec:hadronic_electromagnetic}
 The ATLAS calorimeters are non-compensating calorimeters, which means they have a lower response for hadronic showers
 than for electromagnetic showers, for the same energy deposited.
 As a result, separate calibrations are needed for hadronic and electromagnetic showers.
@@ -459,7 +458,7 @@ topo-cluster moments.
 The cell signal density is measured as energy density of the cell normalized to the total energy
 of the cluster to which it belongs.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_cluster_classification}
 \caption{Cluster EM probability as a function of normalized cell signal density and depth.
@@ -478,7 +477,6 @@ The hadronic calibration weight is then determined as
 
 Where $E^{dep}_i$ is the true energy deposited in the cell, and $E^{EM}_i$ is the energy measured in the cell.
 
-\subsubsubsection{Out-of-cluster}\label{subsubsubsec:out_of_cluster}
 During the topo-clustering process, cells with signal fractions belows the necessary thresholds can be rejected,
 resulting in a certain amount of signal energy being lost.
 
@@ -498,23 +496,87 @@ of the energy from lost cells shared by multiple clusters.
 This correction is determined separately for electromagnetic and hadronic showers, using neutral and charged pions
 respectively\cite{jet-topo-cluster}
 
-\subsubusbsection{Dead material}\label{subsubsubsec:dead_material}
-
 Dead material is also accounted for using simulated pions in a simulated detector.
 Figure~\ref{fig:jet_lost_cells} shows an illustration of the lost cell and dead material calibration procedure.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_lost_cells}
 \caption{Illustration of the procedure used to account for signal lost to lost cells and dead material.}
 \label{fig:jet_lost_cells}\cite{jet-topo-cluster}
 \end{figure}
 
-\subsubsection{Jet Calibration}
-After calibration, the jet clustering algorithms can be run on the topo clusters according the procedures decribed
-in~\ref{sec:jet_clustering}.
+\subsection{Jet Calibration}\label{subsec:jet_calibration}
+For large-R jets, the LCW calibration method is applied to topological clusters as described
+in~\ref{subsec:topo_calibration} before inputting the topo-clusters into the jet clustering algorithm.
 
-After jet clustering, further calibration is required on the resulting jets in ord
+After jet clustering, further calibration is required on the resulting jets in order to ensure that the measured
+energy matches the true energy deposited in the detector.
+This is known as the jet energy scale, or JES, calibration.
+
+Several different energy scales are defined in order to describe topo-clusters or jets at different stages in the
+calibration process.
+Those scales are defined as follows:
+
+\begin{itemize}
+    \item EM scale: energy as measured directly by the calorimeters
+    \item LCW scale: energy after applying the LCW method
+    \item EM+JES scale: energy after applying jet-level calibration, if LCW was not used
+    \item LCW+JES scale: energy after applying LCW and jet-level calibrations
+\end{itemize}
+
+\subsubsection{JES Calibration}\label{subsubsec:jes_calibration}
+
+For the JES calibration of large-R jets, the energy correction procedure described in~\cite{jet-energy-measurement}
+is applied.
+Unlike in ~\cite{jet-energy-measurement}, however, the Monte Carlo used for calibration does include pileup.
+The reason for this is that large-R jets do not receive a pileup-specific calibration before the JES calibration,
+unlike standard jets.\cite{jet-substructure-perf}.
+
+The calibration is done by measuring the JES response in bins of true jet energy ($E_{truth}$) and $\eta$.
+
+The response is:
+
+\begin{equation}\label{eq:jet_jes_response}
+    \mathcal{R} = E_{meas} / E_{truth}
+\end{equation}
+
+For each $\left(E_{truth}, \eta\right)$ bin, the average response $\left<\mathcal{R}\right>$
+and average measured energy $\left<E_{meas}\right>$ are measured.
+
+A one-dimensional calibration function $\mathcal{F}_k\left(E_{meas}\right)$ is then obtained by fitting to the
+distribution of $\left<E_{meas}\right>$ vs. $\left<\mathcal{R}\right>$ in each $\eta$
+bin $k$.\cite{jet-energy-measurement}
+
+Once the calibration functions $\mathcal{F}_k(E_{meas})$ are determined from Monte Carlo, they are applied to
+jets measured in data.
+The calibrated energy for a jet measured with $\eta$ in bin $k$ is:
+
+\begin{equation}\label{eq:jet_jes_calibration}
+    E_{calib} = \frac{E_{meas}}{\mathcal{F}_k\left(E_{meas}\right)}
+\end{equation}\cite{jet-energy-measurement}
+
+\subsubsection{JMS Calibration}\label{subsubsec:jms_calibration}
+
+For large-R jets, the jet mass scale (JMS) must be calibrated in addition to the jet energy scale.
+A similar procedure to that described in~\ref{subsubsec:jes_calibration} is applied to the JMS calibration,
+using the jet mass response in place of the jet energy response.
+
+The jet mass response is defined analogously to the jet energy response:
+
+\begin{equation}\label{eq:jet_mass_response}
+    \mathcal{R}^{mass} = m_{meas} / m_{true}
+\end{equation}
+
+The jet mass response before and after calibration can be seen in~\ref{fig:jet_jms_response}.
+
+\begin{figure}[!ht]
+    \centering
+\includegraphics[width=0.6\linewidth]{jet_jms_calibration.png}
+\caption{Jet mass response as a function of $\eta$ before and after JMS calibration, for anti-$k_T$ jets
+with $R=1.0$ at the LCW scale, without grooming.}
+\label{fig:jet_jms_response}
+\end{figure}\cite{jet-substructure-perf}
 
 \subsection{Flavor Tagging}\label{subsec:jet_flavor_tagging}
 \subsection{Simulation}\label{subsec:jet_full_vs_fast_sim}
