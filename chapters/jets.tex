@@ -404,7 +404,7 @@ topo-cluster, nor does it guarantee that a single topo-cluster only contains ene
 So topo-clusters are not measurements of individual particles in the jet.
 
 The three parameters $S$, $N$, and $P$ are tuned on test-beam data with known energy to maximize the measured energy
-while minimizing the energy resolution\cite{jet-energy-measurement}.
+while minimizing the energy resolution\cite{energy-measurement-of-hadrons}.
 
 Results of the test beam energy measurements with $180~GeV$and $20~GeV$ pions can be seen in~\ref{fig:jet_snp_tuning}.
 
@@ -416,7 +416,7 @@ topo-clustering parameters $S$, $N$, and $P$.
 The x-axis of each plot represents choices for all three parameters, and the y-axis indicates either the average
 energy deposited in each cluster $<E_{clusters}>$ or the energy resolution $RMS/<E_{clusters}>$}
 \label{fig:jet_snp_tuning}
-\end{figure}\cite{jet-energy-measurement}
+\end{figure}\cite{energy-measurement-of-hadrons}
 
 Based on these measurements, the default parameter values chosen for ATLAS topo-clustering are $S=4$, $N=2$, $P=0$.
 
@@ -433,7 +433,8 @@ The calibration strategy known as Local Cell Weighting (LCW) is used to correct 
 Calibration is done using Monte Carlo simulations of neutral and charged pions in a simulated detector.
 Pions with energies up to $2~TeV$ and over a range of $\eta$ values are used.
 
-\subsubsection{Hadronic and electromagnetic repsonses}\label{subsubsec:hadronic_electromagnetic}
+\subsubsection{Topo-cluster calibration}{subsubsec:topo_calibration}
+\subsubsubsection{Hadronic and electromagnetic responses}\label{subsubsubsec:hadronic_electromagnetic}
 The ATLAS calorimeters are non-compensating calorimeters, which means they have a lower response for hadronic showers
 than for electromagnetic showers, for the same energy deposited.
 As a result, separate calibrations are needed for hadronic and electromagnetic showers.
@@ -477,7 +478,7 @@ The hadronic calibration weight is then determined as
 
 Where $E^{dep}_i$ is the true energy deposited in the cell, and $E^{EM}_i$ is the energy measured in the cell.
 
-\subsubsection{Out-of-cluster}\label{subsub:out_of_cluster}
+\subsubsubsection{Out-of-cluster}\label{subsubsubsec:out_of_cluster}
 During the topo-clustering process, cells with signal fractions belows the necessary thresholds can be rejected,
 resulting in a certain amount of signal energy being lost.
 
@@ -497,7 +498,7 @@ of the energy from lost cells shared by multiple clusters.
 This correction is determined separately for electromagnetic and hadronic showers, using neutral and charged pions
 respectively\cite{jet-topo-cluster}
 
-\subusbsection{Dead material}\label{subsub:dead_material}
+\subsubusbsection{Dead material}\label{subsubsubsec:dead_material}
 
 Dead material is also accounted for using simulated pions in a simulated detector.
 Figure~\ref{fig:jet_lost_cells} shows an illustration of the lost cell and dead material calibration procedure.
@@ -508,6 +509,12 @@ Figure~\ref{fig:jet_lost_cells} shows an illustration of the lost cell and dead 
 \caption{Illustration of the procedure used to account for signal lost to lost cells and dead material.}
 \label{fig:jet_lost_cells}\cite{jet-topo-cluster}
 \end{figure}
+
+\subsubsection{Jet Calibration}
+After calibration, the jet clustering algorithms can be run on the topo clusters according the procedures decribed
+in~\ref{sec:jet_clustering}.
+
+After jet clustering, further calibration is required on the resulting jets in ord
 
 \subsection{Flavor Tagging}\label{subsec:jet_flavor_tagging}
 \subsection{Simulation}\label{subsec:jet_full_vs_fast_sim}
