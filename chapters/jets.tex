@@ -42,7 +42,7 @@ predicted rates of multijet production.
 
 \begin{figure}[!ht]
     \centering
-\includegraphics[width=0.6\linewidth]{jet_tth_diagram}
+\includegraphics[width=0.8\linewidth]{jet_tth_diagram}
 \caption{Diagram of a proton-proton collision event in which the hard scatter process is $t\bar{t}H$ production.
 Illustrated are the initial state radiation, underlying event, hard-scatter process, final state parton shower,
 fragmentation, hadron decays, and final state QED radiation.}
@@ -572,11 +572,116 @@ The jet mass response before and after calibration can be seen in~\ref{fig:jet_j
 
 \begin{figure}[!ht]
     \centering
-\includegraphics[width=0.6\linewidth]{jet_jms_calibration.png}
+\includegraphics[width=0.9\linewidth]{jet_jms_calibration.png}
 \caption{Jet mass response as a function of $\eta$ before and after JMS calibration, for anti-$k_T$ jets
 with $R=1.0$ at the LCW scale, without grooming.}
 \label{fig:jet_jms_response}
 \end{figure}\cite{jet-substructure-perf}
 
-\subsection{Flavor Tagging}\label{subsec:jet_flavor_tagging}
+\subsection{B-Tagging}\label{subsec:jet_b_tagging}
+
+The identification of jets containing b hadrons, referred to as b-jets, is very important for many different ATLAS
+physics analyses.
+B-tagging is the process of identifying these jets and distinguishing them from jets that do not
+contain b hadrons.
+Jets containing c hadrons can also be distinguished using similar methods.
+Jets that don't contain either b hadrons or c hadrons are known as light-flavor jets.
+B-tagging and c-tagging are collectively known as flavor tagging.
+B-tagging is used in this analysis to suppress the dominant QCD multijet contribution to the
+background, in order to increase the signal to background ratio.
+
+The main property of b hadrons that allows b-jets to be distinguished from light flavor jets is their relatively long
+lifetime, on the order of picoseconds.
+Because of their long lifetime, b hadrons can travel a measurable distance away from the primary interaction point
+before decaying.
+For example, a $50~GeV$ b hadron will travel an average of $3~mm$ before decaying.\cite{jet-bjet-perf}.
+
+Additionally, b-jets are more likely to contain muons, a fact which can be exploited by b-tagging
+algorithms to discriminate between b-jets and light flavor jets.\cite{jet-bjet-perf}
+
+In this analysis, three different b-tagging algorithms are combined into a mutlivariate algorithm referred to as MV2.
+Each of the three base algorithms uses the relatively large separation distance of b hadron decay vertices away
+from the primary vertex.
+
+\subsubsection{Impact parameter algorithm}\label{subsubsec:jet_btag_ip}
+
+In the impact parameter algorithms, IP2D and IP3D, individual tracks belonging to a jet are traced back towards the
+interaction point, and their distance of closest approach to the interaction point, known as the impact parameter,
+is calculated.
+
+Both the transverse impact parameter, $d_0$, and the longitudinal impact parameter, $z_0 \sin\theta$, are calculated.
+Their significances, $d_0/ \sigma_{d_0}$ and $z_0 \sin\theta / \sigma_{z_0 \sin\theta}$ are also calculated.
+
+IP2D uses only transverse IP significance, and IP3D uses both transverse and longitudinal IP significance.
+
+Histograms of the IP significances are calculated using a simulated $t\bar{t}$ sample for b-jets and light flavor
+jets separately.
+These histograms serve as the probability density functions (PDFs) from which a likelihood ratio discriminant is
+constructed by summing over the likelihood ratios for all tracks in a jet.\cite{jet-bjet-opt}
+
+The IP significances are considered positive if the point of closest approach is on the same side of the primary
+vertex as the direction of the jet, and negative otherwise.
+
+Figure~\ref{fig:jet_btag_ip_sig} shows the distribution of transverse and longitudinal impact parameter significances
+for both heavy quark (b and c) and light quark jets from a simulated $t\bar{t}$ sample.
+Large positive IP significances are much more likely to occur for b-jets than for light jets.
+Large negative IP significances are more likely to be from noise, and so do not provide good signal discrimination.
+
+\begin{figure}[!ht]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_btag_ip_sig}
+\caption{Transverse and longitudinal impact parameter significance distributions for a sample of simulated $t\bar{t}$
+events.}
+\label{fig:jet_btag_ip_sig}
+\end{figure}\cite{jet-bjet-opt}
+
+\subsubsection{Secondary vertex algorithm}\label{subsubsec:jet_btag_svx}
+
+The secondary vertex algorithm (SVX) also makes use of the long b hadron lifetime and mean flight path.
+Rather than calculating impact parameters for individual tracks, multiple tracks are traced back to find where they
+intersect other tracks, in order to reconstruct secondary vertices.\cite{jet-commissioning-b-tagging}
+
+Some filtering is done to reject long-lived particles and other background processes.
+Candidate tracks are required to be a certain significant distance from the primary vertex, and the tracks
+have to pass a goodness-of-fit requirement.
+
+Figure~\ref{fig:jet_btag_svx} shows the secondary vertex reconstruction rate versus jet $p_T$ and jet $\eta$ for
+b-jets, c-jets, and light flavor jets in a simulated sample of $t\bar{t}$ events.
+
+B-jets are much more likely than light flavor jets to contain a reconstructed secondary vertex that passes all of
+the selection criteria outlined in~\cite{jet-bjet-opt}.
+
+\begin{figure}[!ht]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_btag_svx}
+\caption{Secondary vertex reconstruction rate versus $p_T$ and $\eta$ for b-jets, c-jets, and light flavor jets
+from a simulated sample of $t\bar{t} events$}
+\label{fig:jet_btag_svx}
+\end{figure}\cite{jet-bjet-opt}
+
+\subsubsection{Multi-vertex algorithm}\label{subsubsec:jet_btag_jetfitter}
+
+The third algorithm used to identify b-jets from their mean flight distance from the primary vertex is the
+multi-vertex reconstruction algorithm, also known as JetFitter.
+Rather than reconstruct a single secondary vertex, JetFitter attempts to reconstruct the entire
+b hadron decay chain.\cite{jet-btag-jetfitter}
+
+Unlike the SVX algorithm, JetFitter finds multiple vertices that are required to lie in a straight line,
+along the proposed flight path of the b hadron.
+
+The difference between the SVX and JetFitter algorithm is illustrated in figure~\ref{fig:jet_btag_jetfitter}
+
+\begin{figure}[!ht]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_btag_jetfitter}
+\caption{Illustration of the difference between the secondary vertex (a) and multi-vertex (b) algorithms.}
+\label{fig:jet_btag_jetfitter}
+\end{figure}\cite{jet-btag-jetfitter}
+
+\subsubsection{Multivariate algorithm}\label{subsubsec:jet_btag_mv2}
+
+To get the maximum b-tagging performance, all three of the above mentioned algorithms are combined into a multi-variate
+algorithm knowns as MV2.
+
+
 \subsection{Simulation}\label{subsec:jet_full_vs_fast_sim}

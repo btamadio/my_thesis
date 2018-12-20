@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214241b4-fcb9-4ead-a5a3-46d194763dc4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapters/atlas.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/atlas.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapters/jets.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/jets.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapters/sm.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/sm.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapters/susy.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/susy.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/references.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/jet_jes_uncertainty.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +19,8 @@
       <file leaf-file-name="jets.tex" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="578" column="40" selection-start-line="578" selection-start-column="40" selection-end-line="578" selection-end-column="40" />
+            <state relative-caret-position="631">
+              <caret line="684" lean-forward="true" selection-start-line="684" selection-end-line="684" />
               <folding>
                 <element signature="e#4888#4899#2" expanded="true" />
                 <element signature="e#4934#4945#2" expanded="true" />
@@ -67,6 +61,13 @@
                 <element signature="e#33048#33052#3" expanded="true" />
                 <element signature="e#33273#33277#3" expanded="true" />
                 <element signature="e#34136#34140#3" expanded="true" />
+                <element signature="e#36250#36256#2" expanded="true" />
+                <element signature="e#36303#36309#2" expanded="true" />
+                <element signature="e#36330#36336#2" expanded="true" />
+                <element signature="e#36339#36345#0" expanded="true" />
+                <element signature="e#36354#36360#3" expanded="true" />
+                <element signature="e#38434#38438#3" expanded="true" />
+                <element signature="e#38849#38853#3" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,8 +76,8 @@
       <file leaf-file-name="references.bib" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/references.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-627">
-              <caret line="501" column="57" selection-start-line="501" selection-start-column="57" selection-end-line="501" selection-end-column="57" />
+            <state relative-caret-position="571">
+              <caret line="641" selection-start-line="641" selection-end-line="641" />
             </state>
           </provider>
         </entry>
@@ -85,8 +86,8 @@
         <entry file="file://$PROJECT_DIR$/thesis.log.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="49">
-                <caret line="175" selection-start-line="175" selection-end-line="175" />
+              <first_editor relative-caret-position="154">
+                <caret line="182" selection-start-line="182" selection-end-line="182" />
               </first_editor>
               <second_editor />
             </state>
@@ -106,10 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\caption{}</find>
-      <find>jet energy measurement with</find>
-      <find>GeV</find>
-      <find>\begin{figure}</find>
       <find>\begin{figure}[!htbp]</find>
       <find>begin{figure}</find>
       <find>\includegraphics[width=0.6\linewidth]</find>
@@ -136,6 +133,10 @@
       <find>TeV</find>
       <find>jet-jes-un</find>
       <find>begin{figure</find>
+      <find>\item</find>
+      <find>figure</find>
+      <find>includegraphics</find>
+      <find>c</find>
     </findStrings>
     <replaceStrings>
       <replace>figure~\ref{</replace>
@@ -174,10 +175,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="794" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -286,7 +287,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17777778" />
@@ -800,8 +801,8 @@
     <entry file="file://$PROJECT_DIR$/thesis.log.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="49">
-            <caret line="175" selection-start-line="175" selection-end-line="175" />
+          <first_editor relative-caret-position="154">
+            <caret line="182" selection-start-line="182" selection-end-line="182" />
           </first_editor>
           <second_editor />
         </state>
@@ -812,15 +813,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/references.bib">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-627">
-          <caret line="501" column="57" selection-start-line="501" selection-start-column="57" selection-end-line="501" selection-end-column="57" />
+        <state relative-caret-position="571">
+          <caret line="641" selection-start-line="641" selection-end-line="641" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="578" column="40" selection-start-line="578" selection-start-column="40" selection-end-line="578" selection-end-column="40" />
+        <state relative-caret-position="631">
+          <caret line="684" lean-forward="true" selection-start-line="684" selection-end-line="684" />
           <folding>
             <element signature="e#4888#4899#2" expanded="true" />
             <element signature="e#4934#4945#2" expanded="true" />
@@ -861,6 +862,13 @@
             <element signature="e#33048#33052#3" expanded="true" />
             <element signature="e#33273#33277#3" expanded="true" />
             <element signature="e#34136#34140#3" expanded="true" />
+            <element signature="e#36250#36256#2" expanded="true" />
+            <element signature="e#36303#36309#2" expanded="true" />
+            <element signature="e#36330#36336#2" expanded="true" />
+            <element signature="e#36339#36345#0" expanded="true" />
+            <element signature="e#36354#36360#3" expanded="true" />
+            <element signature="e#38434#38438#3" expanded="true" />
+            <element signature="e#38849#38853#3" expanded="true" />
           </folding>
         </state>
       </provider>
