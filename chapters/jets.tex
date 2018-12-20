@@ -678,10 +678,71 @@ The difference between the SVX and JetFitter algorithm is illustrated in figure~
 \label{fig:jet_btag_jetfitter}
 \end{figure}\cite{jet-btag-jetfitter}
 
+The efficiency to reconstruct a b hadron decay vertex as a function of jet $p_T$ and $|\eta|$ for b-jets,
+c-jets, and light flavor jets can be seen in~\ref{fig:jet_btag_jetfitter_perf}
+
+\begin{figure}[!ht]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_btag_jetfitter_perf}
+\caption{JetFitter vertex reconstruction rate versus $p_T$ and $\eta$ for b-jets, c-jets, and light flavor jets
+from a simulated sample of $t\bar{t} events$}
+\label{fig:jet_btag_jetfitter_perf}
+\end{figure}\cite{jet-btag-mv2}
+
 \subsubsection{Multivariate algorithm}\label{subsubsec:jet_btag_mv2}
 
 To get the maximum b-tagging performance, all three of the above mentioned algorithms are combined into a multi-variate
-algorithm knowns as MV2.
+algorithm known as MV2.
 
+The algorithm is a boosted decision tree (BDT) which combines the inputs from all three base algorithms mentioned above.
+The BDT is trained on a training sample for which b-jets are labeled as signal, and a mixture of light jets and
+c-jets are labeled as background\cite{jet-btag-mv2}.
 
-\subsection{Simulation}\label{subsec:jet_full_vs_fast_sim}
+Different versions of the BDT can be obtained by varying the fraction of c-jets and light quark jets in the background
+training sample.
+In this analysis, a mixture of 80\% light quark jets and 20\% c-jets are used in training the BDT, resulting
+in a discriminant known as MV2c20\cite{jet-btag-mv2}.
+
+In addition to the inputs from the three base algorithms, MV2 also includes the $p_T$ and $\eta$ of the jet.
+There are a total of 24 features input to the BDT, summarized in~\ref{fig:jet_btag_mv2_inputs}
+
+\begin{figure}[!ht]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_btag_mv2_inputs}
+\caption{Description of each of the 24 inputs for the MV2 BDT}
+\label{fig:jet_btag_mv2_inputs}
+\end{figure}\cite{jet-btag-mv2}
+
+The output of the MV2c20 BDT for b-jets, c-jets, and light flavor jets from a simulated sample of $t\bar{t}$ events
+can be seen in figure~\ref{fig:jet_btag_mv2_output}.
+
+\begin{figure}[!ht]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_btag_mv2_output}
+\caption{MV2c20 BDT output for b-jets, c-jets, and light flavor jets from a simulated sample of $t\bar{t} events$}
+\label{fig:jet_btag_mv2_output}
+\end{figure}\cite{jet-btag-mv2}
+
+The BDT reduces the selection criteria from 24 variables to a single one-dimensional discriminant.
+The performance of the algorithm in terms of b-tagging efficiency and light flavor jet rejection depends on the
+choice of threshold value for this discriminant.
+
+Figure~\ref{fig:jet_btag_mv2_eff} shows the b-tagging efficiency versus c-jet and light-jet rejection
+for the range of MV2 output cut values.
+As discussed, MV2c20 is trained with 20\% c-jets in the background sample.
+Comparing this to MV2c00, in which only light jets are included in the background training sample,
+there is clearly improved light-jet rejection by including the c-jets in the background training sample.
+
+\begin{figure}[!ht]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_btag_mv2_eff}
+\caption{B-tagging efficiency versus light-jet (a) and c-jet (b) rejection for a range of MV2 output cut values.
+The red curves are for MV2c20, in which 20\% c-jets are included in the background training sample.
+The blue curves are for Mv2c00, which only includes light jets in the background training sample.
+The improved c-jet rejection and worsened light-jet rejection can seen by comparing the two.
+}
+\label{fig:jet_btag_mv2_eff}
+\end{figure}\cite{jet-btag-mv2}
+
+In this analysis, the threshold value is chosen such that the b-jet efficiency is 70\%, resulting
+in a c-jet rejection of 8.1, $\tau$ rejection of 26, and light flavor rejection of 440.\cite{jet-btag-mv2}

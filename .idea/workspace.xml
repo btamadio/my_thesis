@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214241b4-fcb9-4ead-a5a3-46d194763dc4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapters/jets.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/jets.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/references.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +17,8 @@
       <file leaf-file-name="jets.tex" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="684" lean-forward="true" selection-start-line="684" selection-end-line="684" />
+            <state relative-caret-position="586">
+              <caret line="747" column="106" selection-start-line="747" selection-start-column="106" selection-end-line="747" selection-end-column="106" />
               <folding>
                 <element signature="e#4888#4899#2" expanded="true" />
                 <element signature="e#4934#4945#2" expanded="true" />
@@ -68,6 +66,10 @@
                 <element signature="e#36354#36360#3" expanded="true" />
                 <element signature="e#38434#38438#3" expanded="true" />
                 <element signature="e#38849#38853#3" expanded="true" />
+                <element signature="e#40019#40023#2" expanded="true" />
+                <element signature="e#40286#40290#3" expanded="true" />
+                <element signature="e#41342#41346#3" expanded="true" />
+                <element signature="e#42504#42508#3" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,8 +78,8 @@
       <file leaf-file-name="references.bib" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/references.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="641" selection-start-line="641" selection-end-line="641" />
+            <state relative-caret-position="587">
+              <caret line="653" column="1" selection-start-line="653" selection-start-column="1" selection-end-line="653" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -111,20 +113,20 @@
       <find>begin{figure}</find>
       <find>\includegraphics[width=0.6\linewidth]</find>
       <find>\includegraphics[width=\textwidth]</find>
-      <find>single hadron respons</find>
-      <find>energy measurement of had</find>
+      <find />
+      <find />
       <find>jet-energy-measurement</find>
-      <find>Performance of jet sub</find>
+      <find />
       <find>ew_lagrangian</find>
       <find>subsec:ew_lag</find>
       <find>subsec:ew_lagra</find>
       <find>[h!]</find>
-      <find>jet energy</find>
-      <find>Jet energy measurement with</find>
+      <find />
+      <find />
       <find>jet-energy-mea</find>
       <find>jet-energy-meas</find>
       <find>subsec:jet_calibration</find>
-      <find>the average response</find>
+      <find />
       <find>*Err</find>
       <find>matchcal</find>
       <find>*Error</find>
@@ -175,7 +177,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="797" />
@@ -813,15 +815,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/references.bib">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="641" selection-start-line="641" selection-end-line="641" />
+        <state relative-caret-position="587">
+          <caret line="653" column="1" selection-start-line="653" selection-start-column="1" selection-end-line="653" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="684" lean-forward="true" selection-start-line="684" selection-end-line="684" />
+        <state relative-caret-position="586">
+          <caret line="747" column="106" selection-start-line="747" selection-start-column="106" selection-end-line="747" selection-end-column="106" />
           <folding>
             <element signature="e#4888#4899#2" expanded="true" />
             <element signature="e#4934#4945#2" expanded="true" />
@@ -869,6 +871,10 @@
             <element signature="e#36354#36360#3" expanded="true" />
             <element signature="e#38434#38438#3" expanded="true" />
             <element signature="e#38849#38853#3" expanded="true" />
+            <element signature="e#40019#40023#2" expanded="true" />
+            <element signature="e#40286#40290#3" expanded="true" />
+            <element signature="e#41342#41346#3" expanded="true" />
+            <element signature="e#42504#42508#3" expanded="true" />
           </folding>
         </state>
       </provider>
