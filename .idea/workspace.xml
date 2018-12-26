@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214241b4-fcb9-4ead-a5a3-46d194763dc4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapters/signal.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/signal.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/references.bib" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="references.bib" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/references.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11145">
-              <caret line="743" column="68" selection-start-line="743" selection-start-column="68" selection-end-line="743" selection-end-column="68" />
+            <state relative-caret-position="1325">
+              <caret line="773" column="47" selection-start-line="773" selection-start-column="47" selection-end-line="773" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -26,11 +27,18 @@
       <file leaf-file-name="signal.tex" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chapters/signal.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="457">
+              <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
               <folding>
                 <element signature="e#599#603#3" expanded="true" />
                 <element signature="e#759#763#3" expanded="true" />
+                <element signature="e#4968#4975#2" expanded="true" />
+                <element signature="e#4997#5004#2" expanded="true" />
+                <element signature="e#5714#5720#2" expanded="true" />
+                <element signature="e#5727#5735#3" expanded="true" />
+                <element signature="e#5738#5746#3" expanded="true" />
+                <element signature="e#5760#5768#3" expanded="true" />
+                <element signature="e#6006#6012#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,7 +47,7 @@
       <file leaf-file-name="jets.tex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
+            <state relative-caret-position="627">
               <caret line="42" selection-start-line="42" selection-end-line="49" selection-end-column="30" />
               <folding>
                 <element signature="e#4888#4899#2" expanded="true" />
@@ -80,73 +88,6 @@
                 <element signature="e#36339#36345#2" expanded="true" />
                 <element signature="e#36355#36361#3" expanded="true" />
                 <element signature="e#40019#40023#2" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="susy.tex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5040">
-              <caret line="336" column="19" selection-start-line="336" selection-start-column="12" selection-end-line="336" selection-end-column="19" />
-              <folding>
-                <element signature="e#2632#2639#2" expanded="true" />
-                <element signature="e#4456#4462#2" expanded="true" />
-                <element signature="e#4854#4860#2" expanded="true" />
-                <element signature="e#4869#4875#2" expanded="true" />
-                <element signature="e#5009#5016#2" expanded="true" />
-                <element signature="e#5134#5141#2" expanded="true" />
-                <element signature="e#5348#5355#2" expanded="true" />
-                <element signature="e#5624#5631#2" expanded="true" />
-                <element signature="e#5636#5643#2" expanded="true" />
-                <element signature="e#5969#5975#2" expanded="true" />
-                <element signature="e#6400#6403#3" expanded="true" />
-                <element signature="e#6471#6476#3" expanded="true" />
-                <element signature="e#6933#6938#3" expanded="true" />
-                <element signature="e#7185#7188#2" expanded="true" />
-                <element signature="e#7189#7196#2" expanded="true" />
-                <element signature="e#7198#7204#2" expanded="true" />
-                <element signature="e#7617#7620#2" expanded="true" />
-                <element signature="e#7620#7627#2" expanded="true" />
-                <element signature="e#7629#7635#2" expanded="true" />
-                <element signature="e#8397#8401#2" expanded="true" />
-                <element signature="e#8933#8939#2" expanded="true" />
-                <element signature="e#8949#8956#2" expanded="true" />
-                <element signature="e#8959#8965#2" expanded="true" />
-                <element signature="e#11060#11064#2" expanded="true" />
-                <element signature="e#11068#11074#2" expanded="true" />
-                <element signature="e#11115#11121#3" expanded="true" />
-                <element signature="e#11261#11265#2" expanded="true" />
-                <element signature="e#11274#11278#2" expanded="true" />
-                <element signature="e#11280#11284#2" expanded="true" />
-                <element signature="e#11302#11306#3" expanded="true" />
-                <element signature="e#11346#11350#3" expanded="true" />
-                <element signature="e#11444#11450#2" expanded="true" />
-                <element signature="e#11457#11463#3" expanded="true" />
-                <element signature="e#11480#11486#3" expanded="true" />
-                <element signature="e#11530#11536#3" expanded="true" />
-                <element signature="e#11617#11620#3" expanded="true" />
-                <element signature="e#11623#11630#2" expanded="true" />
-                <element signature="e#11650#11653#3" expanded="true" />
-                <element signature="e#11680#11687#3" expanded="true" />
-                <element signature="e#12167#12171#2" expanded="true" />
-                <element signature="e#12206#12213#3" expanded="true" />
-                <element signature="e#12220#12227#3" expanded="true" />
-                <element signature="e#12252#12259#3" expanded="true" />
-                <element signature="e#12419#12425#2" expanded="true" />
-                <element signature="e#12426#12434#2" expanded="true" />
-                <element signature="e#12436#12442#3" expanded="true" />
-                <element signature="e#12445#12451#2" expanded="true" />
-                <element signature="e#12456#12464#2" expanded="true" />
-                <element signature="e#17459#17462#2" expanded="true" />
-                <element signature="e#17467#17474#3" expanded="true" />
-                <element signature="e#17478#17485#2" expanded="true" />
-                <element signature="e#17494#17501#2" expanded="true" />
-                <element signature="e#17592#17598#2" expanded="true" />
-                <element signature="e#17633#17639#2" expanded="true" />
-                <element signature="e#17868#17875#2" expanded="true" />
-                <element signature="e#17883#17890#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -303,7 +244,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/chapters/signal.tex</main-file>
-        <aux-dir>$APPLICATION_HOME_DIR$/bin</aux-dir>
+        <aux-dir />
       </texify-bibtex>
     </configuration>
     <configuration name="sm bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
@@ -1252,7 +1193,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5040">
+        <state relative-caret-position="369">
           <caret line="336" column="19" selection-start-line="336" selection-start-column="12" selection-end-line="336" selection-end-column="19" />
           <folding>
             <element signature="e#2632#2639#2" expanded="true" />
@@ -1317,7 +1258,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
+        <state relative-caret-position="627">
           <caret line="42" selection-start-line="42" selection-end-line="49" selection-end-column="30" />
           <folding>
             <element signature="e#4888#4899#2" expanded="true" />
@@ -1364,18 +1305,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/references.bib">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11145">
-          <caret line="743" column="68" selection-start-line="743" selection-start-column="68" selection-end-line="743" selection-end-column="68" />
+        <state relative-caret-position="1325">
+          <caret line="773" column="47" selection-start-line="773" selection-start-column="47" selection-end-line="773" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/signal.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="457">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
           <folding>
             <element signature="e#599#603#3" expanded="true" />
             <element signature="e#759#763#3" expanded="true" />
+            <element signature="e#4968#4975#2" expanded="true" />
+            <element signature="e#4997#5004#2" expanded="true" />
+            <element signature="e#5714#5720#2" expanded="true" />
+            <element signature="e#5727#5735#3" expanded="true" />
+            <element signature="e#5738#5746#3" expanded="true" />
+            <element signature="e#5760#5768#3" expanded="true" />
+            <element signature="e#6006#6012#2" expanded="true" />
           </folding>
         </state>
       </provider>

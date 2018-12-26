@@ -25,11 +25,13 @@
       <w>higgs</w>
       <w>insertable</w>
       <w>kapton</w>
+      <w>lhef</w>
       <w>massless</w>
       <w>mssm</w>
       <w>multijet</w>
       <w>muon</w>
       <w>neutralino</w>
+      <w>nnpdf</w>
       <w>parton</w>
       <w>partonic</w>
       <w>partons</w>
@@ -38,6 +40,7 @@
       <w>polyimide</w>
       <w>presampler</w>
       <w>pseudorapidity</w>
+      <w>pythia</w>
       <w>renormalizable</w>
       <w>sleptons</w>
       <w>snowmass</w>
