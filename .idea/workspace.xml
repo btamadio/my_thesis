@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214241b4-fcb9-4ead-a5a3-46d194763dc4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapters/signal.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/signal.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/references.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +17,7 @@
       <file leaf-file-name="references.bib" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/references.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
+            <state relative-caret-position="11145">
               <caret line="743" column="68" selection-start-line="743" selection-start-column="68" selection-end-line="743" selection-end-column="68" />
             </state>
           </provider>
@@ -29,18 +26,11 @@
       <file leaf-file-name="signal.tex" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chapters/signal.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="85" selection-start-line="14" selection-start-column="85" selection-end-line="14" selection-end-column="85" />
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#599#603#3" expanded="true" />
                 <element signature="e#759#763#3" expanded="true" />
-                <element signature="e#2440#2447#2" expanded="true" />
-                <element signature="e#2469#2476#2" expanded="true" />
-                <element signature="e#3186#3192#2" expanded="true" />
-                <element signature="e#3199#3207#3" expanded="true" />
-                <element signature="e#3210#3218#3" expanded="true" />
-                <element signature="e#3232#3240#3" expanded="true" />
-                <element signature="e#3478#3484#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,7 +39,7 @@
       <file leaf-file-name="jets.tex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
+            <state relative-caret-position="630">
               <caret line="42" selection-start-line="42" selection-end-line="49" selection-end-column="30" />
               <folding>
                 <element signature="e#4888#4899#2" expanded="true" />
@@ -98,7 +88,7 @@
       <file leaf-file-name="susy.tex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
+            <state relative-caret-position="5040">
               <caret line="336" column="19" selection-start-line="336" selection-start-column="12" selection-end-line="336" selection-end-column="19" />
               <folding>
                 <element signature="e#2632#2639#2" expanded="true" />
@@ -234,10 +224,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="797" />
+    <option name="height" value="790" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -313,7 +303,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/chapters/signal.tex</main-file>
-        <aux-dir />
+        <aux-dir>$APPLICATION_HOME_DIR$/bin</aux-dir>
       </texify-bibtex>
     </configuration>
     <configuration name="sm bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
@@ -356,7 +346,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="786" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="790" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17777778" />
@@ -1262,7 +1252,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/susy.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
+        <state relative-caret-position="5040">
           <caret line="336" column="19" selection-start-line="336" selection-start-column="12" selection-end-line="336" selection-end-column="19" />
           <folding>
             <element signature="e#2632#2639#2" expanded="true" />
@@ -1327,7 +1317,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/jets.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
+        <state relative-caret-position="630">
           <caret line="42" selection-start-line="42" selection-end-line="49" selection-end-column="30" />
           <folding>
             <element signature="e#4888#4899#2" expanded="true" />
@@ -1374,25 +1364,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/references.bib">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
+        <state relative-caret-position="11145">
           <caret line="743" column="68" selection-start-line="743" selection-start-column="68" selection-end-line="743" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapters/signal.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="85" selection-start-line="14" selection-start-column="85" selection-end-line="14" selection-end-column="85" />
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#599#603#3" expanded="true" />
             <element signature="e#759#763#3" expanded="true" />
-            <element signature="e#2440#2447#2" expanded="true" />
-            <element signature="e#2469#2476#2" expanded="true" />
-            <element signature="e#3186#3192#2" expanded="true" />
-            <element signature="e#3199#3207#3" expanded="true" />
-            <element signature="e#3210#3218#3" expanded="true" />
-            <element signature="e#3232#3240#3" expanded="true" />
-            <element signature="e#3478#3484#2" expanded="true" />
           </folding>
         </state>
       </provider>
