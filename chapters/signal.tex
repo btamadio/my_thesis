@@ -1,9 +1,27 @@
 \chapter{Signal Modelling and Systematics} \label{ch:signal}
 
 \section{Signal Modeling}\label{sec:signal_modeling}
-% TODO: Explain MC generators used, include grid of mG/mX used, number
-% of events simulated, etc.
-% Might need to find a backup note if it exists
+
+Simulated gluino pair-production events were generated for use in the analysis.
+Separate samples were generated for the direct decay and cascade decay models described in~\ref{subsec:rpv_gluino}.
+For the direct decay model, events were generated for gluino mass ranging from 900~GeV to 1.8~TeV .
+For the cascade model, the gluino mass was varied from 750~GeV up to 2.1~TeV, with the neutralino mass ranging from
+450~GeV to 1.9~TeV .
+For all signal points, $m_{\tilde{g}} > m_{\tilde{\chi}_1^0}$.
+Signal events were simulated for a discrete set of mass points.
+Figure~\ref{fig:signal_cascade_grid} indicates the $\left(m_{\tilde{g}}, m_{\tilde{\chi}_1^0}\right)$ points for which
+signal evens were generated.
+
+Matrix elements for the gluino pair production were generated using \textsc{MadGraph\_aMC@NLO}, which is a convenient
+framework for calculating arbitrary matrix elements at up to next-to-leading order (NLO)~\cite{}
+
+
+\begin{figure}[!ht]
+    \centering
+\includegraphics[width=0.8\linewidth]{signal_cascade_grid}
+\caption{}
+\label{fig:signal_cascade_grid}
+\end{figure}
 
 \section{Systematic Uncertainty Evaluation Method}\label{sec:signal_systematics_method}
 There are four main components to the systematic uncertainty on the
