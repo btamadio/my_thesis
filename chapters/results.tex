@@ -5,6 +5,22 @@
 Figure~\ref{fig:results_mj_dists} shows the predicted and observed $M_J^{\Sigma}$ distributions in the
 four-jet and five-jet regions, along with the total estimated background uncertainty.
 
+The red solid line indicates the estimated yield in each $M_J^{\Sigma}$ bin, and the red shaded area
+shows the total uncertainty, including statistical and systematic uncertainties.
+
+The gray dashed lines are the $\pm1\sigma$ bands from the statistical uncertaity only.
+
+There is good agreement between predicted and observed event yields across a range of $\pm1\sigma$ values,
+within the total uncertainty.
+
+The exception is in the five-jet signal region, where a slight excess of events is observed.
+
+After statistical analysis, discussed in~\ref{subsec:results_stats}, the excess is found to not be significant.
+
+The $M_J^{\Sigma}$ distributions for two different cascade decay signal mass points are also shown on the plots,
+to visualize the effect that the existence of signal events would hve on the distributions.
+
+
 \begin{figure}[!ht]
     \centering
 \includegraphics[width=0.8\linewidth]{results_mj_dists}
@@ -25,11 +41,17 @@ In the four-jet signal regions, no excess of events was observed.
 In the five-jet signal regions, an excess of events were observed, but these excesses are not statistically
 significant.
 
-Predicted and observed yields in all signal regions are shown in~\ref{fig:results_yields_table},
+Predicted and observed yields in all signal regions are shown in table~\ref{tbl:results_yields_table},
 including the number of events in the corresponding normalization region, $N_{NR}$, and the statistical and systematic
 uncertainties on the background yield predictions in those regions.
 
-\begin{figure}[!ht]
+Table~\ref{tbl:results_yields_table} also shows the number of events in the normalization region, $N_{NR}$,
+corresponding to each signal region.
+
+The central value of the prediction for each signal region is shown, as well as the statistical uncertainty,
+and the systematic uncertainties from the low-$p_T$ and high-$p_T$ uncertainty determination regions.
+
+\begin{table}[!ht]
     \centering
 \includegraphics[width=0.8\linewidth]{results_yields_table}
 \caption{Predicted and observed yields in all signal regions used in the analysis.
@@ -37,12 +59,34 @@ The number of events in the corresponding normalization regions, $N_{NR}$ is sho
 For each signal region, the minimum value of $M_J^{\Sigma}$ used to define that region is also shown.
 Additionally, the statistical uncertainty on the background yield, as well as the two systematic uncertainties,
 derived from the high-$p_T$ and low-$p_T$ UDRs are shown.}
-\label{fig:results_yields_table}
-\end{figure}
+\label{tbl:results_yields_table}
+\end{table}
 
 \section{Statistical Interpretation}\label{sec:results_stats}
 
-\section{Observed and Expected Limits}\label{sec:results_limits}
+\subsection{Determining the significance of an excess over the background prediction}\label{subsec:results_stats_excess}
+In order to determine if the excesses seen in the five-jet signal regions are statistically significant,
+a hypothesis test was conducted, using the likelihood ratio method\cite{results-stats-asymptotic}.
+
+In this case, the null hypothesis, $H_0$ is the hypothesis that the signal process does not exist, and that the
+background prediction is true.
+
+The p-value will therefore quantify the probability of observing an event yield at least as large as that observed,
+under the assumption that the signal process does not exist.
+
+Statistical uncertainties on the signal and background yields are incorporated as nuisance parameters in the likelihood
+function.
+
+The resulting p-values for the signal regions can be seen in table~\ref{tbl:results_model_ind_limits}.
+No signal region shows a statistically significant deviation from the background prediction.
+
+\subsection{Observed and Expected Limits}\label{subsec:results_limits}
+
+As there was no significant excess of events over the background prediction, no evidence for the signal model was found.
+Using the observed yields, upper bounds can be set on the gluino production cross-section of the two different
+models, as well as model-independent upper bounds.
+
+
 
 \begin{figure}[!ht]
     \centering
@@ -64,12 +108,12 @@ and $m_{\tilde{\chi}_1^0}$ values.
 \label{fig:results_ten_quark_limits}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{table}[!ht]
     \centering
     \includegraphics[width=0.8\linewidth]{results_model_ind_limits}
     \caption{}
-\label{fig:results_model_ind_limits}
-\end{figure}
+\label{tbl:results_model_ind_limits}
+\end{table}
 
 \subsection{Ten-quark model}\label{subsec:results_limits_ten_quark}
 \subsection{Six-quark model}\label{subsec:results_limits_six_quark}
