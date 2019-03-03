@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214241b4-fcb9-4ead-a5a3-46d194763dc4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/btamadio.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapters/conclusion.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/conclusion.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapters/jets.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/jets.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapters/method.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/method.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures_and_tables.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/references.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="references.bib" pinned="false" current-in-tab="false">
+      <file leaf-file-name="references.bib" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/references.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="40" column="19" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="19" />
+            <state relative-caret-position="343">
+              <caret line="137" column="1" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -188,7 +183,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="method.tex" pinned="false" current-in-tab="true">
+      <file leaf-file-name="method.tex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chapters/method.tex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3915">
@@ -285,7 +280,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>the average response</find>
       <find>*Err</find>
       <find>matchcal</find>
       <find>*Error</find>
@@ -305,7 +299,6 @@
       <find>The algorithm</find>
       <find>chapter-</find>
       <find>\cite</find>
-      <find>hedri</find>
       <find>figure</find>
       <find>bkg_uncert</find>
       <find>\ref{bkg_uncert}</find>
@@ -315,6 +308,8 @@
       <find>region_defs</find>
       <find>{region_defs}</find>
       <find>{figure}[h]</find>
+      <find>hedri</find>
+      <find>In</find>
     </findStrings>
     <replaceStrings>
       <replace>figure~\ref{</replace>
@@ -326,12 +321,12 @@
       <replace>\includegraphics[width=0.9\textwidth]</replace>
       <replace>energy-measurement-of-hadrons</replace>
       <replace>[!ht]</replace>
-      <replace>~\cite</replace>
       <replace>\ref{sec:bkg_uncert}</replace>
       <replace>\ref{sec:bkg_estimation}</replace>
       <replace>~\ref{</replace>
       <replace>{sec:region_defs}</replace>
       <replace>{figure}[!ht]</replace>
+      <replace>~\cite</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -351,13 +346,13 @@
         <option value="$PROJECT_DIR$/chapters/susy.tex" />
         <option value="$PROJECT_DIR$/chapters/atlas.tex" />
         <option value="$PROJECT_DIR$/thesis_tmp/references.bib" />
-        <option value="$PROJECT_DIR$/references.bib" />
         <option value="$PROJECT_DIR$/chapters/signal.tex" />
         <option value="$PROJECT_DIR$/chapters/sm.tex" />
         <option value="$PROJECT_DIR$/chapters/intro.tex" />
         <option value="$PROJECT_DIR$/chapters/conclusion.tex" />
         <option value="$PROJECT_DIR$/chapters/jets.tex" />
         <option value="$PROJECT_DIR$/chapters/method.tex" />
+        <option value="$PROJECT_DIR$/references.bib" />
       </list>
     </option>
   </component>
@@ -459,7 +454,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/chapters/method.tex</main-file>
-        <aux-dir />
+        <aux-dir>$APPLICATION_HOME_DIR$/bin</aux-dir>
       </texify-bibtex>
     </configuration>
     <configuration name="signal bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
@@ -1298,28 +1293,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapters/signal.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="e#599#603#3" expanded="true" />
-            <element signature="e#759#763#3" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapters/intro.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="26" column="139" selection-start-line="26" selection-start-column="139" selection-end-line="26" selection-end-column="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapters/conclusion.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="41" selection-start-column="41" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1341,13 +1318,6 @@
             <element signature="e#12805#12809#2" expanded="true" />
             <element signature="e#12812#12816#2" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/references.bib">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1565,6 +1535,27 @@
             <element signature="e#21590#21594#3" expanded="true" />
             <element signature="e#23353#23359#3" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapters/signal.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapters/conclusion.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/references.bib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="137" column="1" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
         </state>
       </provider>
     </entry>
