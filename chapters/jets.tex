@@ -45,9 +45,9 @@ predicted rates of multijet production.
 \includegraphics[width=0.8\linewidth]{jet_tth_diagram}
 \caption{Diagram of a proton-proton collision event in which the hard scatter process is $t\bar{t}H$ production.
 Illustrated are the initial state radiation, underlying event, hard-scatter process, final state parton shower,
-fragmentation, hadron decays, and final state QED radiation.}
+fragmentation, hadron decays, and final state QED radiation~\cite{sherpa-2004}.}
 \label{fig:jet_tth_diagram}
-\end{figure}\cite{sherpa-2004}
+\end{figure}
 
 The incoming protons are illustrated by green blob with three incoming arrows to represent the constituent quarks.
 The initial state parton showering, governed by QCD, is shown in blue.
@@ -126,7 +126,7 @@ Jet algorithms should ideally possess infrared and collinear (IRC) safety.
 This means that their results should not change due to soft gluon emissions or near-collinear emissions
 during either the parton shower or hadronization process.
 IRC safety is important because soft and collinear emissions are extremely common in QCD,
-occur randomly, are hard to predict, and can lead to divergences in perturbative calculations if the algorithm is IRC-unsafe.\cite{jet-jetography}
+occur randomly, are hard to predict, and can lead to divergences in perturbative calculations if the algorithm is IRC-unsafe~\cite{jet-jetography}.
 
 \subsubsection{Collinear safety}
 
@@ -147,9 +147,9 @@ But in a collinear-unsafe algorithm, the two divergences do not cancel out, so p
 \includegraphics[width=0.9\linewidth]{jet_collinear_safety}
 \caption{Illustration comparing collinear-safe (left) and collinear-unsafe (right) jet clustering algorithms.
 The emission of a near-collinear gluon changes the number of jets in the event, and results in diverges in theoretical calculations.
-The x-axis represents rapidity, and y-axis represents transverse momentum.}
+The x-axis represents rapidity, and y-axis represents transverse momentum~\cite{jet-jetography}.}
 \label{fig:jet_collinear_safety}
-\end{figure}\cite{jet-jetography}
+\end{figure}
 
 \subsubsection{Infrared safety}
 
@@ -168,7 +168,7 @@ so the divergences do not cancel.
     \centering
 \includegraphics[width=0.9\linewidth]{jet_ir_safety}
 \caption{Illustration of infrared unsafety.
-In an event with a W boson decaying to two hard partons, the emission of a soft gluon can change the result of an infrared-unsafe algorithm.}
+In an event with a W boson decaying to two hard partons, the emission of a soft gluon can change the result of an infrared-unsafe algorithm~\cite{jet-jetography}.}
 \label{fig:jet_ir_safety}
 \end{figure}\cite{jet-jetography}
 
@@ -178,7 +178,7 @@ Sequential recombination algorithms are the most commonly used jet algorithms in
 Instead of clustering in $\eta-\phi$ space, they cluster in transverse momentum space.
 The resulting jets have irregular boundaries, which adapt to soft radiation.
 Sequential recombination algorithms are generally slower to run,
-but have become more popular since the invention of the FastJet\cite{jet-fastjet} algorithm.
+but have become more popular since the invention of the FastJet algorithm~\cite{jet-fastjet}.
 Sequential recombination algorithms are IRC safe.
 
 All sequential recombination algorithms start by defining a distance measure:
@@ -215,7 +215,7 @@ All sequential reclustering algorithms use these distance measures in the follow
 \end{enumerate}
 
 An inclusive clustering algorithm stops when all objects have been clustered into a jet.
-An exclusive algorithm stops when a pre-defined number of jets have been clustered.\cite{jet-algo-review}
+An exclusive algorithm stops when a pre-defined number of jets have been clustered~\cite{jet-algo-review}.
 
 The Cambridge-Aachen (C/A) algorithm has $p=0$, and so does not directly use the transverse momentum of the jets.
 Instead the distance measure is purely in terms of pseudorapidity and azimuthal angle,
@@ -228,23 +228,23 @@ Like with the C/A algorithm, the resulting jets are sensitive to random flucutat
 
 In the anti-$k_T$ algorithm, the objects which are closest together and hardest are clustered together first.
 The resulting jet shapes are insensitive to the details of the soft radiation.
-So the impact of pileup and the underlying event on jet momentum resolution is smallest for the anti-$k_T$ algorithm\cite{jet-antikt-algo}.
+So the impact of pileup and the underlying event on jet momentum resolution is smallest for the anti-$k_T$ algorithm~\cite{jet-antikt-algo}.
 
 A comparison of the different jet clustering algorithms can be seen in figure~\ref{fig:jet_algo_compare}.
 The same parton-level simulated event data was input into four different jet clustering algorithms.
 Random soft particles were also added to the parton-level event data.
 The resulting jets are plotted in $y-\phi$ space, with colors labelling the different jets, and the height of each bar
 indicating the transverse momentum in that region.
-For the $k_T$ and $C/A$ algorithms, the jet boundaries are highly irregular, and depend strongly on the details of the random soft particles.\cite{jet-antikt-algo}
+For the $k_T$ and $C/A$ algorithms, the jet boundaries are highly irregular, and depend strongly on the details of the random soft particles~\cite{jet-antikt-algo}.
 
 \begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_algo_compare}
 \caption{Results of running four different jet clustering algorithm on the same set of parton-level simulated event data.
 SISCone (lower-left) is a cone-based algorithm, while the other three are sequential recombination algorithms defined
-by different values of $p$.}
+by different values of $p$~\cite{jet-antikt-algo}.}
 \label{fig:jet_algo_compare}
-\end{figure}\cite{jet-antikt-algo}
+\end{figure}
 
 \section{Boosted objects}\label{sec:jet_substructure}
 
@@ -275,7 +275,7 @@ so the substructure of $R=1.0$ jets can potentially be used to reconstruct these
 \begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_radial_sep}
-\caption{Radial separation between top decay products vs. top-quark $p_T$ for top quarks produced from a theoretical heavy resonance, $Z'$}
+\caption{Radial separation between top decay products vs. top-quark $p_T$ for top quarks produced from a theoretical heavy resonance, $Z'$~\cite{jet-substructure-perf}.}
 \label{fig:jet_radial_sep}
 \end{figure}
 
@@ -330,14 +330,14 @@ For each fat jet:
 In the first step, a radius parameter and clustering algorithm must be chosen.
 The subjet radius parameter must be smaller than the original radius parameter.
 Often the $k_T$ algorithm is used for subjet clustering, in order to preserve as much of the FSR as possible.
-Rejecting FSR results in reduced jet mass resolution.\cite{jet-tasi-substructure}
+Rejecting FSR results in reduced jet mass resolution~\cite{jet-tasi-substructure}.
 The trimming procedure is illustrated in figure~\ref{fig:jet_trimming}
 
 \begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_trimming}
 \caption{Illustration of the trimming procedure, one of several grooming methods used to remove the contribution
-of unassociated radiation to fat jet mass.}
+of unassociated radiation to fat jet mass~\cite{jet-grooming-slides}.}
 \label{fig:jet_trimming}
 \end{figure}
 
@@ -354,7 +354,7 @@ can be recovered with any of the grooming methods.
     \centering
 \includegraphics[width=0.9\linewidth]{jet_grooming_effect}
 \caption{Measured jet mass distributions before and after grooming, for various grooming techniques.
-Mass distributions are shown for both dijet events (left) and $t\bar{t}$ events (right).}
+Mass distributions are shown for both dijet events (left) and $t\bar{t}$ events (right)~\cite{jet-tasi-substructure}.}
 \label{fig:jet_grooming_effect}
 \end{figure}
 
@@ -369,7 +369,7 @@ Topological cell clusters, or topo-clusters, are three-dimensional clusters of c
 By clustering groups of calorimeter cells into topo-clusters, the number of inputs to the jet reconstruction algorithm
 is reduced.
 Topo-clustering also reduces calorimeter noise by rejecting cell signals not associated to other nearby significant
-cell signals.\cite{jet-topo-cluster}
+cell signals~\cite{jet-topo-cluster}.
 Topo-clusters serve as the main input to the jet clustering algorithms when reconstructing calorimeter jets in ATLAS .
 The two sources of calorimeter cell noise are electronic noise and pileup.
 
@@ -377,7 +377,7 @@ The algorithm is based on the signal-to-noise ratio in each cell, $\zeta_{cell} 
 There are three tunable parameters used in the algorithm, labeled $S$, $N$, and $P$, where $S > N \geq P$.
 
 For purposes of the algorithm, a cell is considered to be a \textit{neighbor} of another cell if the two cells are
-adjacent in the same layer, or if they are in adjacent layers and have any overlap.\cite{jet-topo-cluster}
+adjacent in the same layer, or if they are in adjacent layers and have any overlap~\cite{jet-topo-cluster}.
 
 The algorithm is as follows:
 \begin{itemize}
@@ -389,7 +389,7 @@ The algorithm is as follows:
 \end{itemize}
 
 At any time in the algorithm, if any cell with $\zeta_{cell}>N$ belongs two proto-clusters, then the two
-proto-clusters are merged.\cite{jet-topo-cluster}
+proto-clusters are merged~\cite{jet-topo-cluster}.
 
 Once the algorithm terminates, the final set of topo-clusters are used as the inputs to the desired jet clustering
 algorithm.
@@ -414,9 +414,9 @@ Results of the test beam energy measurements with $180~GeV$and $20~GeV$ pions ca
 \caption{Average energy and energy resolution measured for $180~GeV$ and $20~GeV$ pions with different values of the
 topo-clustering parameters $S$, $N$, and $P$.
 The x-axis of each plot represents choices for all three parameters, and the y-axis indicates either the average
-energy deposited in each cluster $<E_{clusters}>$ or the energy resolution $RMS/<E_{clusters}>$}
+energy deposited in each cluster $<E_{clusters}>$ or the energy resolution $RMS/<E_{clusters}>$~\cite{energy-measurement-of-hadrons}.}
 \label{fig:jet_snp_tuning}
-\end{figure}\cite{energy-measurement-of-hadrons}
+\end{figure}
 
 Based on these measurements, the default parameter values chosen for ATLAS topo-clustering are $S=4$, $N=2$, $P=0$.
 
@@ -448,10 +448,10 @@ The calibration weight for cell $i$ in cluster $j$ is then:
 
 Where $P_j^{EM}$ is the predicted probability that cluster $j$ arose from an electromagnetic shower,
 $w_{i}^{EM}$ is the calibration weight for cell $i$ assuming the electromagnetic response, and
-$w_{i}^{had}$ is the calibration weight for cell $i$ assuming the hadronic response.\cite{jet-topo-cluster}
+$w_{i}^{had}$ is the calibration weight for cell $i$ assuming the hadronic response~\cite{jet-topo-cluster}.
 
 Cluster classification probabilities are determined using the topo-cluster depth and signal density, as hadronic
-showers tend to deposit energy deeper in the calorimeter and have lower energy density.\cite{jet-topo-cluster}
+showers tend to deposit energy deeper in the calorimeter and have lower energy density~\cite{jet-topo-cluster}.
 
 Figure~\ref{fig:jet_cluster_classification} shows the EM classification probability as a function of these two
 topo-cluster moments.
@@ -465,9 +465,9 @@ of the cluster to which it belongs.
 Cell that are farther away from their cluster's center, and with lower energy density are more likely to arise
 from hadronic showers.
 The red line indicates the 50\% boundary: cells falling on that line have a 50\% probability of arising from
-electromagnetic showers, while clusters below that line have a higher probability.}
+electromagnetic showers, while clusters below that line have a higher probability~\cite{jet-topo-cluster}.}
 \label{fig:jet_cluster_classification}
-\end{figure}\cite{jet-topo-cluster}
+\end{figure}
 
 The hadronic calibration weight is then determined as
 
@@ -481,7 +481,7 @@ During the topo-clustering process, cells with signal fractions belows the neces
 resulting in a certain amount of signal energy being lost.
 
 Lost cells with true signal energy deposited are attributed to nearby clusters.
-The relevant search area for a cluster depends on the cluster $\eta$, and ranges from $14\deg$ to $60\deg$.\cite{jet-topo-cluster}
+The relevant search area for a cluster depends on the cluster $\eta$, and ranges from $14\deg$ to $60\deg$~\cite{jet-topo-cluster}.
 Lost cells can be attributed to more than one cluster, with a weight proportional to the energy deposited in each cluster.
 
 An out-of-cluster correction weight is then calculated as
@@ -502,8 +502,8 @@ Figure~\ref{fig:jet_lost_cells} shows an illustration of the lost cell and dead 
 \begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_lost_cells}
-\caption{Illustration of the procedure used to account for signal lost to lost cells and dead material.}
-\label{fig:jet_lost_cells}\cite{jet-topo-cluster}
+\caption{Illustration of the procedure used to account for signal lost to lost cells and dead material~\cite{jet-topo-cluster}.}
+\label{fig:jet_lost_cells}
 \end{figure}
 
 \subsection{Jet Calibration}\label{subsec:jet_calibration}
@@ -529,9 +529,9 @@ Those scales are defined as follows:
 
 For the JES calibration of large-R jets, the energy correction procedure described in~\cite{jet-energy-measurement}
 is applied.
-Unlike in ~\cite{jet-energy-measurement}, however, the Monte Carlo used for calibration does include pileup.
+Unlike in~\cite{jet-energy-measurement}, however, the Monte Carlo used for calibration does include pileup.
 The reason for this is that large-R jets do not receive a pileup-specific calibration before the JES calibration,
-unlike standard jets.\cite{jet-substructure-perf}.
+unlike standard jets~\cite{jet-substructure-perf}.
 
 The calibration is done by measuring the JES response in bins of true jet energy ($E_{truth}$) and $\eta$.
 
@@ -546,7 +546,7 @@ and average measured energy $\left<E_{meas}\right>$ are measured.
 
 A one-dimensional calibration function $\mathcal{F}_k\left(E_{meas}\right)$ is then obtained by fitting to the
 distribution of $\left<E_{meas}\right>$ vs. $\left<\mathcal{R}\right>$ in each $\eta$
-bin $k$.\cite{jet-energy-measurement}
+bin $k$~\cite{jet-energy-measurement}.
 
 Once the calibration functions $\mathcal{F}_k(E_{meas})$ are determined from Monte Carlo, they are applied to
 jets measured in data.
@@ -554,7 +554,7 @@ The calibrated energy for a jet measured with $\eta$ in bin $k$ is:
 
 \begin{equation}\label{eq:jet_jes_calibration}
     E_{calib} = \frac{E_{meas}}{\mathcal{F}_k\left(E_{meas}\right)}
-\end{equation}\cite{jet-energy-measurement}
+\end{equation}~\cite{jet-energy-measurement}
 
 \subsubsection{JMS Calibration}\label{subsubsec:jms_calibration}
 
@@ -574,9 +574,9 @@ The jet mass response before and after calibration can be seen in~\ref{fig:jet_j
     \centering
 \includegraphics[width=0.9\linewidth]{jet_jms_calibration.png}
 \caption{Jet mass response as a function of $\eta$ before and after JMS calibration, for anti-$k_T$ jets
-with $R=1.0$ at the LCW scale, without grooming.}
+with $R=1.0$ at the LCW scale, without grooming~\cite{jet-substructure-perf}.}
 \label{fig:jet_jms_response}
-\end{figure}\cite{jet-substructure-perf}
+\end{figure}
 
 \subsection{B-Tagging}\label{subsec:jet_b_tagging}
 
@@ -594,10 +594,10 @@ The main property of b hadrons that allows b-jets to be distinguished from light
 lifetime, on the order of picoseconds.
 Because of their long lifetime, b hadrons can travel a measurable distance away from the primary interaction point
 before decaying.
-For example, a $50~GeV$ b hadron will travel an average of $3~mm$ before decaying.\cite{jet-bjet-perf}.
+For example, a $50~GeV$ b hadron will travel an average of $3~mm$ before decaying~\cite{jet-bjet-perf}.
 
 Additionally, b-jets are more likely to contain muons, a fact which can be exploited by b-tagging
-algorithms to discriminate between b-jets and light flavor jets.\cite{jet-bjet-perf}
+algorithms to discriminate between b-jets and light flavor jets~\cite{jet-bjet-perf}.
 
 In this analysis, three different b-tagging algorithms are combined into a mutlivariate algorithm referred to as MV2.
 Each of the three base algorithms uses the relatively large separation distance of b hadron decay vertices away
@@ -617,7 +617,7 @@ IP2D uses only transverse IP significance, and IP3D uses both transverse and lon
 Histograms of the IP significances are calculated using a simulated $t\bar{t}$ sample for b-jets and light flavor
 jets separately.
 These histograms serve as the probability density functions (PDFs) from which a likelihood ratio discriminant is
-constructed by summing over the likelihood ratios for all tracks in a jet.\cite{jet-bjet-opt}
+constructed by summing over the likelihood ratios for all tracks in a jet~\cite{jet-bjet-opt}.
 
 The IP significances are considered positive if the point of closest approach is on the same side of the primary
 vertex as the direction of the jet, and negative otherwise.
@@ -631,15 +631,15 @@ Large negative IP significances are more likely to be from noise, and so do not 
     \centering
 \includegraphics[width=0.9\linewidth]{jet_btag_ip_sig}
 \caption{Transverse and longitudinal impact parameter significance distributions for a sample of simulated $t\bar{t}$
-events.}
+events~\cite{jet-bjet-opt}.}
 \label{fig:jet_btag_ip_sig}
-\end{figure}\cite{jet-bjet-opt}
+\end{figure}
 
 \subsubsection{Secondary vertex algorithm}\label{subsubsec:jet_btag_svx}
 
 The secondary vertex algorithm (SVX) also makes use of the long b hadron lifetime and mean flight path.
 Rather than calculating impact parameters for individual tracks, multiple tracks are traced back to find where they
-intersect other tracks, in order to reconstruct secondary vertices.\cite{jet-commissioning-b-tagging}
+intersect other tracks, in order to reconstruct secondary vertices~\cite{jet-commissioning-b-tagging}.
 
 Some filtering is done to reject long-lived particles and other background processes.
 Candidate tracks are required to be a certain significant distance from the primary vertex, and the tracks
@@ -655,16 +655,16 @@ the selection criteria outlined in~\cite{jet-bjet-opt}.
     \centering
 \includegraphics[width=0.9\linewidth]{jet_btag_svx}
 \caption{Secondary vertex reconstruction rate versus $p_T$ and $\eta$ for b-jets, c-jets, and light flavor jets
-from a simulated sample of $t\bar{t} events$}
+from a simulated sample of $t\bar{t} events$~\cite{jet-bjet-opt}.}
 \label{fig:jet_btag_svx}
-\end{figure}\cite{jet-bjet-opt}
+\end{figure}
 
 \subsubsection{Multi-vertex algorithm}\label{subsubsec:jet_btag_jetfitter}
 
 The third algorithm used to identify b-jets from their mean flight distance from the primary vertex is the
 multi-vertex reconstruction algorithm, also known as JetFitter.
 Rather than reconstruct a single secondary vertex, JetFitter attempts to reconstruct the entire
-b hadron decay chain.\cite{jet-btag-jetfitter}
+b hadron decay chain~\cite{jet-btag-jetfitter}.
 
 Unlike the SVX algorithm, JetFitter finds multiple vertices that are required to lie in a straight line,
 along the proposed flight path of the b hadron.
@@ -674,9 +674,9 @@ The difference between the SVX and JetFitter algorithm is illustrated in figure~
 \begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_btag_jetfitter}
-\caption{Illustration of the difference between the secondary vertex (a) and multi-vertex (b) algorithms.}
+\caption{Illustration of the difference between the secondary vertex (a) and multi-vertex (b) algorithms~\cite{jet-btag-jetfitter}.}
 \label{fig:jet_btag_jetfitter}
-\end{figure}\cite{jet-btag-jetfitter}
+\end{figure}
 
 The efficiency to reconstruct a b hadron decay vertex as a function of jet $p_T$ and $|\eta|$ for b-jets,
 c-jets, and light flavor jets can be seen in~\ref{fig:jet_btag_jetfitter_perf}
@@ -684,10 +684,9 @@ c-jets, and light flavor jets can be seen in~\ref{fig:jet_btag_jetfitter_perf}
 \begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_btag_jetfitter_perf}
-\caption{JetFitter vertex reconstruction rate versus $p_T$ and $\eta$ for b-jets, c-jets, and light flavor jets
-from a simulated sample of $t\bar{t} events$}
+\caption{JetFitter vertex reconstruction rate versus $p_T$ and $\eta$ for b-jets, c-jets, and light flavor jets from a simulated sample of $t\bar{t}$ events~\cite{jet-btag-mv2}.}
 \label{fig:jet_btag_jetfitter_perf}
-\end{figure}\cite{jet-btag-mv2}
+\end{figure}
 
 \subsubsection{Multivariate algorithm}\label{subsubsec:jet_btag_mv2}
 
@@ -696,12 +695,12 @@ algorithm known as MV2.
 
 The algorithm is a boosted decision tree (BDT) which combines the inputs from all three base algorithms mentioned above.
 The BDT is trained on a training sample for which b-jets are labeled as signal, and a mixture of light jets and
-c-jets are labeled as background\cite{jet-btag-mv2}.
+c-jets are labeled as background~\cite{jet-btag-mv2}.
 
 Different versions of the BDT can be obtained by varying the fraction of c-jets and light quark jets in the background
 training sample.
 In this analysis, a mixture of 80\% light quark jets and 20\% c-jets are used in training the BDT, resulting
-in a discriminant known as MV2c20\cite{jet-btag-mv2}.
+in a discriminant known as MV2c20~\cite{jet-btag-mv2}.
 
 In addition to the inputs from the three base algorithms, MV2 also includes the $p_T$ and $\eta$ of the jet.
 There are a total of 24 features input to the BDT, summarized in~\ref{fig:jet_btag_mv2_inputs}
@@ -709,9 +708,9 @@ There are a total of 24 features input to the BDT, summarized in~\ref{fig:jet_bt
 \begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_btag_mv2_inputs}
-\caption{Description of each of the 24 inputs for the MV2 BDT}
+\caption{Description of each of the 24 inputs for the MV2 BDT~\cite{jet-btag-mv2}.}
 \label{fig:jet_btag_mv2_inputs}
-\end{figure}\cite{jet-btag-mv2}
+\end{figure}
 
 The output of the MV2c20 BDT for b-jets, c-jets, and light flavor jets from a simulated sample of $t\bar{t}$ events
 can be seen in figure~\ref{fig:jet_btag_mv2_output}.
@@ -719,9 +718,9 @@ can be seen in figure~\ref{fig:jet_btag_mv2_output}.
 \begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_btag_mv2_output}
-\caption{MV2c20 BDT output for b-jets, c-jets, and light flavor jets from a simulated sample of $t\bar{t} events$}
+\caption{MV2c20 BDT output for b-jets, c-jets, and light flavor jets from a simulated sample of $t\bar{t}$ events~\cite{jet-btag-mv2}.}
 \label{fig:jet_btag_mv2_output}
-\end{figure}\cite{jet-btag-mv2}
+\end{figure}
 
 The BDT reduces the selection criteria from 24 variables to a single one-dimensional discriminant.
 The performance of the algorithm in terms of b-tagging efficiency and light flavor jet rejection depends on the
@@ -739,10 +738,9 @@ there is clearly improved light-jet rejection by including the c-jets in the bac
 \caption{B-tagging efficiency versus light-jet (a) and c-jet (b) rejection for a range of MV2 output cut values.
 The red curves are for MV2c20, in which 20\% c-jets are included in the background training sample.
 The blue curves are for Mv2c00, which only includes light jets in the background training sample.
-The improved c-jet rejection and worsened light-jet rejection can seen by comparing the two.
-}
+The improved c-jet rejection and worsened light-jet rejection can seen by comparing the two~\cite{jet-btag-mv2}.}
 \label{fig:jet_btag_mv2_eff}
-\end{figure}\cite{jet-btag-mv2}
+\end{figure}
 
 In this analysis, the threshold value is chosen such that the b-jet efficiency is 70\%, resulting
-in a c-jet rejection of 8.1, $\tau$ rejection of 26, and light flavor rejection of 440.\cite{jet-btag-mv2}
+in a c-jet rejection of 8.1, $\tau$ rejection of 26, and light flavor rejection of 440~\cite{jet-btag-mv2}.
