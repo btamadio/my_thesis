@@ -1,11 +1,11 @@
 \chapter{The Standard Model of Particle Physics}\label{ch:sm}
 
-The Standard Model is a set of theories describing the interactions between elementary particles.
+The Standard Model is a theory describing the interactions between elementary particles.
 It explains three of the four known fundamental forces, namely the electromagnetic force,
 the weak nuclear force, and the strong force.
 It does not include  or account for gravitational interactions.
 
-The Standard Model can be fairly characterized as the most successful theory in science.
+The Standard Model can be fairly characterized as one of the most successful theories in science.
 A huge number of predictions made by the theory have been confirmed experimentally,
 some to an astounding degree of accuracy.
 Precision measurements of the magnetic moment of the electron have shown the experimental and theoretical values of the
@@ -35,6 +35,10 @@ However, the Standard Model does not account for all known physical phenomena,
 and so cannot be considered a complete theory of nature.
 
 \section{Electroweak Sector and the Higgs Mechanism}\label{sec:sm_ew}
+
+The symmetry constraining the electroweak sector of the Standard Model Lagrangian is $SU(2)_L \times U(1)_Y$.
+The subscript $L$ for the $SU(2)$ group indicates that it only acts on the left-handed fields in the theory.
+Right-handed fields appear as $SU(2)$ singlets.
 
 \subsection{Matter fields}\label{subsec:ew_fields}
 
@@ -87,16 +91,14 @@ There are also the corresponding $SU(2)$-singlet right-handed fields:
 \end{equation}
 
 \subsection{Symmetries and Lagrangian}\label{subsec:ew_lagrangian}
-The symmetry constraining the electroweak sector of the Standard Model Lagrangian is $SU(2)_L \times U(1)_Y$.
-The subscript $L$ for the $SU(2)$ group indicates that it only acts on the left-handed fields in the theory.
-As we've seen, right-handed fields appear as $SU(2)$ singlets.
-The Lagrangian density satisfying the required symmetries, including all renormalizable terms, is:
+
+The Lagrangian density satisfying the required symmetries, including all renormalizable terms, can be written as:
 
 \begin{equation}\label{eq:ew_lagrangian}
     \mathcal{L}_{EW} = \mathcal{L}_{kin} + \mathcal{L}_{\text{interactions}}
 \end{equation}
 
-The kinetic part of the electroweak Lagrangian is:
+Where the kinetic part of the electroweak Lagrangian is:
 
 \begin{equation}\label{eq:ew_kin}
     \mathcal{L}_{kin} = -\frac{1}{4}W^{\mu \nu}_{a}W_{\mu \nu}^{a}-\frac{1}{4}B^{\mu \nu}B_{\mu \nu}
@@ -105,7 +107,7 @@ The kinetic part of the electroweak Lagrangian is:
 Where $W_\mu^a$ are the three $SU(2)_L$ gauge bosons, $B_\mu$ is the $U(1)_Y$ (hypercharge) gauge boson,
 and $W_\mu\nu = \partial_{\mu} W_{\nu} - \partial_{\nu} W_{\mu}$.
 
-The part of the electroweak Lagrangian describing electroweak interactions is:
+And the part of the electroweak Lagrangian describing electroweak interactions is:
 
 \begin{equation}\label{eq:ew_int}
     \mathcal{L}_{\text{interactions}} = \sum_{\text{generations}}\left[\frac{g}{2}\bar{\psi}_{L}\gamma^\mu\sigma^i W_\mu^i \psi_L+
@@ -114,7 +116,7 @@ The part of the electroweak Lagrangian describing electroweak interactions is:
 
 Where $\gamma^\mu$ are the Dirac gamma matrices, Y is the hypercharge associated with the relevant field.
 Left-handed leptons and quarks have weak hypercharge $Y = -1$ and $Y = 1/3$, respectively.
-Right-handed leptons have weak hypercharge $Y = -2$, while right-handed up-type quarks have weak hypercharge $Y = 4/3$,
+Right-handed leptons have weak hypercharge $Y = -2$. Right right-handed up-type quarks have weak hypercharge $Y = 4/3$,
 and right-handed down-type quarks have weak hypercharge $Y = -2/3$.
 
 This Lagrangian describes the charged-current and neutral-current weak interactions, as well as weak gauge boson self-interactions.
@@ -122,7 +124,7 @@ However, it is insufficient to describe nature because the gauge bosons are mass
 It would be impossible to include gauge boson mass terms in the electroweak Lagrangian without explicitly breaking the symmetry.
 Similarly, it's impossible to introduce Lorentz-invariant fermion mass terms that keep the Lagrangian invariant under $SU(2)_L \times U(1)_Y$.
 In order to reconcile this theory with the experimentally observed fact of massive weak gauge bosons and massive fermions,
-an entirely new field will have to be introduced.
+an new field will have to be introduced to the theory.
 
 \subsection{Spontaneous symmetry breaking}\label{subsec:ew_higgs}
 
@@ -159,20 +161,19 @@ Selecting $\theta_i(x) = 0$, the additional kinetic term required in the Lagrang
     + \frac{g^2}{8\cos^2 {\theta_W}}Z_\mu Z^\mu\right)
 \end{equation}
 
-Where $W_\mu$ and $Z_\mu$ are mass eigenstates of the electroweak gauge fields,
-linear combinations of the original $W_\mu^a$ and $B_\mu$.
+Where $W_\mu$ and $Z_\mu$ are mass eigenstates of the electroweak gauge fields.
+Each mass eigenstate is a linear combinations of the original $W_\mu^a$ and $B_\mu$.
 
-This has added interaction terms between the Higgs field and the $W$ and $Z$ bosons,
+This results in interaction terms between the Higgs field and the $W$ and $Z$ bosons,
 as well as quadratic terms for these same bosons.
 A quadratic term in the Lagrangian is physically the same as having a mass term in the Lagrangian.
-
 So we find that the $W$ and $Z$ boson masses are:
 
 \begin{equation}\label{eq:wz_masses}
     M_w = \frac{1}{2}vg,\; M_Z = \frac{M_W}{\cos{\theta_W}}
 \end{equation}
 
-Through SSB, electroweak gauge boson masses have been generated without requiring explicit mass terms in the Lagrangian.
+Thus, through SSB, electroweak gauge boson masses have been generated without requiring explicit mass terms in the Lagrangian.
 
 The introduction of this scalar field and its associated potential also generates fermionic mass terms,
 couplings between the fermions and the scalar field, and a mass term for the scalar field itself.
@@ -186,8 +187,8 @@ which can be written, in unitary gauge, as:
 \end{equation}
 
 Once again, after spontaneous symmetry breaking, there appear terms in the Lagrangian that are quadratic in the fields.
-These are mass terms for the fermions, and like for the gauge bosons, the masses are proportional to the Higgs vacuum
-expectation value.
+These are mass terms for the fermions.
+As with the gauge bosons, fermion masses are proportional to the Higgs vacuum expectation value.
 
 \begin{equation}\label{ew:fermion_masses}
     m_d = -c_1\frac{v}{\sqrt{2}},\; m_u = -c_2\frac{v}{\sqrt{2}},\; m_e = -c_3\frac{v}{\sqrt{2}}
@@ -200,7 +201,7 @@ The Higgs mechanism allows for the generation of masses for electroweak gauge bo
 breaking the original symmetry of the theory.
 Additional consequences arising from the Higgs mechanism are the relationship between $Z$ and $W$ boson masses,
 the existence of a new massive scalar field, and interactions between this field and the fermions and gauge bosons.
-The massive particle associated with this field, the Higgs boson, was discovered in 2012 by the ATLAS and CMS collaborations.
+The massive particle associated with this field, the Higgs boson, was discovered in 2012 by the ATLAS and CMS collaborations~\cite{sm-higgs-discovery-atlas, sm-higgs-discovery-cms}.
 
 \section{Quantum Chromodynamics}\label{sec:sm_qcd}
 
@@ -219,12 +220,12 @@ a property known as confinement.
 The fields involved are the quark fields, which also participate in electroweak interactions.
 In the case of QCD, the quarks are in the fundamental $\boldsymbol{3}$ representation of $SU(3)$:
 
-\begin{equation}\label{eq:qcd_fields}
+\begin{equation}\label{eq:qcd-fields}
     \psi = \begin{pmatrix}\psi_R \\ \psi_G \\ \psi_B \end{pmatrix}
 \end{equation}
 
 Where $R,\;G,\;B$ stand for the red, green, and blue color charges.
-The theory will be invariant under local transformations of this color space.
+The theory will be invariant under local transformations in this color space.
 
 \subsection{Symmetries and Lagrangian}\label{subsec:qcd_lagrangian}
 
@@ -233,13 +234,13 @@ The Lagrangian is generated by positing the transformations under which the Lagr
 and including all terms that respect these symmetries.
 For QCD, the symmetry group is $SU(3)$, yielding the following Lagrangian:
 
-\begin{equation}\label{eq:qcd_lagrangian}
+\begin{equation}\label{eq:qcd-lagrangian}
     \mathcal{L}_{QCD} = \sum_{generations}i\bar{\psi}D_\mu\gamma^\mu\psi-\frac{1}{4}G_{\mu\nu}^a G_a^{\mu\nu}
 \end{equation}
 
 Where
 
-\begin{equation}\label{eq:qcd_deriv}
+\begin{equation}\label{eq:qcd-derivative}
 D_\mu = \partial_\mu - i g_s G_\mu^a T^a
 \end{equation}
 
@@ -247,7 +248,7 @@ is the gauge-covariant derivative, $g_s$ is the strong coupling constant, $G_\mu
 and $T^a$ are the infinitesimal generators of $SU(3)$.
 The gluon field strength tensor, $G_{\mu\nu}^a$, is defined as:
 
-\begin{equation}\label{eq:qcd_field_strength}
+\begin{equation}\label{eq:qcd-field-strength}
     G_{\mu\nu}^a = \partial_\mu G_\nu^a - g_s f^{abc} G_\mu^b G_\nu ^c
 \end{equation}
 
@@ -261,7 +262,7 @@ A consequence of the gluon self-interaction in the QCD Lagrangian is that the va
 $g_s$, depends on the energy scale.
 The rate of change of the coupling as energy increases is governed by the $\beta$ function,
 
-\begin{equation}\label{eq:sm_qcd_beta}
+\begin{equation}\label{eq:sm-qcd-beta}
     \beta\left(\alpha_s\right) = \frac{\alpha_s}{2\pi}\left(\frac{11}{3}n_{\text{colors}}-\frac{4}{3}n_{\text{flavors}}\right)
 \end{equation}
 
