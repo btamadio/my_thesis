@@ -332,23 +332,25 @@ Parton distribution functions (PDFs) model the internal structure of the proton.
 They are expressed as probability distributions over momentum fraction $x$, normalized to the number of partons.
 The momentum fraction $x$, is the proportion of the proton momentum carried by the individual parton.
 PDFs are conditional on $Q^2$, the squared energy scale.
-Separate PDFs are calculated for gluons and for each quark flavor.
+There are separate PDFs for gluons and for each quark flavor.
 
-Examples of PDFs for different quark flavors, as well as for gluons, can be seen in figure~\ref{fig:sm_pdfs}.
+The values of PDFs cannot be calculated from first principles using perturbative QCD .
+However, thanks to the QCD factorization theorem, PDFs can be inferred from experiment.
+The factorization theorem allows for the cross section to be factorized into a hard-scattering part and a normalization factor from the PDFs.
+The hard-scattering part of the cross section can be calculated using perturbation theory, and the total cross section can then be measured experimentally.
+Using the measured total cross-section, and the calculated hard-scattering part of the cross-section, the PDF values can be inferred at certain values of $Q^2$
+The Dokshitzer-Gribov-Lipatov-Altarelli-Parisi (DGLAP) equations, which describe how PDFs depend on $Q^2$, can then be used to determine the \textit{global} PDFs~\cite{sm-dglap}.
 
 \begin{figure}[!ht]
     \centering
 \includegraphics[width=0.6\linewidth]{sm_pdfs}
-\caption{Parton distribution functions for the proton, calculated at NLO for two different energy scales~\cite{sm-pdf-2009}.}
+\caption{Parton distribution functions for the proton, evaluated at NLO for two different energy scales~\cite{sm-pdf-2009}.}
 \label{fig:sm_pdfs}
 \end{figure}
 
 When calculating LHC cross-sections, the hard-scattering cross-section for different types of partons
 must be convolved with the PDFs for each parton.
 The proton-proton cross-sections are thus an average of partonic cross-sections, weighted by the PDFs for those partons.
-
-The factorization theorem of QCD allows for the non-perturbative PDF calculations to be carried out independently from
-the perturbative hard scattering cross sections, and then combined.
 
 \section{Limitations}\label{sec:sm_limits}
 
