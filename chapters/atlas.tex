@@ -375,6 +375,22 @@ In order to maximize hit efficiency, the straw diameter should be as large as po
 But there is a tradeoff: as straw diameter increases, so does the drift time.
 The optimal diameter to ensure acceptable time resolution for $25~ns$ bunch-spacing was determined to be $4~cm$~\cite{trt-2013}.
 
+\subsubsection{Tracking Resolution}
+The number of layers crossed per track and the intrinsic accuracy for each inner detector subsystem is summarized in table~\ref{tbl:track_resolution}.
+The TRT provides the largest number of hits per track, but has the poorest resolution, and only provides resolution in $R-\phi$.
+The Pixel and SCT systems have much better resolution in $R-\phi$ and also provide $z$-resolution in the barrel region, and $R$-resolution in the disks.
+\begin{table}[!ht]\centering
+\begin{tabular}{cccc}
+    \toprule
+          & number of layers & $R-\phi$ resolution & $z$ resolution (barrel) / $R$ resolution (disks) \\ \midrule
+    Pixel & 3                & $10~\mu m$          & $115~\mu m$ \\
+    SCT   & 8                & $17~\mu m$          & $580~\mu m$ \\
+    TRT   & 36               & $130~\mu m$         & N/A \\ \bottomrule
+\end{tabular}
+\caption{Summary of number of layers crossed per track as well as intrinsic accuracy in $R-\phi$ and $z$ for each of the inner detector subsystems.}
+\label{tbl:track_resolution}
+\end{table}
+
 \subsection{Calorimeters}\label{subsec:calorimeters}
 
 The ATLAS calorimeters are designed to absorb and measure the energy of both electromagnetic and hadronic showers.
@@ -518,6 +534,16 @@ The amount of energy absorbed by each part of the calorimeter, as measured in in
 The light blue indicates the amount of material in front of the muon spectrometer for $|\eta| < 3.0$~\cite{atlas-detector-2008}.}
 \label{fig:calo_material_budget}
 \end{figure}
+
+\subsubsection{Energy Resolution}
+The energy resolution of the LAr calorimeters is parameterised as~\cite{atlas-em-resolution}:
+\begin{equation}
+    \frac{\sigma(E)}{E} = \frac{a}{\sqrt{E(GeV)}}\oplus b
+\end{equation}
+Electron test beams ranging from $10~GeV$ to $240~GeV$ are used to measure the electron energy resolution of the LAr calorimeters.
+The resulting parameters were found not to exceed $a=10\%\sqrt{GeV}$ and $b=0.7\%$ over both the EM barrel and EM end-cap calorimeters.
+The hadronic end-cap calorimeter has design resolution $\frac{50\%}{\sqrt{E}}\oplus3\%$, while the forward calorimeter has design resolution $\frac{100\%}{\sqrt{E}}\oplus10\%$.
+The hadronic tile calorimeter provides a jet resolution of $\sigma(E)/E = 50\%/\sqrt{E}$~\cite{atlas-detector-2008}.
 
 \subsection{Muon Spectrometer}\label{subsec:muon_spec}
 
