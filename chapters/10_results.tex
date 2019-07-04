@@ -2,24 +2,13 @@
 
 \section{Predicted and Observed Event Yields}\label{sec:results_yields}
 
-Figure~\ref{fig:results_mj_dists} shows the predicted and observed $M_J^{\Sigma}$ distributions in the
-four-jet and five-jet regions, along with the total estimated background uncertainty.
-
-The red solid line indicates the estimated yield in each $M_J^{\Sigma}$ bin, and the red shaded area
-shows the total uncertainty, including statistical and systematic uncertainties.
-
-The gray dashed lines are the $\pm1\sigma$ bands from the statistical uncertaity only.
-
-There is good agreement between predicted and observed event yields across a range of $\pm1\sigma$ values,
-within the total uncertainty.
-
+Figure~\ref{fig:results_mj_dists} shows the predicted and observed $M_J^{\Sigma}$ distributions in the four-jet and five-jet regions, along with the total estimated background uncertainty.
+The red solid line indicates the estimated yield in each $M_J^{\Sigma}$ bin, and the red shaded area shows the total uncertainty, including statistical and systematic uncertainties.
+The gray dashed lines are the $\pm1\sigma$ bands from the statistical uncertainty only.
+There is good agreement between predicted and observed event yields across a range of $\pm1\sigma$ values, within the total uncertainty.
 The exception is in the five-jet signal region, where a slight excess of events is observed.
-
 After statistical analysis, discussed in~\ref{sec:results_stats}, the excess is found to not be significant.
-
-The $M_J^{\Sigma}$ distributions for two different cascade decay signal mass points are also shown on the plots,
-to visualize the effect that the existence of signal events would hve on the distributions.
-
+The $M_J^{\Sigma}$ distributions for two different cascade decay signal mass points are also shown on the plots, to visualize the effect that the existence of signal events would hve on the distributions.
 
 \begin{figure}[!ht]
     \centering
@@ -53,7 +42,19 @@ and the systematic uncertainties from the low-$p_T$ and high-$p_T$ uncertainty d
 
 \begin{table}[!ht]
     \centering
-\includegraphics[width=0.8\linewidth]{results_yields_table}
+
+    \begin{tabular}{lllrlllrlll}
+        \toprule
+        Region & $N_{NR}$ & $\geq M_{J}^{\Sigma}~[TeV]$ & Expected ( & $\pm$ & (stat.) & $\pm$ & (high-$p_T$) & $\pm$ & (low-$p_T$)) & Observed \\
+        \midrule
+        4jSRb     & 64081    & 1.0                       & 23.6       & $\pm$ & 4.6     & $\pm$ & 6.1          & $\pm$ & 1.7          & 15 \\
+        4jSR      & 224862   & 1.0                       & 82.0       & $\pm$ & 7.6     & $\pm$ & 15.8         & $\pm$ & 4.4          & 82 \\
+        5jSRb$_1$ & 2177     & 0.8                       & 7.0        & $\pm$ & 2.4     & $\pm$ & 1.9          & $\pm$ & 0.7          & 10 \\
+        5jSRb$_2$ & 2177     & 0.6                       & 44.0       & $\pm$ & 7.5     & $\pm$ & 11.2         & $\pm$ & 7.2          & 61 \\
+        5jSR      & 6592     & 0.8                       & 18.0       & $\pm$ & 3.7     & $\pm$ & 4.6          & $\pm$ & 1.5          & 31 \\
+        \bottomrule
+    \end{tabular}
+
 \caption{Predicted and observed yields in all signal regions used in the analysis.
 The number of events in the corresponding normalization regions, $N_{NR}$ is shown.
 For each signal region, the minimum value of $M_J^{\Sigma}$ used to define that region is also shown.
@@ -67,22 +68,27 @@ derived from the high-$p_T$ and low-$p_T$ UDRs are shown~\cite{paper-plb}.}
 \subsection{Determining the significance of an excess over the background prediction}\label{subsec:results_stats_excess}
 In order to determine if the excesses seen in the five-jet signal regions are statistically significant,
 a hypothesis test was conducted, using the likelihood ratio method~\cite{results-stats-asymptotic}.
-
-In this case, the null hypothesis, $H_0$ is the hypothesis that the signal process does not exist, and that the
-background prediction is true.
-
-The p-value will therefore quantify the probability of observing an event yield at least as large as that observed,
-under the assumption that the signal process does not exist.
-
-Statistical uncertainties on the signal and background yields are incorporated as nuisance parameters in the likelihood
-function.
-
+In this case, the null hypothesis, $H_0$ is the hypothesis that the signal process does not exist, and that the background prediction is true.
+The p-value will therefore quantify the probability of observing an event yield at least as large as that observed, under the assumption that the signal process does not exist.
+Statistical uncertainties on the signal and background yields are incorporated as nuisance parameters in the likelihood function.
 The resulting p-values for the signal regions can be seen in table~\ref{tbl:results_model_ind_limits}.
 No signal region shows a statistically significant deviation from the background prediction.
 
 \begin{table}[!ht]
     \centering
-    \includegraphics[width=0.8\linewidth]{results_model_ind_limits}
+
+    \begin{tabular}{lllll}
+        \toprule
+        Signal Region & $M_{J}^{\Sigma}$ requirement & Expected limit $[fb]$  & Observed limit $[fb]$ & $p_0$-value \\
+        \midrule
+        4jSRb           & $>1.0~TeV$                      & $0.53^{+0.20}_{-0.12}$ & 0.37 & 0.5   \\
+        4jSR            & $>1.0~TeV$                      & $1.12^{+0.50}_{-0.32}$ & 1.50 & 0.24  \\
+        5jSRb$_1$       & $>0.8~TeV$                      & $0.24^{+0.10}_{-0.06}$ & 0.34 & 0.26  \\
+        5jSRb$_2$       & $>0.6~TeV$                      & $0.86^{+0.40}_{-0.20}$ & 1.32 & 0.20  \\
+        5jSR            & $>0.8~TeV$                      & $0.44^{+0.18}_{-0.10}$ & 0.84 & 0.062 \\
+        \bottomrule
+    \end{tabular}
+
     \caption{Observed and expected limits on gluino pair-production cross section for each of the signal regions,
     along with the p-value for any excess observed in each region~\cite{paper-plb}.}
 \label{tbl:results_model_ind_limits}
