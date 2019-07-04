@@ -56,12 +56,37 @@ Finally, the five-jet b-inclusive region (5jSR) requires $M_J^{\Sigma}>0.8~TeV$.
 A summary of the definitions for the control, uncertainty determination, validation, and signal regions can be found in table~\ref{tbl:region_defs}.
 
 \begin{table}
+    \centering
+
+    \begin{tabular}{ccccccc}
+
+        \toprule
+                             &                        & $N_{jet}~(p_T>200~GeV)$ & $b$-tag & $p_{T,1}$  & $|\Delta\eta_{12}|$ & $M_{J}^{\Sigma}$ \\
+        \midrule
+        CR                   & 3jCR                   & $=3$                    & -       & -          & -                   & - \\
+        \midrule
+        \multirow{2}{*}{UDR} & UDR1                   & $=2$                    & -       & $>400~GeV$ & -                   & - \\
+                             & UDR2                   & $=4$                    & -       & $<400~GeV$ & -                   & - \\
+        \midrule
+        \multirow{4}{*}{VR}  & 4jVRb                  & $\geq4$                 & Yes     & $>400~GeV$ & $>1.4$              & - \\
+                             & 5jVRb                  & $\geq5$                 & Yes     & -          & $>1.4$              & - \\
+                             & 4jVR                   & $\geq4$                 & -       & $>400~GeV$ & $>1.4$              & - \\
+                             & 5jVR                   & $\geq5$                 & -       & -          & $>1.4$              & - \\
+        \hline
+        \multirow{5}{*}{SR}  & 4jSRb                  & $\geq4$                 & Yes     & $>400~GeV$ & $<1.4$              & $>1.0~TeV$ \\
+                             & \multirow{2}{*}{5jSRb} & $\geq5$                 & Yes     & -          & $<1.4$              & $>0.8~TeV$ \\
+                             &                        & $\geq5$                 & Yes     & -          & $<1.4$              & $>0.6~TeV$ \\
+                             & 4jSR                   & $\geq4$                 & -       & $>400~GeV$ & $<1.4$              & $>1.0~TeV$ \\
+                             & 5jSR                   & $\geq5$                 & -       & -          & $<1.4$              & $>0.8~TeV$ \\
+        \bottomrule
+    \end{tabular}
+
     \caption{Summary of the requirements defining the control, uncertainty determination, validation, and signal regions.
     Requirements are placed on the large-R jet multiplicity ($N_{jet}$), the presence or absence of a b-tagged small-R jet ($b$-tag),
     the $p_T$ of the leading jet ($p_{T,1}$), the pseudorapidity difference between the two leading jets ($|\Delta\eta_{12}|$),
     and the scalar sum of the first four leading jets in the event ($M_J^{\Sigma}$)~\cite{paper-plb}.}
     \label{tbl:region_defs}
-    \includegraphics[width=\linewidth]{region_definition_table_2}
+
 \end{table}
 
 \section{Jet mass templates}\label{sec:jet_mass_templates}
