@@ -1,1 +1,41 @@
 \chapter{Data Sample and Event Selection}\label{ch:data_and_event_selection}
+
+\section{Event Selection} \label{sec:event_selection}
+This analysis uses the entirety of the 2015 and 2016 ATLAS datasets, comprising \linebreak
+$36.1~fb^{-1}~(\pm2.1\%)$ of integrated luminosity.
+All collisions occurred as $\sqrt{s}=13~TeV$.
+
+The trigger selects events with $H_{T}>1.0~TeV$, where $H_{T}$ is the scalar sum of the $p_{T}$ of all jets in an event.
+The trigger efficiency for the benchmark signal samples is found to be $100\%$.
+
+Additionally, events are required to have a primary vertex formed from at least two tracks with $p_{T}>400~MeV$ each.
+
+Two different methods of reconstructing jets are used in the analysis.
+Large-R jets are reconstructed using the anti-$k_{T}$ algorithm with radius parameter $R=1.0$,
+and sub-jet radius parameter $R_{sub-jet}=0.2$.
+The jets are trimmed with sub-jet $p_{T}$-fraction $f_{p_{T}}=0.05$.
+The details of how jets are reconstructed, trimmed, and calibrated can be found in chapter~\ref{ch:jets}.
+
+Small-R jets are reconstructed with the anti-$k_{T}$ algorithm, using radius parameter $R=0.4$.
+
+Large-R jets are required to have $p_{T}>200~GeV$ and $|\eta|<2.0$.
+The leading large-R jet is required to have $p_{T}>440~GeV$, a selection for which the $H_{T}$ trigger is fully efficient.
+
+Small-R jets are used as candidates for b-tagging.
+To be considered for b-tagging, a small-R jet must have $p_{T}>50~GeV$ and $|\eta|<2.5$.
+The algorithm used to tag b-jets is described in chapter~\ref{ch:jets} as well as~\cite{b-jet-perf-1,b-jet-perf-2}.
+The algorithm used for b-tagging in this analysis is the fixed-efficiency $70\%$ working point.
+
+The control, validation, and signal regions defined in section~\ref{sec:region_defs} can be further segmented into b-tag and b-veto regions.
+Events with at least one b-tagged small-R jet are considered b-tag events, while those without are labelled as b-veto.
+When b-tagging is not taken into consideration, the region is called b-inclusive.
+
+Additionally, large-R jets found to be within $\Delta R=1.0$ of a b-tagged small-R jet in the same event are referred to as b-matched jets.
+Those large-R jets not within $\Delta R=1.0$ of a b-tagged small-R jet are called non-b-matched.
+
+The distinction in terminology between b-tagged and b-matched is important enough to restate for clarity.
+When referring to the presence or absence of a b-tagged jet \textit{within an event}, the terms b-tag, b-veto, and b-inclusive are used.
+When referring to the proximity of an \textit{individual large-R jet} to a b-tagged small-R jet, the terms b-matched and non-b-matched are used.
+
+Templates will be divided into b-matched and non-b-matched templates, which are used to dress b-matched and non-b-matched jets, respectively.
+Validation and signal regions will be divided into b-tag, b-veto, and b-inclusive regions.

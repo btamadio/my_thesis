@@ -1,1 +1,27 @@
 \chapter{Analysis Overview}\label{ch:analysis_overview}
+
+\section{Strategy Overview}\label{sec:overview}
+
+A data-driven method is used to predict the background yield in the signal regions, as well as the uncertainties on those predictions.
+First, jet mass templates are created from control region jets.
+Randomized jet masses, known as dressed masses, are generated from these templates for each jet in the kinematic sample.
+Summing the dressed masses for each of the up to four leading jets in an event gives the dressed $M_{J}^{\Sigma}$ for that event.
+The dressed $M_{J}^{\Sigma}$ distribution for each signal region is used to estimate the expected background contribution to that region.
+
+\section{Data-Driven Background Estimation} \label{sec:bkg_estimation}
+A data-driven jet mass template method is used to estimate the background.
+The method is similar to that used in the Run-1 version of the analysis~\cite{run1-multijet}, with a few important differences.
+
+In the Run-1 analysis, the templates were smoothed with a kernel density estimate before sampling the dressed masses.
+In this version of the analysis, the templates remain binned.
+This allows for an estimate of the statistical uncertainty from the control sample size.
+By Poisson fluctuating each template bin before sampling, the statistical uncertainty is propagated to the dressed $M_J^{\Sigma}$ distributions.
+
+Secondly, in the Run-1 version of the analysis, two separate sets of templates were generated: one set for the leading two jets in each event,
+and a separate set for the third leading jet.
+In this analysis, the templates are instead divided into b-matched and non-b-matched jets.
+The discrepancy in template shape between b-matched and non-b-matched jets was seen to be larger than that between the third leading jet and first two leading jets.
+
+Finally, the Run-1 version of the analysis used Monte-Carlo non-closure as one contribution to the background systematic uncertainty.
+In this analysis, a data-driven method is used instead.
+This is due to the fact that the sample size of available simulated data was not large enough to make an accurate estimate of the non-closure.
