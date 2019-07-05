@@ -1,6 +1,6 @@
 \chapter{Monte Carlo Models of Signal and Background} \label{ch:monte_carlo}
 
-\section{Signal Modeling}\label{sec:signal_modeling}
+\section{Signal modeling}\label{sec:signal_modeling}
 
 Simulated gluino pair-production events were generated for use in the analysis.
 Separate samples were generated for the direct decay and cascade decay models described in~\ref{subsec:rpv_gluino}.
@@ -114,3 +114,22 @@ In all cases, very good agreement is observed between FullSim and AFII distribut
     Jets are required to have $p_{T}$ greater than $100~GeV$ and $|\eta|<2.8$.}
     \label{fig:afii_mj}
 \end{figure}
+
+\section{Background modeling}\label{sec:bkg_modeling}
+
+Background estimation for this analysis was done with a fully data-driven method that does not rely on Monte Carlo to make predictions.
+However, simulated background events were generated and studied in order to test and validate the data-driven background estimation method.
+This process is detailed in~\ref{sec:bkg_monte_carlo}.
+
+The Pythia8 multijet background sample is generated using Pythia8 8.186~\cite{signal-pythia}.
+Like with the signal samples described in~\ref{subsec:signal_event_gen}, the A14 underlying-event tune~\cite{signal-pythia,signal-pythia-a14} and the NNPDF2.3LO PDF sets are used~\cite{signal-nnpdf}.
+Multijet samples were also generated with Sherpa and Herwig++.
+The $t\bar{t}$ events were generated with Powheg-Box v2~\cite{mc-powheg} with the CT10 PDF set~\cite{mc-ct10-pdf}.
+
+The differential multijet cross section falls drastically with increasing $p_{T}$, so multijet events are not generated with a probability distribution proportional to the differential cross section.
+If they were, the result would be enormous numbers of events with only low-$p_{T}$ jets, and very few events with high-$p_{T}$, resulting in very large statistical uncertainties for the high-$p_{T}$ jet events.
+Instead, multijet events are generated in slices, where each slice has a minimum requirement on the leading-jet $p_{T}$.
+Approximately equal numbers of events can then be generated for each slice, and re-weighted according to the relative cross-section of each slice.
+Using this method, the statistical uncertainty is more constant across a wide range of jet $p_{T}$.
+The lowest-$p_{T}$ slice that passes the event selection for this analysis has a lead-jet range of $160~GeV - 400~GeV$.
+For this slice, just under 16 million simulated events were generated, which corresponds to an effective luminosity of $1.9~fb^{-1}$.
