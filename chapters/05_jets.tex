@@ -62,7 +62,7 @@ Monte Carlo (MC) generators attempt to account for all of these effects to calcu
 However, the MC estimates have very large uncertainties, for the reasons given above.
 As a result, data driven estimation methods are used for determining the background rate of multijet events.
 
-\section{Clustering Algorithms}\label{sec:jet_clustering}
+\section{Clustering algorithms}\label{sec:jet_clustering}
 
 In order to measure jets in an event, a decision has to be made on the type of jet reconstruction algorithm to use.
 The observable result of a collision event can consist of many clusters of stable particles or calorimeter hits.
@@ -92,7 +92,7 @@ They typically use the highest-transverse-momentum (hardest) object in the event
 Cone-based algorithms have the advantage of producing regularly-shaped jet boundaries, which can simplify theoretical calculations and make experimental calibration easier~\cite{jet-cone-algo}.
 However, cone-based algorithms typically lack collinear safety\footnote{The exception to this is the SISCone algorithm~\cite{jet-siscone-algorithm}, a cone-based algorithm which is both IR and collinear safe.}, which is a property that must be satisfied to meet the Snowmass criteria.
 
-\subsection{IRC Safety}\label{subsec:jet_irc_safety}
+\subsection{IRC safety}\label{subsec:jet_irc_safety}
 
 Jet algorithms should ideally possess infrared and collinear (IRC) safety.
 This means that their results should not change due to soft gluon emissions or near-collinear emissions during either the parton shower or hadronization process.
@@ -201,14 +201,11 @@ by different values of $p$~\cite{jet-antikt-algo}.}
 \label{fig:jet_algo_compare}
 \end{figure}
 
-\section{Boosted objects}\label{sec:jet_substructure}
+\section{Jet mass}\label{sec:jet_mass}
 
-As the center-of-mass energy of collisions increases, it becomes increasingly important to study the internal structure
-of jets, in addition to the kinematic properties of jets within events.
-The decay products of hadronically-decaying heavy objects, such as W or Higgs bosons,
-become harder to resolve into separate jets as the momentum of the original object increases.
-Recently, a large number of jet substructure observables have been developed, and an entire subfield has emerged
-dedicated to the study of the internal properties of jets.
+As the center-of-mass energy of collisions increases, it becomes increasingly important to study the internal structure of jets, in addition to the kinematic properties of jets within events.
+The decay products of hadronically-decaying heavy objects, such as W or Higgs bosons, become harder to resolve into separate jets as the momentum of the original object increases.
+Recently, a large number of jet substructure observables have been developed, and an entire subfield has emerged dedicated to the study of the internal properties of jets.
 
 For a two-pronged decay, for example $W \rightarrow q\bar{q}$, the angular separation between the decay products is given by:
 \begin{equation}\label{eq:jet_boosted_sep}
@@ -231,10 +228,6 @@ On the other hand, jets with $R = 1.0$ will capture all decay products with high
 When dealing with boosted objects, larger radius parameters are often used, in order to increase the probability of capturing the full decay products of a boosted object.
 Jets with large radius parameters, typically $R=1.0$ or $R=1.2$ are referred to as fat jets.
 
-\subsection{Jet Mass}\label{subsec:jet_mass}
-
-\subsubsection{Jet mass origin}
-
 The earliest-developed, and most straightforward jet substructure observable is mass.
 The mass of a jet is calculated from the four-vectors of its constituent objects:
 
@@ -245,17 +238,13 @@ For a jet that contains the collimated decay products of an individual boosted r
 
 For a QCD jet, i.e.\ one that is a result of a high-$p_T$ gluon or light quark, one might expect the mass to also be very low or close to zero.
 But in fact perturbative QCD processes lead to a nonzero expected mass for light quark and gluon jets.
-Calculations of perturbative QCD jet mass is beyond the scope of this thesis,
-but the resulting mass is proportional to the jet radius parameter, $R$, and the transverse momentum $p_T$ of the jet.
+Calculations of perturbative QCD jet mass is beyond the scope of this thesis, but the resulting mass is proportional to the jet radius parameter, $R$, and the transverse momentum $p_T$ of the jet.
 Jets arising from light quarks will have different mass than jets arising from gluons.
-After taking relative production cross-sections for quark and gluon jets into account at different energy scales,
-the resulting relationship between jet $p_T$ and mass at next-to-leading order (NLO) is well-approximated by~\cite{jet-mass-nlo}:
+After taking relative production cross-sections for quark and gluon jets into account at different energy scales, the resulting relationship between jet $p_T$ and mass at next-to-leading order (NLO) is well-approximated by~\cite{jet-mass-nlo}:
 
 \begin{equation}\label{eq:jet_mass_nlo}
     m \approx 0.2 p_T R
 \end{equation}
-
-\subsubsection{Trimming}
 
 Additional contributions to jet mass come from initial state radiation (ISR), pileup (PU), the underlying event (UE), and multi-parton interaction (MPI).
 A variety of so-called grooming techniques are used to remove the dependence on this unassociated radiation, so that the groomed jet mass depends only on the mass of the boosted object.
@@ -405,7 +394,7 @@ Figure~\ref{fig:jet_lost_cells} shows an illustration of the lost cell and dead 
 \label{fig:jet_lost_cells}
 \end{figure}
 
-\subsection{Jet Calibration}\label{subsec:jet_calibration}
+\subsection{Jet calibration}\label{subsec:jet_calibration}
 For large-R jets, the LCW calibration method is applied to topological clusters as described in~\ref{subsec:topo_calibration} before inputting the topo-clusters into the jet clustering algorithm.
 After jet clustering, further calibration is required on the resulting jets in order to ensure that the measured energy matches the true energy deposited in the detector.
 This is known as the jet energy scale, or JES, calibration.
@@ -459,7 +448,7 @@ with $R=1.0$ at the LCW scale, without grooming~\cite{jet-substructure-perf}.}
 \label{fig:jet_jms_response}
 \end{figure}
 
-\subsection{B-Tagging}\label{subsec:jet_b_tagging}
+\subsection{$b$-tagging}\label{subsec:jet_b_tagging}
 
 The identification of jets containing b hadrons, referred to as b-jets, is very important for many different ATLAS physics analyses.
 B-tagging is the process of identifying these jets and distinguishing them from jets that do not contain b hadrons.
