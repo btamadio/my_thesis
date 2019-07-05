@@ -21,63 +21,62 @@ Distributions of the two discriminating variables are shown in figure~\ref{fig:M
     \label{fig:MJ_dEta_distributions}
 \end{figure}
 
-\section{Control, uncertainty determination, validation, and signal regions} \label{sec:region_defs}
-Events are divided into control, uncertainty determination, validation, and signal regions.
-The control region is used to derive the jet mass templates, as described in section~\ref{sec:bkg_estimation}.
-The control region is defined as those events with exactly three large-R jets.
+\section{Control, signal, validation, and uncertainty determination regions} \label{sec:region_defs}
+Events are divided into control, signal, validation, and uncertainty determination regions.
+A summary of the definitions of all of these regions is given in table~\ref{tbl:region_defs}.
+Control region events are used to derive jet mass templates, as discussed in section~\ref{sec:jet_mass_templates}.
+The jet mass templates are used to predict the background contribution to the signal region event yields.
+Validation regions are used to check that the template method accurately estimates the $M_J^{\Sigma}$ distribution in high-multiplicity events that are free of signal contamination.
+Uncertainty determination regions are used to create data-driven estimates of the background estimation uncertainty as described in section~\ref{sec:bkg_uncert}.
 
-There are two uncertainty determination regions (UDRs), which are used to derive the data-driven background systematic uncertainty,
-as detailed in section~\ref{sec:bkg_uncert}.
-The high-$p_{T}$ UDR, known as UDR1, consists of events with exactly two large-R jets, with at least one having $p_{T}>400~GeV$.
-The low-$p_{T}$ UDR, known as UDR2, consists of events with exactly four large-R jets, all of which have $p_{T}<400~GeV$.
+Control region events are required to have exactly three large-$R$ jets each with $p_{T}>200~GeV$.
+If a control region event has at least one $b$-matched large-$R$ jet, the additional requirement of $|\Delta\eta_{12}|>1.4$ is applied, in order to suppress potential signal contamination.
+
+There are a total of five partially-overlapping signal regions, all of which require $|\Delta\eta_{12}|<1.4$.
+Regions are defined by the minimum number of large-$R$ jets required ($N_{jet}$), by whether or not a $b$-tagged jet is required to be present in the event, and by a minimum requirement on $M_{J}^{\Sigma}$.
+There are two signal regions which require four or more large-$R$ jets with $p_{T}>200~GeV$, and three signal regions which require five or more.
+Four-jet signal regions require the $p_T$ of the leading large-$R$ jet to be greater than $400~GeV$.
+The $b$-tag signal regions each require at least one $b$-tagged small-$R$ jet per event, and are the most sensitive to the RPV gluino direct and cascade decay models.
+Signal regions without the $b$-tag requirement are also defined, referred to as inclusive signal regions.
+These inclusive regions are less sensitive to the RPV gluino decay signal, but can be sensitive to other potential BSM signals.
+
+The minimum value of $M_{J}^{\Sigma}$ for each signal region is optimized based on signal sensitivity separately for each signal region.
+For the 5-jet $b$-tag signal region, the optimal $M_{J}^{\Sigma}$ cut is $0.8~TeV$ for the cascade decay model, and $0.6~TeV$ for the direct decay model.
+The signal regions corresponding to these two $M_{J}^{\Sigma}$ cuts will be referred to as 5jSRb1 and 5jSRb2, respectively.
+
+The difference between the signal and validation regions is a reversal of the $|\Delta\eta_{12}|$ requirement, and removal of the $M_{J}^{\Sigma}$ requirement.
+Requiring large $|\Delta\eta|_{12}$ reduces the signal contribution to these high-multiplicity regions.
+There is no $M_{J}^{\Sigma}$ requirement for the validation region, so that the performance of the template method over the full range of $M_{J}^{\Sigma}$ can be evaluated.
+
+There are two uncertainty determination regions (UDRs), which are used to derive the data-driven background systematic uncertainty.
+The high-$p_{T}$ UDR, referred to as as UDR1, consists of events with exactly two large-R jets, with at least one having $p_{T}>400~GeV$.
+The low-$p_{T}$ UDR, referred to as UDR2, consists of events with exactly four large-R jets, all of which have $p_{T}<400~GeV$.
 The UDRs are independent of the control, validation, and signal regions.
-
-Validation region are used to check that the template method accurately estimates the $M_J^{\Sigma}$ distribution in
-high-multiplicity events that are free of signal contamination.
-Requiring large $|\Delta\eta|$ reduces the signal contribution to the high-multiplicity regions.
-There are four overlapping validation regions, each requiring $|\Delta\eta| > 1.4$.
-The validation regions are divided into two b-tag and two b-inclusive regions.
-The b-tag regions require at least one b-tagged small-R jet, while the b-inclusive regions have no such requirement.
-The b-tag and b-inclusive regions are further subdivided into 4-jet and 5-jet regions.
-The 4-jet regions require \textit{at least} four large-R jets, and leading jet $p_T>400~GeV$ so that they are independent of UDR2.
-The 5-jet regions require five or more large-R jets, and have no requirement on the leading jet $p_T$.
-
-The signal regions are divided the same way as the validation regions, into two b-tag regions: one with four or more jets,
-and one with five or more jets, as well as a two corresponding b-inclusive regions.
-The four-jet signal regions also require lead jet $p_T>400~GeV$, like the validation region.
-The difference between the signal and validation regions is a reversal of the $|\Delta\eta|$ requirement.
-All signal regions require $|\Delta\eta|<1.4$.
-Additionally, the signal regions include a requirement on $M_J^{\Sigma}$.
-The four-jet b-tag signal region (4jSRb) and 4-jet b-inclusive signal region (4jSR) each require $M_J^{\Sigma} > 1.0~TeV$.
-The five-jet b-tag signal region (5jSRb) is divided into two overlapping regions: one with a cut of $M_J^{\Sigma}>0.6~TeV$,
-and one with a cut of $M_J^{\Sigma}>0.8~TeV$.
-Finally, the five-jet b-inclusive region (5jSR) requires $M_J^{\Sigma}>0.8~TeV$.
-
-A summary of the definitions for the control, uncertainty determination, validation, and signal regions can be found in table~\ref{tbl:region_defs}.
 
 \begin{table}
     \centering
 
-    \begin{tabular}{ccccccc}
+    \begin{tabular}{cccccccc}
 
         \toprule
-                             &                        & $N_{jet}~(p_T>200~GeV)$ & $b$-tag & $p_{T,1}$  & $|\Delta\eta_{12}|$ & $M_{J}^{\Sigma}$ \\
+                             &                        & $N_{jet}~(p_T>200~GeV)$ & $b$-tag & $b$-match & $p_{T,1}$  & $|\Delta\eta_{12}|$ & $M_{J}^{\Sigma}$ \\
         \midrule
-        CR                   & 3jCR                   & $=3$                    & -       & -          & -                   & - \\
+        \multirow{2}{*}{CR}  & 3jCRb                  & $=3$                    & -       & Yes       & -          & -                   & - \\
+                             & 3jCR                   & $=3$                    & -       & No        & -          & -                   & - \\
         \midrule
-        \multirow{2}{*}{UDR} & UDR1                   & $=2$                    & -       & $>400~GeV$ & -                   & - \\
-                             & UDR2                   & $=4$                    & -       & $<400~GeV$ & -                   & - \\
+        \multirow{2}{*}{UDR} & UDR1                   & $=2$                    & -       & -         & $>400~GeV$ & -                   & - \\
+                             & UDR2                   & $=4$                    & -       & -         & $<400~GeV$ & -                   & - \\
         \midrule
-        \multirow{4}{*}{VR}  & 4jVRb                  & $\geq4$                 & Yes     & $>400~GeV$ & $>1.4$              & - \\
-                             & 5jVRb                  & $\geq5$                 & Yes     & -          & $>1.4$              & - \\
-                             & 4jVR                   & $\geq4$                 & -       & $>400~GeV$ & $>1.4$              & - \\
-                             & 5jVR                   & $\geq5$                 & -       & -          & $>1.4$              & - \\
+        \multirow{4}{*}{VR}  & 4jVRb                  & $\geq4$                 & Yes     & -         & $>400~GeV$ & $>1.4$              & - \\
+                             & 5jVRb                  & $\geq5$                 & Yes     & -         & -          & $>1.4$              & - \\
+                             & 4jVR                   & $\geq4$                 & -       & -         & $>400~GeV$ & $>1.4$              & - \\
+                             & 5jVR                   & $\geq5$                 & -       & -         & -          & $>1.4$              & - \\
         \hline
-        \multirow{5}{*}{SR}  & 4jSRb                  & $\geq4$                 & Yes     & $>400~GeV$ & $<1.4$              & $>1.0~TeV$ \\
-                             & \multirow{2}{*}{5jSRb} & $\geq5$                 & Yes     & -          & $<1.4$              & $>0.8~TeV$ \\
-                             &                        & $\geq5$                 & Yes     & -          & $<1.4$              & $>0.6~TeV$ \\
-                             & 4jSR                   & $\geq4$                 & -       & $>400~GeV$ & $<1.4$              & $>1.0~TeV$ \\
-                             & 5jSR                   & $\geq5$                 & -       & -          & $<1.4$              & $>0.8~TeV$ \\
+        \multirow{5}{*}{SR}  & 4jSRb                  & $\geq4$                 & Yes     & -         & $>400~GeV$ & $<1.4$              & $>1.0~TeV$ \\
+                             & \multirow{2}{*}{5jSRb} & $\geq5$                 & Yes     & -         & -          & $<1.4$              & $>0.8~TeV$ \\
+                             &                        & $\geq5$                 & Yes     & -         & -          & $<1.4$              & $>0.6~TeV$ \\
+                             & 4jSR                   & $\geq4$                 & -       & -         & $>400~GeV$ & $<1.4$              & $>1.0~TeV$ \\
+                             & 5jSR                   & $\geq5$                 & -       & -         & -          & $<1.4$              & $>0.8~TeV$ \\
         \bottomrule
     \end{tabular}
 
