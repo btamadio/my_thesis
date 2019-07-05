@@ -28,7 +28,7 @@ A summary of the definitions of all of these regions is given in table~\ref{tbl:
 Control region events are used to derive jet mass templates, as discussed in section~\ref{sec:jet_mass_templates}.
 The jet mass templates are used to predict the background contribution to the signal region event yields.
 Validation regions are used to check that the template method accurately estimates the $M_J^{\Sigma}$ distribution in high-multiplicity events that are free of signal contamination.
-Uncertainty determination regions are used to create data-driven estimates of the background estimation uncertainty as described in section~\ref{sec:bkg_uncert}.
+Uncertainty determination regions are used to create data-driven estimates of the background estimation uncertainty as described in section~\ref{subsec:bkg_uncert}.
 
 Control region events are required to have exactly three large-$R$ jets each with $p_{T}>200~GeV$.
 If a control region event has at least one $b$-matched large-$R$ jet, the additional requirement of $|\Delta\eta_{12}|>1.4$ is applied, in order to suppress potential signal contamination.
@@ -139,7 +139,7 @@ Dressed mass response plots in other regions are used to evaluate how well the m
 In the absence of signal events, a disagreement between the average dressed and kinematic masses would indicate that an individual jet mass is
 dependent on the number of jets in that jet's event, violating the assumptions of the template method.
 A data-driven method is used to estimate the extent to which this assumption is violated, and the size of the effect this can have on the background estimation uncertainty.
-This method is described in~\ref{sec:bkg_uncert}.
+This method is described in~\ref{subsec:bkg_uncert}.
 
 \begin{figure}[!ht]
     \centering
@@ -183,7 +183,7 @@ The systematic uncertainties are taken as the difference between the nominal and
 Scale factors are only derived from the nominal $M_{J}^{\Sigma}$ distributions and applied to both the nominal and systematically-shifted predictions.
 The two systematic uncertainties are symmetrized by taking the maximum of the \linebreak downward-shifted and upward-shifted uncertainties.
 
-\section{Background systematic uncertainty} \label{sec:bkg_uncert}
+\subsection{Systematic uncertainty} \label{subsec:bkg_uncert}
 A data-driven background systematic uncertainty is derived from the uncertainty determination regions.
 As can be seen in figure~\ref{fig:udr_response}, the dressing procedure tends to under-predict jet masses in UDR1 and over-predict jet masses in UDR2.
 The degree of discrepancy depends strongly on $p_T$ and the choice of UDR.
@@ -282,4 +282,64 @@ In both cases, the presence of $t\bar{t}$ events has no impact on the resulting 
     The top two plots show the response for non-b-matched jets only, and the bottom two plots show the response for b-matched jets only.}
 
     \label{fig:ttbar_UDR2}
+\end{figure}
+
+\section{Background estimation method applied to multijet Monte Carlo}\label{sec:bkg_monte_carlo}
+
+The background estimation method was applied to simulated background events from Pythia8 multijets and $t\bar{t}$.
+Other multijet Monte Carlo generators were found to disagree significantly with data in the CR and UDRs, and so are not presented here.
+The predicted and observed $M_{J}^{\Sigma}$ distributions were compared for the various signal regions, and agreement within uncertainties is observed.
+The number of simulated events available resulted in larger statistical uncertainty than will be present in data.
+The equivalent luminosity available for this study was $1.9~fb^{-1}$.
+
+Figure~\ref{fig:mc_4jSR} shows the predicted and observed $M_{J}^{\Sigma}$ distributions for Pythia8 multijets and $t\bar{t}$ in the $\geq4$-jet b-inclusive region with $|\Delta\eta_{1,2}|<1.4$.
+Figure~\ref{fig:mc_4jSRb} shows the same comparison for events with at least one b-tagged jet.
+In both cases, there is agreement between the two distributions within systematic uncertainties.
+Figures~\ref{fig:mc_5jSR} and~\ref{fig:mc_5jSRb} show similar comparisons for the $\geq5$-jet regions.
+In this case the number of simulated events is very small, and so the statistical uncertainty begins to dominate over the systematic uncertainty.
+Regardless, the observed $M_{J}^{\Sigma}$ distributions agree with the dressed distributions, within the uncertainties.
+
+This should not be seen as a true test of the background estimation method.
+If significant differences between the predicted and observed $M_{J}^{\Sigma}$ distributions \textit{had} been found, it would not necessarily indicate a flaw in the method.
+As discussed in~\ref{ch:analysis_overview}, Monte Carlo generators are not expected to perform well in these kinematic regions, hence the need for a data-driven background estimation method in the first place.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{bkg_mc_4jSR}
+    \caption{Predicted and observed $M_{J}^{\Sigma}$ distributions for Pythia8 multijet and $t\bar{t}$ Monte Carlo events in the 4jSR region.
+    The red histogram shows the predicted distribution including statistical uncertainty.
+    The green and blue histograms show the systematic uncertainty.
+    The left plot includes only the high-$p_{T}$ systematic uncertainty, and the right plot shows only the low-$p_{T}$ systematic uncertainty.
+    }
+    \label{fig:mc_4jSR}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{bkg_mc_4jSRb}
+    \caption{Predicted and observed $M_{J}^{\Sigma}$ distributions for Pythia8 multijet and $t\bar{t}$ Monte Carlo events in the 4jSRb region.
+    The red histogram shows the predicted distribution including statistical uncertainty.
+    The green and blue histograms show the systematic uncertainty.
+    The left plot includes only the high-$p_{T}$ systematic uncertainty, and the right plot shows only the low-$p_{T}$ systematic uncertainty.}
+    \label{fig:mc_4jSRb}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{bkg_mc_5jSR}
+    \caption{Predicted and observed $M_{J}^{\Sigma}$ distributions for Pythia8 multijet and $t\bar{t}$ Monte Carlo events in the 5jSR region.
+    The red histogram shows the predicted distribution including statistical uncertainty.
+    The green and blue histograms show the systematic uncertainty.
+    The left plot includes only the high-$p_{T}$ systematic uncertainty, and the right plot shows only the low-$p_{T}$ systematic uncertainty.}
+    \label{fig:mc_5jSR}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{bkg_mc_5jSRb}
+    \caption{Predicted and observed $M_{J}^{\Sigma}$ distributions for Pythia8 multijet and $t\bar{t}$ Monte Carlo events in the 5jSRb region.
+    The red histogram shows the predicted distribution including statistical uncertainty.
+    The green and blue histograms show the systematic uncertainty.
+    The left plot includes only the high-$p_{T}$ systematic uncertainty, and the right plot shows only the low-$p_{T}$ systematic uncertainty.}
+    \label{fig:mc_5jSRb}
 \end{figure}
