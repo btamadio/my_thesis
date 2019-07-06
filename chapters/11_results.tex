@@ -57,14 +57,40 @@ derived from the high-$p_T$ and low-$p_T$ UDRs are shown~\cite{paper-plb}.}
 
 \section{Statistical Interpretation}\label{sec:results_stats}
 
-\subsection{Determining the significance of an excess over the background prediction}\label{subsec:results_stats_excess}
-In order to determine if the excesses seen in the five-jet signal regions are statistically significant,
-a hypothesis test was conducted, using the likelihood ratio method~\cite{results-stats-asymptotic}.
-In this case, the null hypothesis, $H_0$ is the hypothesis that the signal process does not exist, and that the background prediction is true.
-The p-value will therefore quantify the probability of observing an event yield at least as large as that observed, under the assumption that the signal process does not exist.
-Statistical uncertainties on the signal and background yields are incorporated as nuisance parameters in the likelihood function.
-The resulting p-values for the signal regions can be seen in table~\ref{tbl:results_model_ind_limits}.
-No signal region shows a statistically significant deviation from the background prediction.
+The data are interpreted in a frequentist framework by defining a likelihood-ratio test statistic, and calculating a $p$-value under the null hypothesis that no signal is present.
+If the hypothesis cannot be rejected, then there is no evidence for the signal process, and limits can be set on the signal production cross section.
+The limit-setting procedure uses the $\text{CL}_s$ method~\cite{results-stats-asymptotic,results-stats-cls}.
+The likelihood function for an observed yield $k$ and expected yield $\lambda$ is:
+\begin{equation}
+    L(\mu) = P(k|\lambda)\Product_{l}G(0|\theta_{l}, 1)
+\end{equation}
+where $\mu$ is a signal-strength parameter, $P(k|\lambda)$ is the Poisson distribution with mean $\lambda$, and $G(0|\theta_{l}, 1)$ is a log-normal constraint term for systematic $l$.
+Uncertainties are incorporated into the likelihood function as nuisance parameters, by parameterizing the expected yield as:
+\begin{equation}
+    \lambda = \mu\prod_{i}(1+\theta_i \sigma_i)S_0 +B_{0}\prod_j (1+\sigma_{b,j}\sigma_{b,j}) - \mu\Delta b (1+\theta_{b,stat}\sigma_{b,stat})
+\end{equation}
+where $\theta_i$ is the nuisance parameter for signal systematic $i$ with size $\sigma_i$, and $\theta_{b,j}$ is the nuisance parameter for background systematic $j$ with size $\sigma_{b,j}$.
+Recall that each nuisance parameter is constrained by a log-normal constraint in the likelihood function.
+$S_0$ is the nominal signal yield, and $B_0$ is the predicted background yield.
+As described in~\ref{sec:signal_contamination}, the presence of signal contamination in the control region can increase the expected background prediction.
+To correct for this, the signal contamination contribution to the background prediction must be subtracted off from the total expected yield $\lambda$.
+This contribution is proportional to the signal strength, and is subject to statistical, but not systematic uncertainties.
+So the term used to correct for signal contamination is $-\mu\Delta b(1+\theta_{b,stat}\sigma_{b,stat})$.
+
+The test statistic $q_{\mu}$ is a ratio of two different likelihood function fits:
+\begin{equation}
+    q_{\mu} = -2\ln \frac{L(\mu, \hat{\theta})}{L(\hat{\mu}, \hat{\hat{\theta}})}
+\end{equation}
+where $\hat{\theta}$ are the best-fit values of the parameters when the likelihood function is fit to data with the signal-strength parameter $\mu$ kept fixed to the value of the null hypothesis,
+and $\hat{\hat{\theta}}$ are the best-fit values of the parameters when $\mu$ is allowed to vary in the fit, along with the other parameters.
+
+To test for evidence of the signal process, a hypothesis test is conducted with the null hypothesis that $\mu=0$, meaning that the signal process does not exist.
+The frequentist interpretation of a $p$-value is the probability of observing an excess at least as large as what was seen in the data, assuming that the signal process does not exist.
+A $p$-value of $3\times10^{-7}$ or less is required to reject the null hypothesis.
+The $p$-value threshold is equivalent to the false-positive rate, so the probability of incorrectly rejecting the null hypothesis due to a statistical fluctuation will be $3\times10^{-7}$ for this test.
+A separate $p$-value is calculated for each of the signal regions.
+The $p$-values for each of the signal regions can be seen in table~\ref{tbl:results_model_ind_limits}.
+None of the $p$-values are below the threshold, so no evidence of the signal process was found.
 
 \begin{table}[!ht]
     \centering
@@ -86,32 +112,18 @@ No signal region shows a statistically significant deviation from the background
 \label{tbl:results_model_ind_limits}
 \end{table}
 
-\subsection{Observed and Expected Limits}\label{subsec:results_limits}
-
-As there was no significant excess of events over the background prediction, no evidence for the signal was found.
 Using the observed yields, upper bounds can be set on the cross-section of the two signal models, as well as model-independent upper bounds.
-The limits are determined using the $CL_s$ method, which uses a likelihood ratio test statistic~\cite{results-stats-cls}.
-The resulting limits are shown in figure~\ref{fig:results_six_quark_limits}.
-The theoretical $\tilde{g}\tilde{g}$ production cross-section as a function of $m_{\tilde{g}}$ is shown as a red dashed line, with gray band indicating the uncertainty.
-The expected limit is shown as a black dashed line with green and yellow bands indicating the one- and two-sigma uncertainty extent.
-The observed limit is a solid black line.
-Because of the small excess of events observed in the signal region, the upper bound on the production cross section is higher than the theoretical production cross section in the entire gluino mass range that was tested, from $900~GeV$ to $1.8~TeV$.
+The same test statistic can be used in the limit-setting procedure as was used in the discovery test.
+In this case, the signal strength parameter $\mu$ will be fixed to 1 in the numerator of the likelihood-ratio.
+This corresponds to a null hypothesis of a signal process existing with cross-section equal to the theoretical prediction.
+For a given signal point, if the $p$-value falls below 0.05, the signal plus background hypothesis will be rejected, and that point will be considered excluded.
+Since signal yields are only determined at discrete mass points, the limits are smoothly interpolated between points.
 
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.8\linewidth]{results_six_quark_limits}
-    \caption{Predicted and observed cross-section limits for the direct decay model over a range of $m_{\tilde{g}}$ values.
-    Also shown are the estimated gluino pair production cross-sections at each mass point~\cite{paper-plb}.}
-\label{fig:results_six_quark_limits}
-\end{figure}
-
-For the cascade decay model, limits were set over a range of $m_{\tilde{g}}$ values from $800~GeV$ to $2.2~TeV$, and for $m_{tilde{\chi}_1^0}$ values from $50~GeV$ to $2.2~TeV$, with $m_{\tilde{g}} > m_{tilde{\chi}_1^0}$.
-As with the direct decay model, the limits are worsened by the small excess in the signal regions.
-However, a significant portion of the parameter space has been excluded for this model as compared to the Run-1 analysis.
+The resulting limits for the cascade decay scenario are shown in figure~\ref{fig:results_ten_quark_limits}.
+The observed limit and its theoretical uncertainty are shown in red, and the expected limit is shown in black with 1 sigma band shown in yellow.
+For comparison, the limits set by the Run-1 analysis are shown in gray.
+The result is a significant increase in the excluded parameter space for this model.
 The gluino mass excluded varies from $1~TeV$ to $1.875~TeV$ depending on the value of $m_{tilde{\chi}_1^0}$.
-The observed and expected 95\% CL mass exclusions over the  $m_{\tilde{g}} - m_{tilde{\chi}_1^0}$ plane can be seen in figure~\ref{fig:results_ten_quark_limits}.
-The observed limit and its theoretical uncertainty are shown in red, the expected limit is shown in black with 1 sigma band shown in yellow.
-For comparison, the Run 1 limit is shown in gray.
 
 \begin{figure}[!ht]
     \centering
@@ -121,4 +133,22 @@ For comparison, the Run 1 limit is shown in gray.
     The gray dashed curve shows the limits from the Run-1 analysis.
     Due to slight excess in the signal region, the observed limit is less than expected~\cite{paper-plb}.}
 \label{fig:results_ten_quark_limits}
+\end{figure}
+
+For the direct decay scenario, a similar limit-setting method was used, with $p$-values calculated over a range of gluino masses and also over a range of $\mu$ values.
+For a given gluino mass and value of $\mu$, if the $p$-value is less than 0.05, the gluinos with that mass and production cross-section are considered excluded.
+This allows for lower bounds to be placed on the gluino cross-section over a range of gluino mass values.
+
+The resulting limits for the direct-decay model are shown in figure~\ref{fig:results_six_quark_limits}.
+The theoretical $\tilde{g}\tilde{g}$ production cross-section as a function of $m_{\tilde{g}}$ is shown as a red dashed line, with gray band indicating the uncertainty.
+The expected limit is shown as a black dashed line with green and yellow bands indicating the one- and two-sigma uncertainty extent, and the observed limit is a solid black line.
+Because of the small excess of events observed in the signal region, the upper bound on the production cross section is higher than the theoretical production cross section in the entire gluino mass range that was tested, from $900~GeV$ to $1.8~TeV$.
+So no new limits can be set on the mass of the gluino decaying through this channel.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.8\linewidth]{results_six_quark_limits}
+    \caption{Predicted and observed cross-section limits for the direct decay model over a range of $m_{\tilde{g}}$ values.
+    Also shown are the estimated gluino pair production cross-sections at each mass point~\cite{paper-plb}.}
+\label{fig:results_six_quark_limits}
 \end{figure}
