@@ -37,7 +37,7 @@ To model the parts of the collision environment described in section~\ref{sec:je
 Interfacing \textsc{MadGraph} and \textsc{Pythia} is made possible by a standardized file format known as Les Houches Event Format (LHEF)~\cite{signal-lhef}.
 
 As discussed in section~\ref{sec:jet_collisions}, there are non-perturbative processes that occur in proton-proton collisions, which cannot be directly calculated from first principles.
-This processes can be parameterized and approximated in a program like \textsc{Pythia}, requiring the creation of several free parameters whose values have to be inferred from data.
+This processes can be parameterized and approximated in a program like \textsc{Pythia}, requiring many free parameters with values that must be constrained using data.
 The process of inferring these parameters so that the calculations match the data is known as tuning.
 For this analysis the A14 set of tuned parameter values were used for modeling the underlying event in \textsc{Pythia}~\cite{signal-pythia-a14,signal-pythia-tunes}.
 The parton distribution functions (PDFs) used for the simulated signal generation are from the NNPDF2.3LO set~\cite{signal-nnpdf}.
@@ -64,7 +64,7 @@ Very good agreement between FullSim and AFII-simulated events was observed acros
 As a result, AFII simulation was used for generating signal events for all of the grid points used in the limit-setting.
 Full simulation events were also generated for a few representative signal points.
 
-For this study, full simulation events for the decay modes described in chapter~\ref{ch:analysis_overview} were not available, but a very similar signal was used.
+For the analysis described in this thesis, full simulation events for the decay modes described in chapter~\ref{ch:analysis_overview} were not available, but a very similar signal was used.
 For this study, pair-produced gluinos each decay to a neutralino + $t\bar{t}$, and the neutralinos each decay through a $\lambda''$ vertex to three light quarks.
 This process is illustrated in~\ref{fig:mc_gtt}.
 The benchmark model used in this study has $m_{\tilde{g}}=1250~GeV$ and $m_{\tilde{\chi}}=450~GeV$.
