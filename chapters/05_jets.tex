@@ -50,17 +50,24 @@ Once the final state parton shower particles reach a low enough energy, they had
 The resulting hadrons then decay through various decay chains, shown in dark green.
 Photon radiation, governed by QED, can occur at any of these stages, and is shown in yellow.
 
-The final measured objects in the detector are the jets.
-But every process leading up to the final state is quantum mechanical,
-meaning that interference terms between the various processes lead to a fundamental and unresolvable ambiguity in the source of a given jet.
-An event with 3 high-$pT$ jets could be explained by a $2\rightarrow3$ hard-scattering process.
-Or it could be explained by a $2\rightarrow2$ hard scattering process, with an additional jet arising from ISR or FSR, the underlying event, or even from a hadronic decay.
-All of these processes must be taken into account when calculating the rate of 3-jet events, each contributing its own source of uncertainty.
-The final rate calculation combines the perturbative QCD calculations for the matrix elements and parton showering with empirically measured probability distributions for the non-perturbative parts of the collision, including soft gluon emission, long-distance couplings, hadronization, and multi-parton interactions (MPI) .
-As the number of jets in the final state increases, so does the complexity and uncertainty when calculating event rates.
-Monte Carlo (MC) generators attempt to account for all of these effects to calculate the rate of multijet events at the LHC .
-However, the MC estimates have very large uncertainties, for the reasons given above.
-As a result, data driven estimation methods are used for determining the background rate of multijet events.
+Accurate modelling of multijet events is challenging for several reasons.
+The first challenge comes from merging the matrix-element differential cross section with the parton shower simulation
+An event with $n$ jets in the final state can arise from a hard scattering event with $n$ partons in the final state, or from an event with $n-1$ partons in the final state, where the additional jet arises during the parton shower.
+The contributions from these two paths cannot be exactly factorized, but different merging schemes have been developed to combine them in a way that avoids double counting and yields accurate estimates of jet kinematic observables~\cite{jet-merging}.
+Uncertainties necessarily arise from the choice of merging scheme and scale parameters.
+There are additional uncertainties from higher-order diagrams, which can be evaluated by observing the change in cross section as the QCD scale is varied.
+High jet multiplicity events require diagrams with more factors of $\alpha_{s}$, so the uncertainty from higher-order diagrams grows with jet multiplicity.
+Additional contributions to uncertainty come from the choice of PDF and from the underlying event.
+Figure~\ref{fig:jet_multijet_uncertainties} shows the sizable discrepancy in third-jet $p_{T}$ and jet multiplicity distributions across several event generators.
+Because of the challenges in using Monte Carlo to estimate QCD multijet cross sections, the analysis presented in this thesis will use a fully data-driven background estimation method.
+\begin{figure}[!ht]
+    \centering
+\includegraphics[width=0.9\linewidth]{jet_multijet_simulation}
+\caption{Distribution of third-leading jet $p_{T}$ vs. leading jet $p_{T}$ (left) and jet multiplicity (right) for events simulated with several different event generators and parton shower methods.
+The bottom pane of each plot shows the ratio with respect to the Pythia 8 result.
+~\cite{jet-multijet-simulation}.}
+\label{fig:jet_multijet_uncertainties}
+\end{figure}
 
 \section{Clustering algorithms}\label{sec:jet_clustering}
 
