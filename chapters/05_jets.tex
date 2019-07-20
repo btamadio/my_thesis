@@ -190,7 +190,8 @@ The resulting jets are plotted in $y-\phi$ space, with colors labelling the diff
 For the $k_T$ and $C/A$ algorithms, the jet boundaries are highly irregular, and depend strongly on the details of the random soft particles~\cite{jet-antikt-algo}.
 
 ATLAS uses the ant-$k_T$ algorithm for its jet reconstruction because of its lack of sensitivity to pileup and underlying event, as well as its regular jet boundaries.
-The standard choice of radius parameter used by ATLAS is $R=0.4$, and a radius parameter of $R=1.0$ is used for boosted analyses, as discussed in the next section.
+The standard choice of radius parameter used by ATLAS is $R=0.4$, and a radius parameter of $R=1.0$ is used for large-$R$ jets, as discussed in the next section.
+This analysis uses both small-$R$ and large-$R$ jets, which requires running the jet clustering algorithm twice for each event, starting from the topo-clusters each time.
 
 \begin{figure}[!ht]
     \centering
@@ -279,8 +280,8 @@ The $W$-mass peak, which is originally completely hidden due to unassociated rad
 \begin{figure}[!ht]
     \centering
 \includegraphics[width=0.9\linewidth]{jet_grooming_effect}
-\caption{Measured jet mass distributions before and after grooming, for various grooming techniques.
-Mass distributions are shown for both dijet events (left) and $t\bar{t}$ events (right)~\cite{jet-tasi-substructure}.}
+\caption{Jet mass distributions from simulated LHC proton-proton collisions events before and after grooming, for various grooming techniques.
+HERWIG is used to simulate $\sqrt{s}=7~TeV$ QCD dijet events (left) and Standard Model $t\bar{t}$ events (right) with parton-level $p_{T}$ between $500$ and $600~GeV$~\cite{jet-boosted}.}
 \label{fig:jet_grooming_effect}
 \end{figure}
 
@@ -567,3 +568,4 @@ The improved c-jet rejection and worsened light-jet rejection can seen by compar
 \end{figure}
 
 In this analysis, the threshold value is chosen such that the b-jet efficiency is 70\%, resulting in a c-jet rejection of 8.1, $\tau$ rejection of 26, and light flavor rejection of 440~\cite{jet-btag-mv2}.
+Small-$R$ jets are used in this analysis because the $b$-tagging algorithm is only calibrated for jets with $R=0.4$.
