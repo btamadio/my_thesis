@@ -1,11 +1,19 @@
 \chapter{Signal systematics}\label{ch:signal_systematics}
 There are several factors that contribute to the systematic uncertainty on the signal yields, which must be accounted for when checking for significant excesses in the signal region or when setting limits on signal production.
+The dominant sources of systematic error are the large-R jet mass scale (JMS), the small-R b-tagging uncertainty, the Monte Carlo statistical uncertainty, and the modelling uncertainty, which includes uncertainty on parton distribution functions (PDFs), QCD scale uncertainty, and initial state radiation (ISR) modelling uncertainty.
 The size of the contribution from each source of uncertainty depends on the signal point being evaluated.
-For each source of systematic uncertainty, a full set of signal Monte Carlo samples is generated with the value of a nuisance parameter shifted up, and another set is generated with the value of that parameter shifted down.
-The spread in signal yields for each signal point between the two systematically-varied samples gives the size of that systematic uncertainty for that point.
-For example, to evaluate the QCD scale uncertainty, two sets of signal samples are generated, one with the QCD scale shifted up by approximately 11\%, and one with the QCD scale shifted down by the same amount, and their signal yields are compared with the nominal signal yield.
-Figures~\ref{fig:systematics_njet,fig:systematics_nbjet,fig:systematics_deta,fig:systematics_mj} shows the nominal and systematically-shifted distributions of four observables that contribute to the signal region definition for four representative signal points.
+To evaluate the size of a systematic uncertainty from a given source, a nuisance parameter is varied up and down, and the variation in the signal yield as compared to the nominal value is taken as the size of the uncertainy.
+When a systematic contains multiple components, those components are treated as uncorrelated, and their contributions are combined in quadrature.
+
+For example, to evaluate the contribution to the signal efficiency uncertainty from PDF, QCD scale, $\alpha_s$ and ISR modelling uncertainties, truth-level signal simulation samples are created where different parameters are varied in the generation.
+For PDF uncertainties, the internal event weights in the PDF set are varied up and down during the generation.
+For the QCD scale and $\alpha_{s}$ uncertainties, the value of these parameters are varied up and down during the generation.
+For ISR uncertainties, the value of the matching scale, $q_{\textrm{cut}}$ is varied up and down during the generation.
+Figures~\ref{fig:systematics_njet,fig:systematics_nbjet,fig:systematics_deta,fig:systematics_mj} show the nominal and systematically-shifted distributions of four observables that contribute to the signal region definition for four representative signal points.
 The nuisance parameters varied in these plots are the event internal weights of the PDF set, the QCD scale, and $\alpha_{S}$.
+The PDF and QCD scale contributions to the uncertainty are highest at low gluino mass, reaching a maximum of $25\%$ at$m_{\tilde{g}}=1.0~TeV$, the lowest gluino mass studied.
+For higher masses, these uncertainties drop to only a few percent.
+For reconstruction-level uncertainties such as b-tagging efficiency, the nominal signal samples are used, and the detector simulation is run with different nuisance parameters separately shifted up or down.
 
 \begin{figure}[!ht]
     \centering
@@ -35,29 +43,32 @@ The nuisance parameters varied in these plots are the event internal weights of 
     \label{fig:systematics_mj}
 \end{figure}
 
-
-There are four main components to the systematic uncertainty on the estimated signal yield.
-These components are the large-R jet mass scale (JMS), the small-R b-tagging uncertainty, the Monte Carlo statistical uncertainty, and the modelling uncertainty, which includes uncertainty on parton distribution functions (PDFs), QCD scale uncertainty, and initial state radiation (ISR) modelling uncertainty.
-The size of a given systematic is evaluated by varying a nuisance parameter and determining the percent difference in signal yield between the nominal distribution and systematically varied distribution.
-When a systematic contains multiple components, those components are treated as uncorrelated, and their contributions are combined in quadrature.
-Systematic uncertainties depend on the gluino and neutralino masses being considered, as well as the decay mode of direct or cascade.
-As such, they are evaluated separately at each point in the mass grid.
-
-For the JMS uncertainty, there are four components, called the baseline, modeling, statistical, and tracking components.
+For the large-$R$ JMS, there are four components, called the baseline, modeling, statistical, and tracking components.
 These components are derived from the $R_{trk}$ method~\cite{jet-substructure-perf}.
 The JMS uncertainty is largest for $m_{\tilde{g}}=1.0~TeV$, at $\approx 24\%$, and drops to $\approx 8\%$ for signal points with $m_{\tilde{g}}=1.8~TeV$.
 It is generally dominated by the tracking uncertainty, followed by the baseline uncertainty.
-
 The b-tagging uncertainty is evaluated by varying a set of 25 nuisance parameters.
 The result is an uncertainty on the signal efficiency of between $15\%$ and $25\%$.
 This uncertainty is only applied to the b-tag signal regions.
+The luminosity uncertainty is 3.2\%, and other uncertainties such as small-$R$ jet energy scale (JES), small-$R$ jet energy resolution (JER), and pileup are found to be negligible.
+Table\ref{tbl:systematics_summary} gives a summary of the sources of systematic uncertainty, the number of nuisance parameters for each source, and the approximate range of uncertainty size for each source.
+Because the size of the uncertainty depends strongly on the particular signal point, these are only approximate ranges, except in the case of luminosity, where the uncertainty is the same regardless of signal point.
+The JMS uncertainty is highest for the lowest-mass signal points, and decreases with gluino mass.
+The $b$-tagging efficiency uncertainty is only relevant for signal regions that include a $b$-tag requirement.
+\begin{table}[!ht]\centering
+\begin{tabular}{lll}
+    \toprule
+    source                              & number of nuisance parameters & size of uncertainty    \\ \midrule
+    b-tagging efficiency                & 25                            & $15\%-25\%$            \\ \midrule
+    \multirow[t]{4}{*}{Large-$R$ JMS}   & \multirow[t]{4}{*}{4}         & baseline: $4\%-10\%$   \\
+                                        &                               & modeling: $3\%-6\%$    \\
+                                        &                               & statistical: $5\%-8\%$ \\
+                                        &                               & tracking: $9\%-17\%$   \\ \midrule
+    PDF, QCD Scale, and $\alpha_{s}$    & 3                             & $5\%-25\%$             \\ \midrule
+    luminosity                          & 1                             & $3.2\%$                \\ \bottomrule
+\end{tabular}
+\caption{Summary of contributions to systematic uncertainties on the signal yield from various sources, including the number of nuisance parameters and approximate range of uncertainty size for each.}
+\label{tbl:systematics_summary}
+\end{table}
 
-The Monte Carlo statistical uncertainty accounts for the fact that only a limited sample of simulated events are produced for each mass point.
-The uncertainty is derived as $\sigma=\sqrt{\epsilon(1-\epsilon)/N}$, where $\epsilon$ is the efficiency measured in the sample, and $N$ is the sample size.
 
-Evaluating the contribution to the signal efficiency uncertainty from PDF, $\alpha_s$ and ISR modelling uncertainties requires the generation of truth-level signal simulation samples where different parameters are varied in the generation.
-For PDF uncertainties, the internal event weights in the PDF set are varied up and down during the generation.
-For the QCD scale uncertainty, the value of $alpha_s$ is varied up and down during the generation.
-For ISR uncertainties, the value of the matching scale, $q_{\textrm{cut}}$ is varied up and down during the generation.
-The PDF and QCD scale contributions to the uncertainty are highest at low gluino mass, reaching a maximum of $25\%$ at$m_{\tilde{g}}=1.0~TeV$, the lowest gluino mass studied.
-For higher masses, these uncertainties drop to only a few percent.
