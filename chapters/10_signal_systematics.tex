@@ -1,4 +1,40 @@
 \chapter{Signal systematics}\label{ch:signal_systematics}
+There are several factors that contribute to the systematic uncertainty on the signal yields, which must be accounted for when checking for significant excesses in the signal region or when setting limits on signal production.
+The size of the contribution from each source of uncertainty depends on the signal point being evaluated.
+For each source of systematic uncertainty, a full set of signal Monte Carlo samples is generated with the value of a nuisance parameter shifted up, and another set is generated with the value of that parameter shifted down.
+The spread in signal yields for each signal point between the two systematically-varied samples gives the size of that systematic uncertainty for that point.
+For example, to evaluate the QCD scale uncertainty, two sets of signal samples are generated, one with the QCD scale shifted up by approximately 11\%, and one with the QCD scale shifted down by the same amount, and their signal yields are compared with the nominal signal yield.
+Figures~\ref{fig:systematics_njet,fig:systematics_nbjet,fig:systematics_deta,fig:systematics_mj} shows the nominal and systematically-shifted distributions of four observables that contribute to the signal region definition for four representative signal points.
+The nuisance parameters varied in these plots are the event internal weights of the PDF set, the QCD scale, and $\alpha_{S}$.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{systematics_njet_variation}
+    \caption{Nominal and systematically-shifted $N_{jet}$ distributions for four signal points, showing the shifted distributions for internal generator event weights, QCD scale, and $\alpha_{s}$.}
+    \label{fig:systematics_njet}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{systematics_nbjet_variation}
+    \caption{Nominal and systematically-shifted $N_{b-jet}$ distributions for four signal points, showing the shifted distributions for internal generator event weights, QCD scale, and $\alpha_{s}$.}
+    \label{fig:systematics_nbjet}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{systematics_deta_variation}
+    \caption{Nominal and systematically-shifted $|\Delta\eta_{1,2}|$ distributions for four signal points, showing the shifted distributions for internal generator event weights, QCD scale, and $\alpha_{s}$.}
+    \label{fig:systematics_deta}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{systematics_mj_variation}
+    \caption{Nominal and systematically-shifted $M_{J}^{\Sigma}$ distributions for four signal points, showing the shifted distributions for internal generator event weights, QCD scale, and $\alpha_{s}$.}
+    \label{fig:systematics_mj}
+\end{figure}
+
 
 There are four main components to the systematic uncertainty on the estimated signal yield.
 These components are the large-R jet mass scale (JMS), the small-R b-tagging uncertainty, the Monte Carlo statistical uncertainty, and the modelling uncertainty, which includes uncertainty on parton distribution functions (PDFs), QCD scale uncertainty, and initial state radiation (ISR) modelling uncertainty.
