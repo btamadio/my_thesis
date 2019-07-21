@@ -80,10 +80,9 @@ Background events, which mainly come from QCD multijet production, tend to have 
 Unlike with the boosted scenarios described in~\ref{sec:jet_mass}, the jet mass for signal events does not come from capturing the decay products of a single boosted heavy object in an individual jet.
 Instead, the high jet mass in signal events results from the high probability that two or more decay products, possibly from different parent particles, can accidentally overlap inside the same large-$R$ jet.
 $M_{J}^{\Sigma}$ provides good separation between signal and background because it takes into account both the energy and angular structure of an event, unlike a purely energy-dependent observable like $H_{T}$~\cite{hook-mj,elhedri-mj}.
-
 The second discriminating variable is $|\Delta \eta_{12}|$, the pseudorapidity difference between the first two leading jets in an event.
-For events with high jet multiplicity, the signal has smaller $|\Delta \eta_{12}|$ than the background.
 
+For events with high jet multiplicity, the signal has smaller $|\Delta \eta_{12}|$ than the background.
 Distributions of the two discriminating variables are shown in figure~\ref{fig:MJ_dEta_distributions} for data as well as background and signal Monte Carlo.
 The different event generators all show similar $M_{J}^{\Sigma}$ distributions for QCD multijets, and a clear difference can be seen between the signal and background distributions.
 For signal events, the location of the $M_{J}^{\Sigma}$ peak depends on the gluino mass, moving to higher values for larger masses.
@@ -102,14 +101,17 @@ In the analysis, a requirement of small $|\Delta \eta_{12}|<1.4$ can therefore b
 
 A data-driven method is used to predict the background yield in the signal regions, as well as the uncertainties on those predictions.
 The method assumes that for background events, the probably distribution for the mass of an individual jet depends mainly on the $p_{T}$, $\eta$, and flavor of that jet, and does not depend strongly on other details of the event kinematics.
-Using this assumption, templates for jet mass can be built from jet in a background-dominated region and used to predict the mass distribution for jets in signal regions.
+Using this assumption, templates for jet mass can be built from jets in a background-dominated region and used to predict the mass distribution for jets in signal regions.
 Templates are binned in $p_{T}$ and $\eta$, and are derived separately for $b$-matched and non-$b$-matched jets.
-Each template is a histogram of jet mass within a certain range of $p_{T}$ and $\eta$.
-The histogram is used as the probability distribution for a jet to have a certain mass, conditional on its $p_{T}$, $\eta$, and flavor.
-
-Randomized jet masses, known as dressed masses, are generated from these templates for each jet in the kinematic sample.
+Each template is the histogram of jet mass within a bin.
+The histogram is used as the jet mass probability distribution, conditioned on $p_{T}$, $\eta$, and flavor.
+Randomized jet masses, known as dressed masses, are generated from these templates for each jet in the signal region sample.
 Summing the dressed masses for each of the up to four leading jets in an event gives the dressed $M_{J}^{\Sigma}$ for that event.
 The dressed $M_{J}^{\Sigma}$ distribution for each signal region is used to estimate the expected background contribution to that region.
+This method depends on the assumption that the jet mass in background events depends only on $p_{T}$, $\eta$, and flavor.
+Independent regions are defined for measuring the extent to which this assumption is violated in data, and this will serve as a systematic uncertainty on the background estimation.
+These regions will be called uncertainty determination regions (UDRs).
+Background-dominated validation regions will also be defined to test that the dressed $M_{J}^{\Sigma}$ distributions are within the uncertainties derived from the UDRs.
 
 The method is similar to that used in the Run-1 version of the analysis~\cite{run1-multijet}, with a few important differences.
 In the Run-1 analysis, the templates were smoothed with a kernel density estimate before sampling the dressed masses.
@@ -123,3 +125,8 @@ Finally, the Run-1 version of the analysis used Monte-Carlo non-closure as one c
 In this analysis, a data-driven method is used instead.
 This is due to the fact that the sample size of available simulated data was not large enough to make an accurate estimate of the non-closure.
 More details of the template-based background estimation method and how uncertainties are derived from data will be given in~\ref{sec:jet_mass_templates}.
+
+Once the data-driven background estimation and uncertainties have been obtained, a comparison can be done between the observed and expected yields in the signal regions.
+If no significant excess is observed, limits can be set on gluino and neutralino masses under the cascade and direct decay model assumptions.
+Limits are set by first calculating a 95\% CL upper bound on the signal production cross-section, and then identifying the mass points for which the theoretical cross-section lies outside this bound.
+The details of the limit-setting procedure are described in~\ref{sec:results_stats}.
