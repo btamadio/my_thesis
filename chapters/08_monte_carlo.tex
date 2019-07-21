@@ -36,14 +36,14 @@ Interfacing \textsc{MadGraph} and \textsc{Pythia} is made possible by a standard
 As discussed in section~\ref{sec:jet_collisions}, there are non-perturbative processes that occur in proton-proton collisions, which cannot be directly calculated from first principles.
 This processes can be parameterized and approximated in a program like \textsc{Pythia}, requiring many free parameters with values that must be constrained using data.
 The process of inferring these parameters so that the calculations match the data is known as tuning.
-For this analysis the A14 set of tuned parameter values are used to model the underlying event in \textsc{Pythia}~\cite{signal-pythia-a14,signal-pythia-tunes}.
-The parton distribution functions (PDFs) used for the simulated signal generation are from the NNPDF2.3LO set~\cite{signal-nnpdf}.
+For this analysis the A14 set of tuned parameter values~\cite{signal-pythia-a14,signal-pythia-tunes} and the NNPDF2.3LO set~\cite{signal-nnpdf} of PDFs are used to model the underlying event in~\textsc{Pythia}.
+EvtGen v1.2.0~\cite{mc-evtgen} is used for modelling b- and c-hadron decays.
 
 \subsection{Cross-section}\label{subsec:signal_cross_section}
 In order to estimate the expected signal yield and uncertainty, the nominal production cross section and its uncertainty must be known.
 Gluino pair-production cross-sections have been calculated at a range of center-of-mass energies, and the results are summarized in~\cite{signal-xsec}.
 The gluino pair-production cross-section and its uncertainty over a range of gluino masses can be seen in~\ref{fig:signal_xsec}.
-
+The uncertainty band comes from calculating the cross section with different PDF sets and with different factorization and renormalization scales~\cite{signal-xsec}.
 \begin{figure}[!ht]\centering
     \includegraphics[width=0.9\linewidth]{signal_xsec}
     \caption{Gluino pair-production cross-section and uncertainty for $\sqrt{13}~TeV$ proton-proton collisions at the LHC, calculated at NLO+NLL~\cite{signal-xsec}.}
@@ -61,7 +61,7 @@ Very good agreement between FullSim and AFII-simulated events is observed across
 As a result, AFII simulation is used for generating signal events for all of the grid points used in the limit-setting.
 Full simulation events are also generated for a few representative signal points.
 
-For the FullSim/AFII comparison, full simulation events for the decay modes described in chapter~\ref{ch:analysis_overview} were not available, but a very similar signal was used.
+For the FullSim/AFII comparison, full simulation events for the decay modes described in chapter~\ref{ch:analysis_overview} are not available, but a very similar signal is used.
 In this case, pair-produced gluinos each decay to a neutralino + $t\bar{t}$, and the neutralinos each decay through a $\lambda''$ vertex to three light quarks.
 This process is illustrated in~\ref{fig:mc_gtt}.
 The benchmark model used in this study has $m_{\tilde{g}}=1250~GeV$ and $m_{\tilde{\chi}}=450~GeV$.

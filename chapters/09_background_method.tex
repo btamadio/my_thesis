@@ -2,12 +2,20 @@
 
 \section{Control, signal, validation, and uncertainty determination regions} \label{sec:region_defs}
 Events are divided into control, signal, validation, and uncertainty determination regions.
-A summary of the definitions of all of these regions is given in table~\ref{tbl:region_defs}.
-Control region events are used to derive jet mass templates, as discussed in section~\ref{sec:jet_mass_templates}.
-The jet mass templates are used to predict the background contribution to the signal region event yields.
-Validation regions are used to check that the template method accurately estimates the $M_J^{\Sigma}$ distribution in high-multiplicity events that are free of signal contamination.
-Uncertainty determination regions are used to create data-driven estimates of the background estimation uncertainty as described in section~\ref{subsec:bkg_uncert}.
+Figure~\ref{fig:workflow} illustrates how the different regions are used in the analysis.
+Jet mass templates are constructed from control region (CR) events and used predict the mass distribution in the uncertainty determination region (UDR), validation region (VR), and signal region (SR), as discussed in section~\ref{sec:jet_mass_templates}.
+The discrepancy between predicted and observed jet masses in the UDR is taken as the systematic uncertainty of the background estimation method.
+Observed and predicted masses in the validation regions can be compared to check that any discrepancy falls within this uncertainty, as a way of validating the method.
+Finally the observed yields in the signal region can be compared to the predicted background yield in the signal region.
 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{background_workflow.png}
+    \caption{Workflow illustrating how the different regions are used in the analysis.}
+    \label{fig:workflow}
+\end{figure}
+
+Table~\ref{tbl:region_defs} gives the cuts used to define each of these regions.
 Control region events are required to have exactly three large-$R$ jets each with $p_{T}>200~GeV$.
 If a control region event has at least one $b$-matched large-$R$ jet, the additional requirement of $|\Delta\eta_{12}|>1.4$ is applied, in order to suppress potential signal contamination.
 
