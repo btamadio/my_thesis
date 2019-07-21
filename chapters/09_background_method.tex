@@ -170,9 +170,15 @@ Scale factors are only derived from the nominal $M_{J}^{\Sigma}$ distributions a
 The two systematic uncertainties are symmetrized by taking the maximum of the \linebreak downward-shifted and upward-shifted uncertainties.
 
 \subsection{Systematic uncertainty} \label{subsec:bkg_uncert}
-A data-driven background systematic uncertainty is derived from the uncertainty determination regions.
+
+The template method relies on the assumption that the probability density function (PDF) for a jet in a background event to have mass $m$ depends only on the jets $p_{T}$, $\eta$, and $b$-match status of the individual jet.
+It also assumes that the mass PDF of a jet is independent of the masses of other jets in the event.
+The extent to which these assumptions do not hold introduces a systematic uncertainty to the background estimation.
+To understand this uncertainty, signal-depleted regions called UDRs are defined, which are independent from signal and validation regions.
+The predicted jet mass in these regions can be compared to the measured jet mass to determine the level of systematic uncertainty inherent to the method.
+
 As can be seen in figure~\ref{fig:udr_response}, the dressing procedure tends to under-predict jet masses in UDR1 and over-predict jet masses in UDR2.
-The degree of discrepancy depends strongly on $p_T$ and the choice of UDR.
+The degree of discrepancy depends strongly on $p_T$ and the choice of UDR .
 Separate uncorrelated systematic uncertainties are derived for jets with $p_T<400~GeV$ and those with $p_T>400~GeV$.
 Since the discrepancy is larger in UDR1 than UDR2 for jets with $p_T<400~GeV$, UDR1 is used to derive the uncertainty for those jets.
 For jets with $p_T<400~GeV$, uncertainties are correlated across $p_T$ and $|\eta|$ bins, and likewise for jets with $p_T>400~GeV$.
@@ -189,7 +195,7 @@ For jets with $p_T<400~GeV$, uncertainties are correlated across $p_T$ and $|\et
 Systematic uncertainties are binned in $p_{T}$ and $|\eta|$.
 The lowest $p_{T}$ bin is for jets with $p_{T} < 400~GeV$.
 The second bin is for jets with $400~GeV \leq p_T < 544~GeV$, and the highest bin is for jets with $p_T \geq 544~GeV$.
-For jets with $p_{T} \geq 400~GeV$, uncertainties are derived only from UDR1.
+For jets with $p_{T} > 400~GeV$, uncertainties are derived only from UDR1.
 For jets with $p_{T} < 400~GeV$, uncertainties are derived from both UDR1 and UDR2, and the maximum uncertainty is used.
 
 For each $p_T$ bin in the UDR dressed mass response, a fractional error is calculated as $e_i=\left(<m_{kin}>-<m_{dressed}>\right)/<m_{dressed}>$.
