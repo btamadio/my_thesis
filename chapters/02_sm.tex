@@ -24,7 +24,7 @@ The theory consists of three generations of matter fields, specified by their re
 Poincar\'e symmetry consists of the Lorentz symmetry of special relativity, plus global translational symmetry.
 
 The Standard Model is a complete theory in the sense that it is internally self-consistent,
-and all particles predicted by the theory have been discovered experimentally.
+and all particles predicted by the theory have been observed experimentally.
 However, the Standard Model does not account for all known physical phenomena,
 and so cannot be considered a complete theory of nature.
 
@@ -72,7 +72,7 @@ each of which comes in three colors:
         q_{t} \\ q_{b}
     \end{pmatrix}_L
 \end{equation}
-Quark color will play a role in QCD interactions, as discussed in the next section.
+Quark color plays a role in QCD interactions, which will be described in the next section.
 There are also the corresponding $SU(2)$-singlet right-handed fields:
 
 \begin{equation}\label{eq:right_handed_quarks}
@@ -89,16 +89,16 @@ where the kinetic part of the electroweak Lagrangian is:
 \begin{equation}\label{eq:ew_kin}
     \mathcal{L}_{kin} = -\frac{1}{4}W^{\mu \nu}_{a}W_{\mu \nu}^{a}-\frac{1}{4}B^{\mu \nu}B_{\mu \nu}
 \end{equation}
-$W_\mu^a$ are the three $SU(2)_L$ gauge bosons, $B_\mu$ is the $U(1)_Y$ (hypercharge) gauge boson, and $W_\mu\nu = \partial_{\mu} W_{\nu} - \partial_{\nu} W_{\mu}$.
+$W_\mu^a$ are the three $SU(2)_L$ gauge bosons, $B_\mu$ is the $U(1)_Y$ (hypercharge) gauge boson, and $W_{\mu\nu} = \partial_{\mu} W_{\nu} - \partial_{\nu} W_{\mu}$.
 The part of the electroweak Lagrangian describing electroweak interactions is:
 \begin{equation}\label{eq:ew_int}
     \mathcal{L}_{\text{interactions}} = \sum_{\text{generations}}\left[\frac{g}{2}\bar{\psi}_{L}\gamma^\mu\sigma^i W_\mu^i \psi_L+
     g'B_\mu\left(Y_{\psi_L}\bar{\psi}_L\gamma^\mu\psi_L + Y_{\psi_R}\bar{\psi}_R\gamma^\mu \psi_R\right)\right]
 \end{equation}
-where $\gamma^\mu$ are the Dirac gamma matrices, Y is the hypercharge associated with the relevant field.
+where $\gamma^\mu$ are the Dirac gamma matrices, and Y is the hypercharge associated with the relevant field.
 
 Left-handed leptons and quarks have weak hypercharge $Y = -1$ and $Y = 1/3$, respectively.
-Right-handed leptons have weak hypercharge $Y = -2$. Right right-handed up-type quarks have weak hypercharge $Y = 4/3$,
+Right-handed leptons have weak hypercharge $Y = -2$. Right-handed up-type quarks have weak hypercharge $Y = 4/3$,
 and right-handed down-type quarks have weak hypercharge $Y = -2/3$.
 
 This Lagrangian describes the charged-current and neutral-current weak interactions, as well as weak gauge boson self-interactions.
@@ -124,13 +124,13 @@ We can then re-parameterize the scalar field as:
     \phi = \exp{\left(i\frac{\sigma_i}{2}\theta^i(x)\right)}\frac{1}{\sqrt{2}}\begin{pmatrix} 0 \\ v+H(x) \end{pmatrix}
 \end{equation}
 where $H(x)$ and $\theta^i(x)$ are real-valued fields, and $v = \sqrt{\frac{-\mu^2}{\lambda}}$ is the vacuum expectation value of the Higgs field.
-Because of the $SU(2)_L$ symmetry of the theory, we are free to choose convenient values for $\theta_i(x)$,
+Because of the $SU(2)_L$ symmetry of the theory, we are free to choose convenient values for $\theta^i(x)$,
 without affecting the outcome of any observable predictions.
-Selecting $\theta_i(x) = 0$, the additional kinetic term required in the Lagrangian is:
+Selecting $\theta^i(x) = 0$, the additional kinetic term required in the Lagrangian is:
 \begin{equation}\label{eq:higgs_kinetic}
     \Delta\mathcal{L}_{EW} = \left(D_{\mu}\phi\right)^{\dagger}\left(D_{\mu}\phi\right)
-    =\frac{1}{2}\partial_{\mu}H \partial^{\mu}H + (v+H)^{2}\left(\frac{g^2}{4}W_\mu^\dagger W^\mu
-    + \frac{g^2}{8\cos^2 {\theta_W}}Z_\mu Z^\mu\right)
+    =\frac{1}{2}\partial_{\mu}H \partial^{\mu}H + \frac{1}{2}(v+H)^{2}\left(\frac{g^2}{4}W_\mu^\dagger W^\mu
+    + \frac{g^2}{4\cos^2 {\theta_W}}Z_\mu Z^\mu\right)
 \end{equation}
 where $W_\mu$ and $Z_\mu$ are mass eigenstates of the electroweak gauge fields.
 Each mass eigenstate is a linear combination of the original $W_\mu^a$ and $B_\mu$.

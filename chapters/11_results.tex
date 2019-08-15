@@ -62,7 +62,7 @@ If the hypothesis cannot be rejected, then there is no evidence for the signal p
 The limit-setting procedure uses the $\text{CL}_s$ method~\cite{results-stats-asymptotic,results-stats-cls}.
 The likelihood function for an observed yield $k$ and expected yield $\lambda$ is:
 \begin{equation}
-    L(\mu) = P(k|\lambda)\Product_{l}G(0|\theta_{l}, 1)
+    L(\mu) = P(k|\lambda)\prod_{l}G(0|\theta_{l}, 1)
 \end{equation}
 where $\mu$ is a signal-strength parameter, $P(k|\lambda)$ is the Poisson distribution with mean $\lambda$, and $G(0|\theta_{l}, 1)$ is a log-normal constraint term for systematic $l$.
 Uncertainties are incorporated into the likelihood function as nuisance parameters, by parameterizing the expected yield as:
