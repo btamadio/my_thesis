@@ -280,10 +280,19 @@ The six endcap disks are located at $|z| = 495~mm, 580~mm, 650~mm$ and cover the
 Figure~\ref{fig:inner_detector_quarter} shows a quarter-section of the entire inner detector, as well as a detailed view of the pixel subsystem, not including the Insertable B Layer (IBL), which was installed in 2014.
 
 The ATLAS pixel sensors are solid-state silicon detectors.
-The basic operating principle of a solid-state detector is that charged particles passing through the material generate electron-hole pairs, which are accelerated towards opposite ends of the material via an electric field.
+The basic operating principle is that charged particles passing through a material generate electron-hole pairs, which are accelerated towards opposite ends of the material via an electric field.
 This generates a current, which can be measured by charge-sensitive sensors at the edge of the material~\cite{spieler-2005}.
-In a silicon detector, the active material is a pn junction, operated with a reverse bias voltage, until fully depleted.
+The active material is a $pn$-junction, operated with a reverse bias voltage, until fully depleted.
 This reduces the thermal noise from free charge carriers to a low enough level that electron-hole pairs from signal particles can be detected~\cite{spieler-2005}.
+The operating principle is illustrated in figure~\ref{fig:solid_state_diagram}, which shows the electron-hole pairs generated in the depletion region by an incoming ionizing particle, and the directions in which the electrons and holes are accelerated under the electric field.
+
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.6\textwidth]{atlas_solid_state_diagram}
+\caption{The basic operating principle of a solid-state particle detector. A reverse bias is applied across a $pn$-junction, creating a depletion region.
+When a charged particle passes through this depletion region, electron-hole pairs are created, and the electrons and holes are accelerated in opposite directions under the electric field.
+The flow of electrons generates a current in the readout electronics.}\label{fig:solid_state_diagram}
+\end{figure}
+
 In ATLAS, the pixel sensors consist of an n-type bulk, with $p^+$ implants on the back side and $n^+$ implants on the front side.
 Before irradiation, the active pn junction region exists between the n-type bulk and $p^+$- implanted side.
 Irradiation leads to the reduction in the effective doping concentration, until the bulk material undergoes type inversion.
