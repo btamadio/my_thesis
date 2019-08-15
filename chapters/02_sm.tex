@@ -257,22 +257,18 @@ However, the existence of color confinement is consistent with empirical evidenc
 
 The QCD Lagrangian describes how individual quarks and gluons behave.
 But the LHC collides protons, not individual quarks.
-Protons consist of three valence quarks: two up quarks and one down quark.
-But they also consist of a "sea" of quarks and antiquarks, as well as gluons.
-When calculating collision cross-sections for the LHC, this internal structure of the protons must be taken into account.
+Protons consist of three valence quarks: two up quarks and one down quark, and a "sea" of quarks, antiquarks, and gluons.
+When calculating collision cross-sections for the LHC, the internal structure of the protons must be taken into account.
 
-Parton distribution functions (PDFs) model the internal structure of the proton.
-They are expressed as probability distributions over momentum fraction $x$, normalized to the number of partons.
-The momentum fraction $x$, is the proportion of the proton momentum carried by the individual parton.
-PDFs are conditional on $Q^2$, the squared energy scale.
-There are separate PDFs for gluons and for each quark flavor.
-
-The values of PDFs cannot be calculated from first principles using perturbative QCD .
-However, thanks to the QCD factorization theorem, PDFs can be inferred from experiment.
+This internal structure is accounted for using parton distribution functions (PDFs).
+PDFs are expressed as probability density functions $f_i(x, Q^2)$, where $i$ denotes the flavor of the parton, $x$ is the fraction of momentum carried by the parton, and $Q$ is the momentum transfer at which the proton structure is probed, or the energy scale of the hard-scatter process.
+The values of these PDFs cannot be calculated from first principles, but thanks to the QCD factorization theorem, they can be measured experimentally.
 The factorization theorem allows for the cross section to be factorized into a hard-scattering part and a normalization factor from the PDFs.
-The hard-scattering part of the cross section can be calculated using perturbation theory, and the total cross section can then be measured experimentally.
-Using the measured total cross-section, and the calculated hard-scattering part of the cross-section, the PDF values can be inferred at certain values of $Q^2$.
-The Dokshitzer-Gribov-Lipatov-Altarelli-Parisi (DGLAP) equations, which describe how PDFs depend on $Q^2$, can then be used to determine the global PDFs~\cite{sm-dglap}.
+By comparing the experimental and theoretical cross sections for a given process, the PDFs can be inferred.
+Since the PDFs are independent of the hard-scattering process, the data from a variety of processes can be combined.
+Using the  Dokshitzer-Gribov-Lipatov-Altarelli-Parisi (DGLAP) equations~\cite{sm-dglap}, which describe how the PDFs depend $Q^2$, data from different processes at different momentum-transfer scales can all be combined into a global fit.
+For PDFs used by ATLAS, the global fit includes data from deep inelastic scattering (DIS) $e-p$ collisions from the HERA-II experiment, jet and $t\bar{t}$ production from ATLAS and CMS, and observables from several other processes~\cite{sm-pdf-atlas-run2}.
+
 Figure~\ref{fig:sm_pdfs} shows the proton PDFs evaluated at NLO for $Q^2 = 10~GeV^2$ and $Q^2 = 10^{4}~GeV^2$
 \begin{figure}[!ht]
     \centering
